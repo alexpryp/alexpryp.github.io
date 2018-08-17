@@ -1,0 +1,163 @@
+header .wrap, nav, ul, li, footer .wrap, a{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+.logo_wrap, .logo, .logo_name, nav, ul, li, a{
+	display: inline-block;
+	box-sizing: border-box;
+}
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+/*start stylization of header----------------------------*/
+header {
+	background-color: #274F7D;
+	height: 50px;
+	margin: 0;
+	position: sticky;
+	z-index: 1;
+	top: 0;
+}
+header .wrap {
+	height: 50px;
+	margin: 0px auto;
+}
+.logo_wrap {
+	height: 50px;
+	width: 250px;
+	padding: 5px;
+}
+.logo {
+	font-size: 40px;
+	font-weight: bold;
+	color: #fff;
+	width: 100px;
+}
+.logo_name {
+	width: 100px;
+	font-size: 1.2em;
+	color: #fff;
+	padding: 0;
+	float: right;
+	margin: 5px;
+}
+nav {
+	width: 210px;
+	height: 50px;
+	float: right;
+}
+ul {
+	height: 50px;
+	list-style: none;
+}
+li {
+	float: left;
+	width: 70px;
+	height: 50px;
+}
+li a {
+	text-decoration: none;
+	width: 70px;
+	height: 50px;
+	text-align: center;
+	padding: 10px 0px;
+	background-color: #274F7D;
+	color: #fff;
+	border-top: 5px solid #274F7D;
+}
+.active {
+	background-color: #274F7D;
+	color: #fff;
+	transition: 0.5s;
+	border-top: 5px solid #fff;
+}
+li a:hover {
+	color: #000;
+	transition: 0.3s;
+	border-top: 5px solid #fff;
+}
+li a:active {
+	background-color: #fff;
+	color: #000;
+}
+li a:visited {
+	background-color: #274F7D;
+	color: #fff;
+}
+/*end stylization of header------------------------------*/
+
+
+main {
+	margin: 0 auto;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+section {
+	display: block;
+	box-sizing: border-box;
+	border-bottom: 1px solid #000;
+}
+h2 {
+	text-align: center;
+	margin-top: 50px;
+}
+
+/*start stylization of project cards---------------------*/
+.project_card {
+	padding: 5px;
+	float: left;
+	width: 25%;
+}
+.card_wrap {
+	border: 1px solid #ccc;
+	transform: scale(0.9);
+	transition: 0.5s;
+	box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.3);
+}
+.card_wrap:hover {
+	border: 1px solid #777;
+	transition: 0.5s;
+	transform: scale(1);
+	box-shadow: 0 15px 30px 20px rgba(0, 0, 0, 0.3);
+}
+.project_card img {
+	width: 100%;
+	height: auto;
+}
+.desc {
+	padding: 15px;
+	text-align: center;
+}
+@media all and (max-width: 1024px) {
+	.project_card {
+		width: 50%;
+	}
+}
+@media all and (max-width: 400px) {
+	.project_card {
+		width: 100%;
+	}
+}
+/*end stylization of project cards-----------------------*/
+
+
+footer {
+	height: 100px;
+	background-color: #274F7D;
+}
+footer .wrap {
+	height: 50px;
+	margin: 0 auto;
+	color: #fff;
+	background-color: #274F7D;
+}
+
+	/*box-shadow: 0 -10px 5px rgba(0, 0, 0, 0.5);*/
