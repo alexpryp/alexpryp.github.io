@@ -1,3 +1,8 @@
+:root {
+  --main-color: #222;
+}
+
+
 header .wrap, nav, ul, li, footer .wrap, a{
 	padding: 0;
 	margin: 0;
@@ -5,7 +10,6 @@ header .wrap, nav, ul, li, footer .wrap, a{
 }
 .logo_wrap, .logo, .logo_name, nav, ul, li, a{
 	display: inline-block;
-	box-sizing: border-box;
 }
 * {
     box-sizing: border-box;
@@ -14,43 +18,34 @@ header .wrap, nav, ul, li, footer .wrap, a{
 
 body {
 	margin: 0;
+	padding: 0;
 	font-family: sans-serif;
 }
 
 /*start stylization of header----------------------------*/
 header {
-	background-color: #274F7D;
-	height: 50px;
+	background-color: var(--main-color);
+	min-height: 50px;
 	margin: 0;
 	position: sticky;
 	z-index: 1;
 	top: 0;
-}
-header .wrap {
-	height: 50px;
-	margin: 0px auto;
-}
-.logo_wrap {
-	height: 50px;
-	width: 250px;
-	padding: 5px;
-}
-.logo {
-	font-size: 40px;
-	font-weight: bold;
-	color: #fff;
-	width: 100px;
+	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 .logo_name {
-	width: 100px;
-	font-size: 1.2em;
+	max-width: 200px;
+	font-size: 1.5em;
 	color: #fff;
 	padding: 0;
-	float: right;
 	margin: 5px;
+	color: #999;
+	font-family: 'Audiowide', cursive;
 }
 nav {
-	width: 210px;
+	width: 270px;
 	height: 50px;
 	float: right;
 }
@@ -60,36 +55,32 @@ ul {
 }
 li {
 	float: left;
-	width: 70px;
+	width: 90px;
 	height: 50px;
 }
 li a {
 	text-decoration: none;
-	width: 70px;
+	width: 90px;
 	height: 50px;
 	text-align: center;
-	padding: 10px 0px;
-	background-color: #274F7D;
-	color: #fff;
-	border-top: 5px solid #274F7D;
+	padding: 10px;
+	background-color: var(--main-color);
+	color: #aaa;
+	border-top: 5px solid #222;
 }
 .active {
-	background-color: #274F7D;
+	background-color: var(--main-color);
 	color: #fff;
 	transition: 0.5s;
-	border-top: 5px solid #fff;
+	border-top: 5px solid #42bff4;
 }
 li a:hover {
-	color: #000;
+	color: #fff;
 	transition: 0.3s;
-	border-top: 5px solid #fff;
+	border-top: 5px solid #42bff4;
 }
 li a:active {
-	background-color: #fff;
-	color: #000;
-}
-li a:visited {
-	background-color: #274F7D;
+	background-color: var(--main-color);
 	color: #fff;
 }
 /*end stylization of header------------------------------*/
@@ -98,11 +89,9 @@ li a:visited {
 main {
 	margin: 0 auto;
 	background-color: #fff;
-	box-sizing: border-box;
 }
 section {
 	display: block;
-	box-sizing: border-box;
 	border-bottom: 1px solid #000;
 }
 h2 {
@@ -110,17 +99,64 @@ h2 {
 	margin-top: 50px;
 }
 
+/*start stylization of section About---------------------*/
+.about {
+	background-image: url(images/backgrounds/main-bg.jpg);
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+.about h1 {
+	margin-top: 50px;
+	color: #fff;
+	font-size: 2em;
+	text-align: center;
+	text-shadow: black 0 0 30px;
+	flex-basis: 100%;
+	align-self: flex-start;
+	font-family: 'Audiowide', cursive;
+}
+.about .card {
+	max-width: 400px;
+	padding: 10px;
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0.7);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.about .card p {
+	color: #fff;
+}
+.card img {
+	width: 250px;
+	margin: 10px;
+	border-radius: 50%;
+}
+
+/* start stylization of portfolio section */
+.projects-wrap {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
 /*start stylization of project cards---------------------*/
-.project_card {
+.project-tile {
 	padding: 5px;
-	float: left;
-	width: 25%;
+	max-width: 450px;
 }
 .card_wrap {
 	border: 1px solid #ccc;
 	transform: scale(0.9);
 	transition: 0.5s;
-	box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.3);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .card_wrap:hover {
 	border: 1px solid #777;
@@ -128,7 +164,7 @@ h2 {
 	transform: scale(1);
 	box-shadow: 0 15px 30px 20px rgba(0, 0, 0, 0.3);
 }
-.project_card img {
+.project-tile img {
 	width: 100%;
 	height: auto;
 }
@@ -136,28 +172,27 @@ h2 {
 	padding: 15px;
 	text-align: center;
 }
-@media all and (max-width: 1024px) {
-	.project_card {
+/* @media all and (max-width: 1024px) {
+	.project-tile {
 		width: 50%;
 	}
 }
 @media all and (max-width: 400px) {
-	.project_card {
+	.project-tile {
 		width: 100%;
 	}
-}
+} */
 /*end stylization of project cards-----------------------*/
 
 
 footer {
 	height: 100px;
-	background-color: #274F7D;
+	background-color: var(--main-color);
+	box-shadow:  0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 footer .wrap {
 	height: 50px;
 	margin: 0 auto;
 	color: #fff;
-	background-color: #274F7D;
+	background-color: var(--main-color);
 }
-
-	/*box-shadow: 0 -10px 5px rgba(0, 0, 0, 0.5);*/

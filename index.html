@@ -2,95 +2,85 @@
 
 <html lang="ru">
 	<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta content="text/html" charset="utf-8">
+    <meta name="description" content="Портфолио веб разработчика Прыпышного Александра">
 		<link rel="stylesheet" type="text/css" href ="style.css">
-		<title>Портфолио</title>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+		<title>Александр Прыпышный</title>
 		<script src="script.js"></script>
-        <script type="text/javascript">
-            //script that simulates active tabs
-            function activateTab(evt) {
-            // Declare all variables
-                var i, tablinks;
-
-                // Get all elements with class="tablinks" and remove the class "active"
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-
-                //Add an "active" class to the button that opened the tab
-                evt.currentTarget.className += " active";
-            }
-        </script>
 	</head>
 <body>
     <header>
-        <div class="wrap">
-            <div class="logo_wrap">
-                <div class="logo">&#60/&#62</div> <div class="logo_name">Aleksandr</div>
-            </div>
-            <nav>
-                <ul>
-                    <li>
-                        <!-- add the javaScript event handler (onclick) -->
-                        <a class="tablinks" onclick="activateTab(event)" href="#about">About</a>
-                    </li>
-                    <li>
-                        <!-- add the javaScript event handler (onclick) -->
-                        <a class="tablinks" onclick="activateTab(event)" href="#portfolio">Portfolio</a>  
-                    </li>
-                    <li>
-                        <!-- add the javaScript event handler (onclick) -->
-                        <a class="tablinks" onclick="activateTab(event)" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+      <div class="logo_name">Alexander</div>
+      <nav id="navbar">
+        <ul>
+        <li>
+          <!-- add the javaScript event handler (onclick) -->
+          <a class="tablinks active" onclick="activateTab(event)" href="#about">Главная</a>
+        </li>
+        <li>
+          <!-- add the javaScript event handler (onclick) -->
+          <a class="tablinks" onclick="activateTab(event)" href="#portfolio">Работы</a>  
+        </li>
+        <li>
+          <!-- add the javaScript event handler (onclick) -->
+          <a class="tablinks" onclick="activateTab(event)" href="#contact">Контакты</a>
+        </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section class="about">
+        <section class="about" id="welcome-section">
             <a name="about"></a>
-            <h2>About</h2>
+            <h1>Front-end web developer</h1>
+            <div class="card">
+              <img src="images/Avatar.jpg">
+              <p>Приветствую, меня зовут Александр Прыпышный, я занимаюсь front-end разработкой, в своей работе использую следующие инструменты и технологии: HTML, CSS, Flexbox, Grid Layout, Bootstrap, JavaScript, Git, GitHub, Photoshop.
+            </p>
+            </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="projects">
             <a name="portfolio"></a>
-            <h2>Portfolio</h2>
-            <div class="project_card">
-                <div class="card_wrap">
-                    <a href="">
-                        <img src="images/projects/Norm_Borl.jpg" alt="Norman Borloug page" width="500" height="500">
-                    </a>
-                    <div class="desc">Norman Borloug page</div>
-                </div>
-            </div>
-            <div class="project_card">
-                <div class="card_wrap">
-                    <a href="">
-                        <img src="images/projects/Countries_and_cities.jpg" alt="Countries and cities site" width="500" height="500">
-                    </a>
-                    <div class="desc">Countries and cities site</div>
-                </div>
-            </div>
-            <div class="project_card">
-                <div class="card_wrap">
-                    <a href="">
-                        <img src="images/projects/Gallery.jpg" alt="Gallery" width="500" height="500">
-                    </a>
-                    <div class="desc">Gallery</div>
-                </div>
-            </div>
-            <div class="project_card">
-                <div class="card_wrap">
-                    <a href="">
-                        <img src="images/projects/Portfolio.jpg" alt="Portfolio" width="500" height="500">
-                    </a>
-                    <div class="desc">Portfolio</div>
-                </div>
+            <h2>Мои pet-проекты</h2>
+            <div class="projects-wrap">
+              <div class="project-tile">
+                  <div class="card_wrap">
+                      <a href="">
+                          <img src="images/projects/Norm_Borl.jpg" alt="Norman Borloug page" width="500" height="500">
+                      </a>
+                      <div class="desc">Norman Borloug page</div>
+                  </div>
+              </div>
+              <div class="project-tile">
+                  <div class="card_wrap">
+                      <a href="">
+                          <img src="images/projects/Countries_and_cities.jpg" alt="Countries and cities site" width="500" height="500">
+                      </a>
+                      <div class="desc">Countries and cities site</div>
+                  </div>
+              </div>
+              <div class="project-tile">
+                  <div class="card_wrap">
+                      <a href="">
+                          <img src="images/projects/Gallery.jpg" alt="Gallery" width="500" height="500">
+                      </a>
+                      <div class="desc">Gallery</div>
+                  </div>
+              </div>
+              <div class="project-tile">
+                  <div class="card_wrap">
+                      <a href="">
+                          <img src="images/projects/Portfolio.jpg" alt="Portfolio" width="500" height="500">
+                      </a>
+                      <div class="desc">Portfolio</div>
+                  </div>
+              </div>
             </div>
         </section>
         <section class="contact">
             <a name="contact"></a>
-            <h2>Contact</h2>
+            <h2>Контакты</h2>
         </section>
     </main>
     <footer>
