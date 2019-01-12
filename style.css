@@ -191,6 +191,7 @@ h2 {
 	justify-content: space-around;
 	align-items: stretch;
 	margin: 100px auto;
+	max-width: 1200px;
 }
 #profile-link a:link {
 	margin: auto;
