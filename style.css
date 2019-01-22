@@ -1,14 +1,15 @@
 :root {
   --main-color: #222;
+  --hover-footer-link: #42bff4;
 }
 
 
-header .wrap, nav, ul, li, footer .wrap, a{
+header .wrap, nav, header ul, header li, a{
 	padding: 0;
 	margin: 0;
 	border: 0;
 }
-.logo_wrap, .logo, .logo_name, nav, ul, li, a{
+.logo_wrap, .logo, .logo_name, nav, header ul, header li, a{
 	display: inline-block;
 }
 * {
@@ -19,6 +20,7 @@ header .wrap, nav, ul, li, footer .wrap, a{
 body {
 	margin: 0;
 	padding: 0;
+	font-size: 12pt;
 	font-family: sans-serif;
 }
 
@@ -44,21 +46,21 @@ header {
 	color: #999;
 	font-family: 'Audiowide', cursive;
 }
-nav {
+header nav {
 	width: 270px;
 	height: 50px;
 	float: right;
 }
-ul {
+header ul {
 	height: 50px;
 	list-style: none;
 }
-li {
+header li {
 	float: left;
 	width: 90px;
 	height: 50px;
 }
-li a {
+header li a {
 	text-decoration: none;
 	width: 90px;
 	height: 50px;
@@ -68,18 +70,18 @@ li a {
 	color: #aaa;
 	border-top: 5px solid #222;
 }
-.active {
+header .active {
 	background-color: var(--main-color);
 	color: #fff;
 	transition: 0.5s;
 	border-top: 5px solid #42bff4;
 }
-li a:hover {
+header li a:hover {
 	color: #fff;
 	transition: 0.3s;
 	border-top: 5px solid #42bff4;
 }
-li a:active {
+header li a:active {
 	background-color: var(--main-color);
 	color: #fff;
 }
@@ -103,6 +105,8 @@ h2 {
 .about {
 	background-image: url(images/backgrounds/main-bg.jpg);
 	height: 100vh;
+	min-height: 600px;
+	padding: 5px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -217,13 +221,38 @@ h2 {
 
 /* stylization of footer section */
 footer {
-	height: 100px;
+	margin: 0;
+	padding: 10px;
+	color: #fff;
 	background-color: var(--main-color);
 	box-shadow:  0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-footer .wrap {
-	height: 50px;
-	margin: 0 auto;
+
+footer h3 {
+	color: var(--hover-footer-link);
+}
+
+footer .contacts ul {
+	list-style: none;
+	font-size: 10pt;
+}
+
+footer .contacts li {
+	padding: 5px;
+}
+
+footer .contacts a {
+	text-decoration: none;
 	color: #fff;
-	background-color: var(--main-color);
+}
+
+footer .contacts a:hover {
+	color: var(--hover-footer-link);
+}
+
+/* Media quaries */
+@media screen and (max-width: 450px) {
+	header .logo_name {
+		display: none;
+	}
 }
