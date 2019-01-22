@@ -158,15 +158,10 @@ h2 {
 }
 .card_wrap {
 	border: 1px solid #ccc;
-	transform: scale(0.9);
-	transition: 0.5s;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .card_wrap:hover {
-	border: 1px solid #777;
-	transition: 0.5s;
-	transform: scale(1);
-	box-shadow: 0 15px 30px 20px rgba(0, 0, 0, 0.3);
+	border: 5px solid var(--hover-footer-link);
 }
 .project-tile img {
 	width: 100%;
@@ -176,16 +171,7 @@ h2 {
 	padding: 15px;
 	text-align: center;
 }
-/* @media all and (max-width: 1024px) {
-	.project-tile {
-		width: 50%;
-	}
-}
-@media all and (max-width: 400px) {
-	.project-tile {
-		width: 100%;
-	}
-} */
+
 /*end stylization of project cards-----------------------*/
 
 /* stylization of contact section */
@@ -206,7 +192,7 @@ h2 {
 	color: #000;
 }
 #profile-link a:hover {
-	color: #42bff4;
+	color: var(--hover-footer-link);
 }
 
 .profile-link {
