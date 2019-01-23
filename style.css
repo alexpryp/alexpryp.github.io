@@ -96,21 +96,16 @@ section {
 	display: block;
 	border-bottom: 1px solid #000;
 }
-h2 {
-	text-align: center;
-	margin-top: 50px;
-}
 
 /*start stylization of section About---------------------*/
 .about {
 	background-image: url(images/backgrounds/main-bg.jpg);
-	height: 100vh;
-	min-height: 600px;
-	padding: 5px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+	min-height: 100vh;
+	padding: 5px;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
@@ -119,7 +114,7 @@ h2 {
 .about h1 {
 	margin-top: 50px;
 	color: #fff;
-	font-size: 2em;
+	font-size: 1.6em;
 	text-align: center;
 	text-shadow: black 0 0 30px;
 	flex-basis: 100%;
@@ -175,34 +170,60 @@ h2 {
 /*end stylization of project cards-----------------------*/
 
 /* stylization of contact section */
+.contact {
+	padding: 1px;
+	background-image: url(images/backgrounds/main-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
+}
+.contact h2 {
+	color: #fff;
+	font-size: 2em;
+	text-align: center;
+	text-shadow: black 0 0 30px;
+}
 #profile-link {
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction: column;
 	justify-content: space-around;
 	align-items: stretch;
-	margin: 100px auto;
-	max-width: 1200px;
+	margin: 25px auto;
+	width: 100%;
+}
+#profile-link a {
+	display: block;
+	min-width: 320px;
+	padding: 5px;
+	background-color: #555;
+	margin: 5px auto;
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0.7);
 }
 #profile-link a:link {
-	margin: auto;
 	text-decoration: none;
-	color: #000;
+	color: #fff;
 }
 #profile-link a:visited {
-	color: #000;
+	color: #fff;
 }
 #profile-link a:hover {
 	color: var(--hover-footer-link);
+	background: #000;
 }
 
-.profile-link {
+#profile-link .profile-link {
+	display: flex;
+	align-items: center;
 	align-self: center;
-	max-width: 450px;
 	height: 100px;
-	font-size: 2.5em;
+	width: 100%;
+	font-size: 2em;
 	text-align: center;
-	padding-right: 10px;
-	padding-left: 10px;
+	margin: 5px;
 }
 
 /* stylization of footer section */
@@ -240,5 +261,11 @@ footer .contacts a:hover {
 @media screen and (max-width: 450px) {
 	header .logo_name {
 		display: none;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	header {
+		position: static;
 	}
 }
