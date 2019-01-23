@@ -141,6 +141,10 @@ section {
 }
 
 /* start stylization of portfolio section */
+.portfolio h2 {
+	text-align: center;
+	font-size: 2em;
+}
 .projects-wrap {
 	display: flex;
 	justify-content: space-around;
@@ -212,14 +216,14 @@ section {
 }
 #profile-link a:hover {
 	color: var(--hover-footer-link);
-	background: #000;
+	background: var(--main-color);
 }
 
 #profile-link .profile-link {
 	display: flex;
 	align-items: center;
 	align-self: center;
-	height: 100px;
+	height: 60px;
 	width: 100%;
 	font-size: 2em;
 	text-align: center;
