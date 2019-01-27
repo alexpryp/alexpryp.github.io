@@ -136,7 +136,7 @@ section {
 }
 .card img {
 	width: 250px;
-	margin: 10px;
+	margin: 1px;
 	border-radius: 50%;
 }
 
@@ -146,17 +146,18 @@ section {
 	font-size: 2em;
 }
 .projects-wrap {
+	padding-bottom: 25px;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
 /*start stylization of project cards---------------------*/
 .project-tile {
-	padding: 5px;
+	padding: 1px;
 	max-width: 450px;
 }
 .card_wrap {
-	border: 1px solid #ccc;
+	border: 5px solid #fff;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .card_wrap:hover {
