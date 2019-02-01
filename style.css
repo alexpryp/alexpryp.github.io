@@ -238,27 +238,34 @@ footer {
 	color: #fff;
 	background-color: var(--main-color);
 	box-shadow:  0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: flex;
+	justify-content: center;
 }
 
 footer h3 {
 	color: var(--hover-footer-link);
 }
 
-footer .contacts ul {
-	list-style: none;
-	font-size: 10pt;
+footer .contacts, footer .menu {
+	width: 150px;
 }
 
-footer .contacts li {
+footer ul {
+	list-style: none;
+	font-size: 10pt;
+	padding-left: 0px;
+}
+
+footer li {
 	padding: 5px;
 }
 
-footer .contacts a {
+footer a {
 	text-decoration: none;
 	color: #fff;
 }
 
-footer .contacts a:hover {
+footer a:hover {
 	color: var(--hover-footer-link);
 }
 
@@ -267,10 +274,16 @@ footer .contacts a:hover {
 	header .logo_name {
 		display: none;
 	}
+	footer {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 800px) {
 	header {
 		position: static;
+	}
+	footer {
+		display: none;
 	}
 }
