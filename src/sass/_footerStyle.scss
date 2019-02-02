@@ -1,0 +1,33 @@
+footer {
+	margin: 0;
+	padding: 10px;
+	color: $white;
+	background-color: $main-color;
+	box-shadow:  0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: flex;
+	justify-content: center;
+
+	h3 {
+		color: $hover-footer-link;
+	}
+	.contacts, .menu {
+		width: 150px;
+	}
+	ul {
+		list-style: none;
+		font-size: 10pt;
+		padding-left: 0px;
+
+		li {
+			padding: 5px;
+		}
+	}
+	a {
+		text-decoration: none;
+		color: $white;
+
+		&:hover {
+			color: $hover-footer-link;
+		}
+	}
+}

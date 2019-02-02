@@ -1,0 +1,36 @@
+.portfolio {
+	h2 {
+		text-align: center;
+		font-size: 2em;
+	}
+	.projects-wrap {
+		padding-bottom: 25px;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+
+		.project-tile {
+			padding: 1px 1px 10px 1px;
+			max-width: 450px;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		.card_wrap {
+			border: 5px solid $white;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+			.desc {
+				padding: 15px;
+				text-align: center;
+			}
+
+			&:hover {
+				border: 5px solid $hover-footer-link;
+			}
+		}
+	}
+}

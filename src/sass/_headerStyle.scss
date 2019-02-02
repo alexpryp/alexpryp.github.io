@@ -1,0 +1,66 @@
+header {
+	background-color: $main-color;
+	min-height: 50px;
+	margin: 0;
+	position: sticky;
+	z-index: 1;
+	top: 0;
+	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+	.logo_name {
+		max-width: 200px;
+		font-size: 1.5em;
+		padding: 0;
+		margin: 5px;
+		color: $grey-text;
+		font-family: 'Audiowide', cursive;
+	}
+
+	nav {
+		width: 270px;
+		height: 50px;
+		float: right;
+
+		ul {
+			height: 50px;
+			list-style: none;
+		}
+
+		li {
+			float: left;
+			width: 90px;
+			height: 50px;
+		}
+
+		a {
+			text-decoration: none;
+			width: 90px;
+			height: 50px;
+			text-align: center;
+			padding: 10px;
+			background-color: $main-color;
+			color: $grey-text;
+			border-top: 5px solid $main-color;
+
+			&:hover {
+				color: $white;
+				transition: 0.3s;
+				border-top: 5px solid $hover-footer-link;
+			}
+			&:active {
+				background-color: $main-color;
+				color: $white;
+			}
+		}
+
+		.active {
+			background-color: $main-color;
+			color: $white;
+			transition: 0.5s;
+			border-top: 5px solid $hover-footer-link;
+		}
+	}
+}
