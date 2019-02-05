@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Форма опроса</title>
+</head>
+<body>
+	<h1>Ваш отзыв о Free Code Camp</h1>
+	<div id="form-outer">
+		<p id="description">
+			Поделитесь своим мнением, как мы можем улучшить freeCodeCamp
+		</p>
+		<form action="https://crossorigin.me/https://freecodecamp.com" id="survey-form" method="GET">
+			<div class="rowTab">
+				<div class="labels">
+					<label id="name-label" for="name">* Имя: </label>
+				</div>
+				<div class="rightTab">
+					<input type="text" name="name" id="name" class="input-field" placeholder="Введите своё имя" autofocus required>
+				</div>
+			</div>
+			<div class="rowTab">
+				<div class="labels">
+					<label id="email-label" for="email">* Email: </label>
+				</div>
+				<div class="rightTab">
+					<input type="email" name="email" id="email" class="input-field" placeholder="Введите свой email" required>
+				</div>
+			</div>
+			<div class="rowTab">
+				<div class="labels">
+					<label id="number-label" for="number">* Возраст: </label>
+				</div>
+				<div class="rightTab">
+					<input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Ваш возраст" required>
+				</div>
+			</div>
+			<div class="rowTab">
+				<div class="labels">
+					<label for="dropdown">Какой вариант лучше всего описывает вашу текущую роль? </label>
+				</div>
+				<div class="rightTab">
+					<select name="currentPos" id="dropdown" class="dropdown">
+						<option value disabled>Выберите нужное</option>
+						<option value="student">Студент</option>
+						<option value="job">Работа на полную ставку</option>
+						<option value="learner">Стажировка</option>
+						<option value="preferNo">Предпочитаю не говорить</option>
+						<option value="other">Другое</option>
+					</select>
+				</div>
+			</div>
+			<div class="rowTab">
+				<div class="labels">
+					<label>* Порекомендуете лы Вы freeCodeCamp друзьям?</label>
+				</div>
+				<div class="rightTab" id="userRating">
+					<ul style="list-style: none;">
+						<li class="radio"><label><input type="radio" name="radio-buttons" value="1" class="userRatings">Порекомендую</label></li>
+						<li class="radio"><label><input type="radio" name="radio-buttons" value="2" class="userRatings">Возможно</label></li>
+						<li class="radio"><label><input type="radio" name="radio-buttons" value="3" class="userRatings">Нет</label></li>
+					</ul>
+				</div>
+			</div>
+			<div class="rowTab">
+				<div class="labels">
+					<label for="most-like">Что Вам больше всего понравилось в FCC: </label>
+				</div>
+				<div class="rightTab">
+					<select name="mostLike" id="most-like" class="dropdown">
+						<option value selected disabled>Выберите подходящие пункты</option>
+						<option value="challenges">Задания</option>
+						<option value="projects">Проекты</option>
+						<option value="community">Сообщество</option>
+						<option value="openSource">Окрытый исходный код</option>
+					</select>
+				</div>
+			</div>
+			<div class="rowTab">
+				<div class="labels">
+					<label>Что по вашему мнению следует улучшить в будущем?<br>(Выберите подходящие пункты):</label>
+				</div>
+				<div class="rightTab">
+					<ul id="preferences" style="list-style: none;">
+						<li class="checkbox"><label><input type="checkbox" value="1" name="prefer" class="userRatings">Front-end проекты</label></li>
+						<li class="checkbox"><label><input type="checkbox" value="2" name="prefer" class="userRatings">Back-end проекты</label></li>
+						<li class="checkbox"><label><input type="checkbox" value="3" name="prefer" class="userRatings">Визуализация данных</label></li>
+						<li class="checkbox"><label><input type="checkbox" value="4" name="prefer" class="userRatings">Задания</label></li>
+						<li class="checkbox"><label><input type="checkbox" value="5" name="prefer" class="userRatings">Сообщество c открытым исходным кодом</label></li>
+						<li class="checkbox"><label><input type="checkbox" value="6" name="prefer" class="userRatings">Справочные службы</label></li>
+						<li class="checkbox"><label><input type="checkbox" value="7" name="prefer" class="userRatings">Видео</label></li>
+						<li class="checkbox"><label><input type="checkbox" value="8" name="prefer" class="userRatings">Встречи в городе</label></li>
+						<li class="checkbox"><label><input type="checkbox" value="9" name="prefer" class="userRatings">Wiki</label></li>
+						<li class="checkbox"><label><input type="checkbox" value="10" name="prefer" class="userRatings">Форум</label></li>
+						<li class="checkbox"><label><input type="checkbox" value="11" name="prefer" class="userRatings">Дополнительные курсы</label></li>
+					</ul>
+				</div>
+			</div>
+			<div class="rowTab">
+				<div class="labels">
+					<label for="comments">Ваши пожелания и комментарии: </label>
+				</div>
+				<div class="rightTab">
+					<textarea name="comment" id="comments" class="input-fields" style="height:50px;resize:vertical;" placeholder="Ваши комментарии..."></textarea>
+				</div>
+			</div>
+			<button id="submit" type="submit">Отправить</button>
+		</form>
+		<p>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+		    <img style="border:0;width:88px;height:31px"
+		        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+		        alt="Правильный CSS!" />
+		    </a>
+		</p>     
+	</div>
+</body>
+</html>
