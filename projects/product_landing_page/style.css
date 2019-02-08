@@ -1,0 +1,208 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#hero, #how-it-works {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+body {
+	background-color: #fff;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+#header a {
+	display: block;
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid #000;
+	background-color: #fff;
+	color: #000;
+	text-decoration: none;
+}
+
+#header a:hover {
+	background-color: #FF8C00;
+}
+
+#header {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 5px;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+#header-img {
+	max-height: 40px;
+}
+#nav-bar ul {
+	max-width: 500px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#hero, .hero-wrapper, #form, #how-it-works {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#hero {
+	height: 100vh;
+	margin: 0;
+	background-image: url("http://www.museosansevero.it/wp/wp-content/uploads/2018/10/FOTO_1_home.jpg");
+}
+.hero-logo img {
+	width: 100%;
+}
+.hero-logo {
+	max-width: 150px;
+	margin-bottom: 50px;
+}
+.hero-wrapper {
+	max-width: 450px;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+}
+.hero-wrapper h2 {
+	margin-bottom: 20px;
+	text-align: center;
+	color: white;
+}
+input#email {
+	padding: 5px;
+	min-width: 275px;
+	margin: 20px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#features {
+	max-width: 1000px;
+	display: flex;
+	flex-direction: column;
+	background-color: #FFE4B5;
+}
+#features h2 {
+	text-align: center;
+	margin-top: 20px;
+	border: 1px solid black;
+	background-color: darkorange;
+}
+
+.grid {
+	display: flex;
+	justify-content: space-between;
+	min-height: 100px;
+	margin: 20px 0;
+}
+
+.icon {
+	min-width: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: darkorange;
+}
+
+.desc {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#how-it-works {
+	width: 100%;
+	height: 500px;
+	background-image: url("http://www.museosansevero.it/wp/wp-content/uploads/2018/10/terza_slide.jpg")
+}
+
+#pricing {
+	display: flex;
+	justify-content: space-around;
+	align-items: stretch;
+	flex-wrap: wrap;
+	max-width: 1000px;
+	background-color: #FFE4B5;
+}
+
+.statue {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	border: 1px solid #000;
+	margin: 10px 10px;
+	background-color: #fff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product_img img{
+	width: 100%;
+}
+
+.product_name {
+	padding: 10px;
+	text-align: center;
+	background-color: #ccc;
+}
+.price {
+	padding: 10px;
+	text-align: center;
+}
+
+.btn {
+	background-color: #FFD700;
+	color: #000;
+	padding: 0 20px;
+	margin: 5px;
+	height: 40px;
+	font-weight: 900;
+	text-transform: uppercase;
+	border: 0px solid black;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.btn:hover {
+	background-color: #FF8C00;
+}
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 10px;
+	width: 100%;
+	background-color: #434744;
+	font-size: 10pt;
+	color: #fff;
+}
+footer a {
+	color: #fff;
+}
+.footer-logo {
+	max-width: 400px;
+}
+.footer-logo img {
+	width: 100%;
+}
+
+@media only screen and (max-width: 570px) {
+	header .logo {
+		display: none;
+	}
+}
