@@ -16,7 +16,7 @@ html, body, #navbar, #main-doc {
 	left: 0;
 	border-right: 2px solid #999;
 }
-header {
+header, h2{
 	font-size: 20pt;
 	padding: 10px;
 	text-align: center;
@@ -31,14 +31,16 @@ header {
 }
 #navbar li {
 	list-style: none;
-	padding: 10px 20px;
-	border-top: 1px solid black;
+	padding: 0;
 }
 #navbar a {
+	display: block;
+	padding: 10px 20px;
 	text-decoration: none;
+	border-bottom: 1px solid #000;
 	color: #000;
 }
-#navbar li:hover {
+#navbar a:hover {
 		background-color: #444;
 		color: #fff;
 }
@@ -61,7 +63,8 @@ code {
 	font-size: 12pt;
 	padding: 20px;
 	white-space: pre;
-	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
 	background-color: #ddd;
 
 	word-break: normal;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
@@ -9,276 +9,219 @@
 <body>
 	<nav id="navbar">
 		<header>ES6 Documentation</header>
-		<a class="nav-link" href="#What_is_ECMAScript_6" rel="internal">
-			<li>What is ECMAScript 6</li>
-		</a>
-		<a class="nav-link" href="#JavaScript_let" rel="internal">
-			<li>JavaScript let</li>
-		</a>
-		<a class="nav-link" href="#JavaScript_const" rel="internal">
-			<li>JavaScript const</li>
-		</a>
-		<a class="nav-link" href="#Exponentiation_Operator" rel="internal">
-			<li>Exponentiation Operator</li>
-		</a>
-		<a class="nav-link" href="#Default_Parameter_Values" rel="internal">
-			<li>Default Parameter Values</li>
-		</a>
-		<a class="nav-link" href="#Array_find" rel="internal">
-			<li>Array find</li>
-		</a>
-		<a class="nav-link" href="#Array_findIndex" rel="internal">
-			<li>Array findIndex</li>
-		</a>
-		<a class="nav-link" href="#New_Number_Properties" rel="internal">
-			<li>New Number Properties</li>
-		</a>
-		<a class="nav-link" href="#New_Number_Methods" rel="internal">
-			<li>New Number Methods</li>
-		</a>
-		<a class="nav-link" href="#The_Number_isInteger_Method" rel="internal">
-			<li>The Number isInteger Method</li>
-		</a>
-		<a class="nav-link" href="#The_Number_isSafeInteger_Method" rel="internal">
-			<li>The Number isSafeInteger Method</li>
-		</a>
-		<a class="nav-link" href="#New_Global_Methods" rel="internal">
-			<li>New Global Methods</li>
-		</a>
-		<a class="nav-link" href="#The_isFinite_Method" rel="internal">
-			<li>The isFinite Method</li>
-		</a>
-		<a class="nav-link" href="#The_isNaN_Method" rel="internal">
-			<li>The isNaN Method</li>
-		</a>
-		<a class="nav-link" href="#Arrow_Functions" rel="internal">
-			<li>Arrow Functions</li>
-		</a>
+		<ul>
+			<li><a class="nav-link" href="#What_is_ECMAScript_6" rel="tag">What is ECMAScript 6</a></li>
+			<li><a class="nav-link" href="#JavaScript_let" rel="tag">JavaScript let</a></li>
+			<li><a class="nav-link" href="#JavaScript_const" rel="tag">JavaScript const</a></li>
+			<li><a class="nav-link" href="#Exponentiation_Operator" rel="tag">Exponentiation Operator</a></li>
+			<li><a class="nav-link" href="#Default_Parameter_Values" rel="tag">Default Parameter Values</a></li>
+			<li><a class="nav-link" href="#Array_find" rel="tag">Array find</a></li>
+			<li><a class="nav-link" href="#Array_findIndex" rel="tag">Array findIndex</a></li>	
+			<li><a class="nav-link" href="#New_Number_Properties" rel="tag">New Number Properties</a></li>
+			<li><a class="nav-link" href="#New_Number_Methods" rel="tag">New Number Methods</a></li>
+			<li><a class="nav-link" href="#The_Number_isInteger_Method" rel="tag">The Number isInteger Method</a></li>
+			<li><a class="nav-link" href="#The_Number_isSafeInteger_Method" rel="tag">The Number isSafeInteger Method</a></li>
+			<li><a class="nav-link" href="#New_Global_Methods" rel="tag">New Global Methods</a></li>				
+			<li><a class="nav-link" href="#The_isFinite_Method" rel="tag">The isFinite Method</a></li>		
+			<li><a class="nav-link" href="#The_isNaN_Method" rel="tag">The isNaN Method</a></li>		
+			<li><a class="nav-link" href="#Arrow_Functions" rel="tag">Arrow Functions</a></li>
+		</ul>	
 	</nav>
-	<main id="main-doc">
-		<section class="main-section" id="What_is_ECMAScript_6">
-			<header>What is ECMAScript 6</header>
-			<article>
-				<p>ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262. It was created to standardize JavaScript, so as to foster multiple independent implementations. JavaScript has remained the best-known implementation of ECMAScript since the standard was first published, with other well-known implementations including JScript and ActionScript.[3] ECMAScript is commonly used for client-side scripting on the World Wide Web, and it is increasingly being used for writing server applications and services using Node.js.</p>
-				<p>ECMAScript 6 is also known as ES6 and ECMAScript 2015.</p>
-				<p>Some people like to call it JavaScript 6.</p>
-				<p>This chapter will introduce some of the new features in ES6.</p>
-				<ul>
-					<li>JavaScript let</li>
-					<li>JavaScript const</li>
-					<li>Exponentiation (**)</li>
-					<li>Default parameter values</li>
-					<li>Array.find()</li>
-					<li>Array.findIndex()</li>
-				</ul>
-			</article>
-		</section>
-		<section class="main-section" id="JavaScript_let">
-			<header>JavaScript let</header>
-			<article>
-				<p>The <b>let</b> statement allows you to declare a variable with block scope.</p>
-				<code>
-	var x = 10;
-	// Here x is 10
-	{ 
-		let x = 2;
-		// Here x is 2
-	}
-	// Here x is 10
-				</code>
-			</article>
-		</section>
-		<section class="main-section" id="JavaScript_const">
-			<header>JavaScript const</header>
-			<article>
-				<p>The <b>const</b> statement allows you to declare a constant (a JavaScript variable with a constant value).</p>
-				<p>Constants are similar to let variables, except that the value cannot be changed.</p>
-				<code>
-	var x = 10;
-	// Here x is 10
-	{ 
-	  const x = 2;
-	  // Here x is 2
-	}
-	// Here x is 10
-				</code>
-				<p>Read more about <b>let</b> and <b>const</b> in <a href="https://www.w3schools.com/js/js_let.asp">JS Let / Const.</a></p>
-			</article>
-		</section>
-		<section class="main-section" id="Exponentiation_Operator">
-			<header>Exponentiation Operator</header>
-			<article>
-				<p>The <b>exponentiation</b> operator (**) raises the first operand to the power of the second operand.</p>
-				<code>
-	var x = 5;
-	var z = x ** 2;          // result is 25
-				</code>
-				<p>x ** y produces the same result as Math.pow(x,y):</p>
-				<code>
-	var x = 5;
-	var z = Math.pow(x,2);   // result is 25
-				</code>
-			</article>
-		</section>
-		<section class="main-section" id="Default_Parameter_Values">
-			<header>Default Parameter Values</header>
-			<article>
-				<p>ES6 allows function parameters to have default values.</p>
-				<code>
-	function myFunction(x, y = 10) {
-	  // y is 10 if not passed or undefined
-	  return x + y;
-	}
-	myFunction(5); // will return 15
-				</code>
-			</article>
-		</section>
-		<section class="main-section" id="Array_find">
-			<header>Array find</header>
-			<article>
-				<p>The find() method returns the value of the first array element that passes a test function.</p>
-				<p>This example finds (returns the value of ) the first element that is larger than 18:</p>
-				<code>
-	var numbers = [4, 9, 16, 25, 29];
-	var first = numbers.find(myFunction);
+	<section class="main-section" id="main-doc">
+		<h2>ES6 Documentation</h2>
+		<article id="What_is_ECMAScript_6">
+			<h2>What is ECMAScript 6</h2>
+			<p>ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262. It was created to standardize JavaScript, so as to foster multiple independent implementations. JavaScript has remained the best-known implementation of ECMAScript since the standard was first published, with other well-known implementations including JScript and ActionScript.[3] ECMAScript is commonly used for client-side scripting on the World Wide Web, and it is increasingly being used for writing server applications and services using Node.js.</p>
+			<p>ECMAScript 6 is also known as ES6 and ECMAScript 2015.</p>
+			<p>Some people like to call it JavaScript 6.</p>
+			<p>This chapter will introduce some of the new features in ES6.</p>
+			<ul>
+				<li>JavaScript let</li>
+				<li>JavaScript const</li>
+				<li>Exponentiation (**)</li>
+				<li>Default parameter values</li>
+				<li>Array.find()</li>
+				<li>Array.findIndex()</li>
+			</ul>
+		</article>
+		<article id="JavaScript_let">
+			<h2>JavaScript let</h2>
+			<p>The <b>let</b> statement allows you to declare a variable with block scope.</p>
+			<code>
+var x = 10;
+// Here x is 10
+{ 
+	let x = 2;
+	// Here x is 2
+}
+// Here x is 10
+			</code>
+		</article>
+		<article id="JavaScript_const">
+			<h2>JavaScript const</h2>
+			<p>The <b>const</b> statement allows you to declare a constant (a JavaScript variable with a constant value).</p>
+			<p>Constants are similar to let variables, except that the value cannot be changed.</p>
+			<code>
+var x = 10;
+// Here x is 10
+{ 
+  const x = 2;
+  // Here x is 2
+}
+// Here x is 10
+			</code>
+			<p>Read more about <b>let</b> and <b>const</b> in <a href="https://www.w3schools.com/js/js_let.asp">JS Let / Const.</a></p>
+		</article>
+		<article id="Exponentiation_Operator">
+			<h2>Exponentiation Operator</h2>
+			<p>The <b>exponentiation</b> operator (**) raises the first operand to the power of the second operand.</p>
+			<code>
+var x = 5;
+var z = x ** 2;          // result is 25
+			</code>
+			<p>x ** y produces the same result as Math.pow(x,y):</p>
+			<code>
+var x = 5;
+var z = Math.pow(x,2);   // result is 25
+			</code>
+		</article>
+		<article id="Default_Parameter_Values">
+			<h2>Default Parameter Values</h2>
+			<p>ES6 allows function parameters to have default values.</p>
+			<code>
+function myFunction(x, y = 10) {
+  // y is 10 if not passed or undefined
+  return x + y;
+}
+myFunction(5); // will return 15
+			</code>
+		</article>
+		<article id="Array_find">
+			<h2>Array find</h2>
+			<p>The find() method returns the value of the first array element that passes a test function.</p>
+			<p>This example finds (returns the value of ) the first element that is larger than 18:</p>
+			<code>
+var numbers = [4, 9, 16, 25, 29];
+var first = numbers.find(myFunction);
 
-	function myFunction(value, index, array) {
-	  return value > 18;
-	}					
-				</code>
-				<p>Note that the function takes 3 arguments:</p>
-				<ul>
-					<li>The item value</li>
-					<li>The item index</li>
-					<li>The array itself</li>
-				</ul>
-			</article>
-		</section>
-		<section class="main-section" id="Array_findIndex">
-			<header>Array findIndex</header>
-			<article>
-				<p>The findIndex() method returns the index of the first array element that passes a test function.</p>
-				<p>This example finds the index of the first element that is larger than 18:</p>
-				<code>
-	var numbers = [4, 9, 16, 25, 29];
-	var first = numbers.findIndex(myFunction);
+function myFunction(value, index, array) {
+  return value > 18;
+}					
+			</code>
+			<p>Note that the function takes 3 arguments:</p>
+			<ul>
+				<li>The item value</li>
+				<li>The item index</li>
+				<li>The array itself</li>
+			</ul>
+		</article>
+		<article id="Array_findIndex">
+			<h2>Array findIndex</h2>
+			<p>The findIndex() method returns the index of the first array element that passes a test function.</p>
+			<p>This example finds the index of the first element that is larger than 18:</p>
+			<code>
+var numbers = [4, 9, 16, 25, 29];
+var first = numbers.findIndex(myFunction);
 
-	function myFunction(value, index, array) {
-	  return value > 18;
-	}
-				</code>
-				<p>Note that the function takes 3 arguments:</p>
-				<ul>
-					<li>The item value</li>
-					<li>The item index</li>
-					<li>The array itself</li>
-				</ul>
-			</article>
-		</section>
-		<section class="main-section" id="New_Number_Properties">
-			<header>New Number Properties</header>
-			<article>
-				<p>ES6 added the following properties to the Number object:</p>
-				<ul>
-					<li>EPSILON</li>
-					<li>MIN_SAFE_INTEGER</li>
-					<li>MAX_SAFE_INTEGER</li>
-				</ul>
-				<code>
-	var x = Number.EPSILON;
-				</code>
-				<code>
-	var x = Number.MIN_SAFE_INTEGER;
-				</code>
-				<code>
-	var x = Number.MAX_SAFE_INTEGER;
-				</code>
-			</article>
-		</section>
-		<section class="main-section" id="New_Number_Methods">
-			<header>New Number Methods</header>
-			<article>
-				<p>ES6 added 2 new methods to the Number object:</p>
-				<ul>
-					<li>Number.isInteger()</li>
-					<li>Number.isSafeInteger()</li>
-				</ul>
-			</article>
-		</section>
-		<section class="main-section" id="The_Number_isInteger_Method">
-			<header>The Number isInteger Method</header>
-			<article>
-				<p>The <b>Number.isInteger()</b> method returns true if the argument is an integer.</p>
-				<code>
-	Number.isInteger(10);        // returns true
-	Number.isInteger(10.5);      // returns false
-				</code>
-			</article>
-		</section>
-		<section class="main-section" id="The_Number_isSafeInteger_Method">
-			<header>The Number isSafeInteger Method</header>
-			<article>
-				<p>A safe integer is an integer that can be exactly represented as a double precision number.</p>
-				<p>The <b>Number.isSafeInteger()</b> method returns true if the argument is a safe integer.</p>
-				<code>
-	Number.isSafeInteger(10);    // returns true
-	Number.isSafeInteger(12345678901234567890);  // returns false
-				</code>
-			</article>
-		</section>
-		<section class="main-section" id="New_Global_Methods">
-			<header>New Global Methods</header>
-			<article>
-				<p>ES6 also added 2 new global number methods:</p>
-				<ul>
-					<li>isFinite()</li>
-					<li>isNan</li>
-				</ul>
-			</article>
-		</section>
-		<section class="main-section" id="The_isFinite_Method">
-			<header>The isFinite Method</header>
-			<article>
-				<p>The global <b>isFinite()</b> method returns false if the argument is Infinity or NaN.</p>
-				<p>Otherwise it returns true:</p>
-				<code>
-	isFinite(10/0);       // returns false
-	isFinite(10/1);       // returns true
-				</code>
-			</article>
-		</section>
-		<section class="main-section" id="The_isNaN_Method">
-			<header>The isNaN Method</header>
-			<article>
-				<p>The global <b>isNaN()</b> method returns true if the argument is NaN. Otherwise it returns false:</p>
-				<code>
-	isNaN("Hello");       // returns true
-				</code>
-			</article>
-		</section>
-		<section class="main-section" id="Arrow_Functions">
-			<header>Arrow Functions</header>
-			<article>
-				<p>Arrow functions allows a short syntax for writing function expressions.</p>
-				<p>You don't need the <b>function</b> keyword, the <b>return</b> keyword, and the <b>curly brackets.</b></p>
-				<code>
-	// ES5
-	var x = function(x, y) {
-	   return x * y;
-	}
+function myFunction(value, index, array) {
+  return value > 18;
+}
+			</code>
+			<p>Note that the function takes 3 arguments:</p>
+			<ul>
+				<li>The item value</li>
+				<li>The item index</li>
+				<li>The array itself</li>
+			</ul>
+		</article>
+		<article id="New_Number_Properties">
+			<h2>New Number Properties</h2>
+			<p>ES6 added the following properties to the Number object:</p>
+			<ul>
+				<li>EPSILON</li>
+				<li>MIN_SAFE_INTEGER</li>
+				<li>MAX_SAFE_INTEGER</li>
+			</ul>
+			<code>
+var x = Number.EPSILON;
+			</code>
+			<code>
+var x = Number.MIN_SAFE_INTEGER;
+			</code>
+			<code>
+var x = Number.MAX_SAFE_INTEGER;
+			</code>
+		</article>
+		<article id="New_Number_Methods">
+			<h2>New Number Methods</h2>
+			<p>ES6 added 2 new methods to the Number object:</p>
+			<ul>
+				<li>Number.isInteger()</li>
+				<li>Number.isSafeInteger()</li>
+			</ul>
+		</article>
+		<article id="The_Number_isInteger_Method">
+			<h2>The Number isInteger Method</h2>
+			<p>The <b>Number.isInteger()</b> method returns true if the argument is an integer.</p>
+			<code>
+Number.isInteger(10);        // returns true
+Number.isInteger(10.5);      // returns false
+			</code>
+		</article>
+		<article id="The_Number_isSafeInteger_Method">
+			<h2>The Number isSafeInteger Method</h2>
+			<p>A safe integer is an integer that can be exactly represented as a double precision number.</p>
+			<p>The <b>Number.isSafeInteger()</b> method returns true if the argument is a safe integer.</p>
+			<code>
+Number.isSafeInteger(10);    // returns true
+Number.isSafeInteger(12345678901234567890);  // returns false
+			</code>
+		</article>
+		<article id="New_Global_Methods">
+			<h2>New Global Methods</h2>
+			<p>ES6 also added 2 new global number methods:</p>
+			<ul>
+				<li>isFinite()</li>
+				<li>isNan</li>
+			</ul>
+		</article>
+		<article id="The_isFinite_Method">
+			<h2>The isFinite Method</h2>
+			<p>The global <b>isFinite()</b> method returns false if the argument is Infinity or NaN.</p>
+			<p>Otherwise it returns true:</p>
+			<code>
+isFinite(10/0);       // returns false
+isFinite(10/1);       // returns true
+			</code>
+		</article>
+		<article id="The_isNaN_Method">
+			<h2>The isNaN Method</h2>
+			<p>The global <b>isNaN()</b> method returns true if the argument is NaN. Otherwise it returns false:</p>
+			<code>
+isNaN("Hello");       // returns true
+			</code>
+		</article>
+		<article id="Arrow_Functions">
+			<h2>Arrow Functions</h2>
+			<p>Arrow functions allows a short syntax for writing function expressions.</p>
+			<p>You don't need the <b>function</b> keyword, the <b>return</b> keyword, and the <b>curly brackets.</b></p>
+			<code>
+// ES5
+var x = function(x, y) {
+   return x * y;
+}
 
-	// ES6
-	const x = (x, y) => x * y;
-				</code>
-				<p>Arrow functions do not have their own <b>this.</b> They are not well suited for defining <b>object methods.</b></p>
-				<p>Arrow functions are not hoisted. They must be defined <b>before</b> they are used.</p>
-				<p>Using <b>const</b> is safer than using <b>var</b>, because a function expression is always constant value.</p>
-				<p>You can only omit the return keyword and the curly brackets if the function is a single statement. Because of this, it might be a good habit to always keep them:</p>
-				<code>
-	const x = (x, y) => { return x * y };
-				</code>
-			</article>
-		</section>
-	</main>
+// ES6
+const x = (x, y) => x * y;
+			</code>
+			<p>Arrow functions do not have their own <b>this.</b> They are not well suited for defining <b>object methods.</b></p>
+			<p>Arrow functions are not hoisted. They must be defined <b>before</b> they are used.</p>
+			<p>Using <b>const</b> is safer than using <b>var</b>, because a function expression is always constant value.</p>
+			<p>You can only omit the return keyword and the curly brackets if the function is a single statement. Because of this, it might be a good habit to always keep them:</p>
+			<code>
+const x = (x, y) => { return x * y };
+			</code>
+		</article>
+	</section>
 </body>
 </html>
