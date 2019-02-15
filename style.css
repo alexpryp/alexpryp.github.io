@@ -101,30 +101,34 @@ header {
       margin: 1px;
       border-radius: 50%; }
 
-.portfolio h2 {
-  text-align: center;
-  font-size: 2em; }
-
-.portfolio .projects-wrap {
-  padding-bottom: 25px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; }
-  .portfolio .projects-wrap .project-tile {
-    padding: 1px 1px 10px 1px;
-    max-width: 450px; }
-    .portfolio .projects-wrap .project-tile img {
-      width: 100%;
-      height: auto; }
-  .portfolio .projects-wrap .card_wrap {
-    border: 1px solid #fff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-    .portfolio .projects-wrap .card_wrap .desc {
-      padding: 15px;
-      text-align: center; }
-    .portfolio .projects-wrap .card_wrap:hover {
-      border: 1px solid #42bff4;
-      box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 40px 0 rgba(0, 0, 0, 0.3); }
+.portfolio {
+  background-color: #222; }
+  .portfolio h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    text-shadow: #42bff4 0 0 30px; }
+  .portfolio .projects-wrap {
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .portfolio .projects-wrap .project-tile {
+      padding: 1px 1px 10px 1px;
+      max-width: 450px; }
+      .portfolio .projects-wrap .project-tile img {
+        width: 100%;
+        height: auto; }
+    .portfolio .projects-wrap .card_wrap {
+      border: 1px solid #fff;
+      background-color: #fff;
+      box-shadow: 0 4px 8px 0 rgba(66, 191, 244, 0.2), 0 6px 20px 0 rgba(66, 191, 244, 0.19); }
+      .portfolio .projects-wrap .card_wrap .desc {
+        padding: 15px;
+        text-align: center; }
+      .portfolio .projects-wrap .card_wrap:hover {
+        border: 1px solid #42bff4;
+        box-shadow: 0 4px 16px 0 rgba(66, 191, 244, 0.8), 0 6px 40px 0 rgba(66, 191, 244, 0.5); }
 
 .contact {
   padding: 1px;
@@ -152,12 +156,12 @@ header {
       align-self: center;
       height: 60px;
       width: 100%;
-      font-size: 2em;
+      font-size: 1.5em;
       text-align: center;
       margin: 5px; }
     .contact #profile-link a {
       display: block;
-      min-width: 320px;
+      min-width: 280px;
       padding: 5px;
       background-color: #555;
       margin: 5px auto;

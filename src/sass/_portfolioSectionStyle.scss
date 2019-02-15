@@ -1,7 +1,10 @@
 .portfolio {
+	background-color: $main-color;
 	h2 {
 		text-align: center;
 		font-size: 2em;
+		color: $white;
+		text-shadow: $hover-footer-link 0 0 30px;
 	}
 	.projects-wrap {
 		padding-bottom: 25px;
@@ -21,7 +24,8 @@
 
 		.card_wrap {
 			border: 1px solid $white;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			background-color: $white;
+			box-shadow: 0 4px 8px 0 rgba(66, 191, 244, 0.2), 0 6px 20px 0 rgba(66, 191, 244, 0.19);
 
 			.desc {
 				padding: 15px;
@@ -30,7 +34,7 @@
 
 			&:hover {
 				border: 1px solid $hover-footer-link;
-				box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 40px 0 rgba(0, 0, 0, 0.3);
+				box-shadow: 0 4px 16px 0 rgba(66, 191, 244, 0.8), 0 6px 40px 0 rgba(66, 191, 244, 0.5);
 			}
 		}
 	}
