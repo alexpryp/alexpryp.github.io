@@ -20,7 +20,7 @@ header {
   position: sticky;
   z-index: 1;
   top: 0;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; }
@@ -102,7 +102,8 @@ header {
       border-radius: 50%; }
 
 .portfolio {
-  background-color: #222; }
+  background-color: #222;
+  box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2), 0px 0px 20px 12px rgba(0, 0, 0, 0.19); }
   .portfolio h2 {
     text-align: center;
     font-size: 2em;
@@ -119,7 +120,21 @@ header {
       .portfolio .projects-wrap .project-tile img {
         width: 100%;
         height: auto; }
+    .portfolio .projects-wrap .project-info {
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.85);
+      color: #fff;
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      transition: 0.5s ease; }
+      .portfolio .projects-wrap .project-info p {
+        padding: 10px; }
     .portfolio .projects-wrap .card_wrap {
+      position: relative;
       border: 1px solid #fff;
       background-color: #fff;
       box-shadow: 0 4px 8px 0 rgba(66, 191, 244, 0.2), 0 6px 20px 0 rgba(66, 191, 244, 0.19); }
@@ -129,6 +144,9 @@ header {
       .portfolio .projects-wrap .card_wrap:hover {
         border: 1px solid #42bff4;
         box-shadow: 0 4px 16px 0 rgba(66, 191, 244, 0.8), 0 6px 40px 0 rgba(66, 191, 244, 0.5); }
+        .portfolio .projects-wrap .card_wrap:hover .project-info {
+          bottom: 0;
+          height: 100%; }
 
 .contact {
   padding: 1px;
@@ -181,7 +199,7 @@ footer {
   padding: 10px;
   color: #fff;
   background-color: #222;
-  box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 -8px 8px 0 rgba(0, 0, 0, 0.2), 0 -12px 20px 0 rgba(0, 0, 0, 0.19);
   display: flex;
   justify-content: center; }
   footer h3 {
