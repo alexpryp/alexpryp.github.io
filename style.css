@@ -97,10 +97,12 @@ header {
     align-items: center; }
     .about .card p {
       color: #fff; }
-    .about .card img {
+    .about .card .avatar {
       width: 250px;
       margin: 1px;
       border-radius: 50%; }
+    .about .card .technology {
+      width: 70px; }
 
 .portfolio {
   background-color: #222;
