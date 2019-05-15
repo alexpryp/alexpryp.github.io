@@ -23,10 +23,14 @@
 	}
 
 	.wrapper-about {
-		
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: stretch;
 	}
 
 	.card {
+		margin: 10px;
 		max-width: 400px;
 		padding: 10px;
 		border-radius: 10px;

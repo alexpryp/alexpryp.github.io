@@ -86,7 +86,13 @@ header {
     flex-basis: 100%;
     align-self: flex-start;
     font-family: 'Audiowide', cursive; }
+  .about .wrapper-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch; }
   .about .card {
+    margin: 10px;
     max-width: 400px;
     padding: 10px;
     border-radius: 10px;
