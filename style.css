@@ -210,10 +210,12 @@ footer {
   box-shadow: 0 -8px 8px 0 rgba(0, 0, 0, 0.2), 0 -12px 20px 0 rgba(0, 0, 0, 0.19);
   display: flex;
   justify-content: center; }
+  footer div {
+    margin: 10px 20px; }
   footer h3 {
     color: #42bff4; }
   footer .contacts, footer .menu {
-    width: 150px; }
+    width: 185px; }
   footer ul {
     list-style: none;
     font-size: 10pt;

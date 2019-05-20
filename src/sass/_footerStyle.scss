@@ -6,12 +6,15 @@ footer {
 	box-shadow:  0 -8px 8px 0 rgba(0, 0, 0, 0.2), 0 -12px 20px 0 rgba(0, 0, 0, 0.19);
 	display: flex;
 	justify-content: center;
-
+	
+	div {
+		margin: 10px 20px;
+	}
 	h3 {
 		color: $hover-footer-link;
 	}
 	.contacts, .menu {
-		width: 150px;
+		width: 185px;
 	}
 	ul {
 		list-style: none;
