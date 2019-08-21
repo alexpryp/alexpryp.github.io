@@ -66,7 +66,7 @@ header {
       border-top: 5px solid #42bff4; }
 
 .about {
-  background: rgba(0, 0, 0, 0.7) url(images/backgrounds/main-bg.jpg);
+  background: rgba(0, 0, 0, 0.6) url(images/backgrounds/main-bg.jpg);
   background-blend-mode: darken;
   background-position: center;
   background-repeat: no-repeat;
@@ -91,23 +91,42 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch;
-    max-width: 1080px; }
+    align-items: stretch; }
+  .about .about-contact {
+    display: inline-block;
+    margin: 30px auto;
+    font-size: 1.5em;
+    text-align: center; }
+    .about .about-contact a:link {
+      text-decoration: none;
+      color: #fff; }
+    .about .about-contact a:visited {
+      color: #fff; }
+    .about .about-contact a:hover {
+      color: #42bff4; }
   .about .card {
-    margin: 10px;
-    flex-basis: 45%;
-    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 10px;
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
+    flex-basis: 48%;
+    padding: 5px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center; }
-    .about .card p {
+    .about .card #about-me {
       color: #fff; }
+    .about .card p {
+      text-align: justify; }
+    .about .card h2 {
+      text-align: center; }
     .about .card .avatar {
-      width: 250px;
-      margin: 1px;
-      border-radius: 50%; }
+      width: 180px;
+      margin: 5px 20px 10px 5px;
+      border-radius: 10px;
+      float: left; }
     .about .card .technology {
       width: 70px; }
 
@@ -121,12 +140,15 @@ header {
     text-shadow: #42bff4 0 0 30px; }
   .portfolio .projects-wrap {
     padding-bottom: 25px;
+    margin: auto;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap; }
     .portfolio .projects-wrap .project-tile {
       padding: 1px 1px 10px 1px;
-      max-width: 450px; }
+      width: 450px;
+      min-width: 250px;
+      margin: 10px; }
       .portfolio .projects-wrap .project-tile img {
         width: 100%;
         height: auto; }
@@ -240,3 +262,7 @@ footer {
     position: static; }
   footer {
     display: none; } }
+
+@media screen and (max-width: 1080px) {
+  .about .card {
+    flex-basis: 98%; } }

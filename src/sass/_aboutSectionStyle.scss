@@ -1,5 +1,5 @@
 .about {
-	background: rgba(0, 0, 0, 0.7) url(images/backgrounds/main-bg.jpg);
+	background: rgba(0, 0, 0, 0.60) url(images/backgrounds/main-bg.jpg);
 	background-blend-mode: darken; //Background and RGBA-color blending mode
 	background-position: center;
 	background-repeat: no-repeat;
@@ -28,28 +28,58 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: stretch;
-		max-width: $max-content-width;
+		//max-width: $max-content-width;
+	}
+
+	.about-contact  {
+		display: inline-block;
+		margin: 30px auto;
+		font-size: 1.5em;
+		text-align: center;
+		a {
+			&:link {
+				text-decoration: none;
+				color: $white;
+			}
+			&:visited {
+				color: $white;
+			}
+			&:hover {
+				color: $hover-footer-link;
+				//background: $main-color;
+			}
+		}
 	}
 
 	.card {
-		margin: 10px;
-		//max-width: 400px;
-		flex-basis: 45%;
-		//flex-grow: 1;
-		padding: 10px;
+		font-size: 1.2em;
+		font-weight: bold;
+		margin: 10px 10px;
+		background-color: rgba(0, 0, 0, 0.3);
 		border-radius: 10px;
+		flex-basis: 48%;
+		padding: 5px 20px;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
 
-		p {
+		#about-me {
 			color: $white;
 		}
+
+		p {
+			text-align: justify;
+		}
+
+		h2 {
+			text-align: center;
+		}
 		.avatar {
-			width: 250px;
-			margin: 1px;
-			border-radius: 50%;
+			width: 180px;
+			margin: 5px 20px 10px 5px;
+			border-radius: 10px;
+			float: left;
 		}
 		.technology {
 			width: 70px;
