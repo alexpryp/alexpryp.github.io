@@ -26,12 +26,12 @@ header {
   justify-content: space-around;
   flex-wrap: wrap; }
   header .logo_name {
-    max-width: 200px;
     font-size: 1.5em;
-    padding: 0;
-    margin: 5px;
+    padding: 5px 0 0 0;
     color: #999;
     font-family: 'Audiowide', cursive; }
+    header .logo_name img {
+      height: 35px; }
   header nav {
     width: 270px;
     height: 50px;
@@ -66,8 +66,7 @@ header {
       border-top: 5px solid #42bff4; }
 
 .about {
-  background: rgba(0, 0, 0, 0.6) url(images/backgrounds/main-bg.jpg);
-  background-blend-mode: darken;
+  background: url(images/backgrounds/main-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -79,16 +78,16 @@ header {
   flex-wrap: wrap;
   align-content: flex-start; }
   .about h1 {
-    margin-top: 50px;
+    margin: 10px;
     color: #fff;
-    font-size: 1.6em;
+    font-size: 1em;
     text-align: center;
     text-shadow: #000 0 0 30px;
     flex-basis: 100%;
-    align-self: flex-start;
-    font-family: 'Audiowide', cursive; }
+    align-self: flex-start; }
   .about .wrapper-about {
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch; }
@@ -105,28 +104,30 @@ header {
     .about .about-contact a:hover {
       color: #42bff4; }
   .about .card {
-    font-size: 1.2em;
-    font-weight: bold;
+    font-size: 1.1em;
     margin: 10px 10px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
-    flex-basis: 48%;
     padding: 5px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center; }
     .about .card #about-me {
-      color: #fff; }
+      color: #fff;
+      max-width: 480px; }
     .about .card p {
       text-align: justify; }
     .about .card h2 {
+      text-align: center;
+      margin-top: 10px; }
+    .about .card p.pAvatar {
       text-align: center; }
     .about .card .avatar {
-      width: 180px;
-      margin: 5px 20px 10px 5px;
-      border-radius: 10px;
-      float: left; }
+      width: 210px;
+      margin: auto;
+      border-radius: 50%;
+      border: 10px double #fff; }
     .about .card .technology {
       width: 70px; }
 
@@ -262,7 +263,3 @@ footer {
     position: static; }
   footer {
     display: none; } }
-
-@media screen and (max-width: 1080px) {
-  .about .card {
-    flex-basis: 98%; } }

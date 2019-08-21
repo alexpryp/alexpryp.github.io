@@ -1,6 +1,5 @@
 .about {
-	background: rgba(0, 0, 0, 0.60) url(images/backgrounds/main-bg.jpg);
-	background-blend-mode: darken; //Background and RGBA-color blending mode
+	background: url(images/backgrounds/main-bg.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -13,18 +12,18 @@
 	align-content: flex-start;
 
 	h1 {
-		margin-top: 50px;
+		margin: 10px;
 		color: $white;
-		font-size: 1.6em;
+		font-size: 1em;
 		text-align: center;
 		text-shadow: $black 0 0 30px;
 		flex-basis: 100%;
 		align-self: flex-start;
-		font-family: 'Audiowide', cursive;
 	}
 
 	.wrapper-about {
 		display: flex;
+		width: 100%;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: stretch;
@@ -52,12 +51,12 @@
 	}
 
 	.card {
-		font-size: 1.2em;
-		font-weight: bold;
+		font-size: 1.1em;
+		//font-weight: bold;
 		margin: 10px 10px;
-		background-color: rgba(0, 0, 0, 0.3);
+		background-color: rgba(0, 0, 0, 0.7);
 		border-radius: 10px;
-		flex-basis: 48%;
+		//flex-basis: 48%;
 		padding: 5px 20px;
 		display: flex;
 		flex-wrap: wrap;
@@ -66,6 +65,7 @@
 
 		#about-me {
 			color: $white;
+			max-width: 480px;
 		}
 
 		p {
@@ -74,12 +74,16 @@
 
 		h2 {
 			text-align: center;
+			margin-top: 10px;
+		}
+		p.pAvatar {
+			text-align: center;
 		}
 		.avatar {
-			width: 180px;
-			margin: 5px 20px 10px 5px;
-			border-radius: 10px;
-			float: left;
+			width: 210px;
+			margin: auto;
+			border-radius: 50%;
+			border: 10px double $white;
 		}
 		.technology {
 			width: 70px;

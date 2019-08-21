@@ -11,12 +11,14 @@ header {
 	flex-wrap: wrap;
 
 	.logo_name {
-		max-width: 200px;
 		font-size: 1.5em;
-		padding: 0;
-		margin: 5px;
+		padding: 5px 0 0 0;
+		//margin: 5px;
 		color: $grey-text;
 		font-family: 'Audiowide', cursive;
+		img {
+			height: 35px;
+		}
 	}
 
 	nav {
