@@ -141,7 +141,8 @@ header {
   .portfolio h2 {
     text-align: center;
     font-size: 2em;
-    color: #fff; }
+    color: #fff;
+    margin: 10px 0; }
   .portfolio .projects-wrap {
     padding-bottom: 25px;
     margin: auto;
