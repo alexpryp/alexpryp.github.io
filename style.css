@@ -51,11 +51,11 @@ header {
       padding: 10px;
       background-color: #222;
       color: #999;
-      border-top: 5px solid #222; }
+      border-bottom: 5px solid #222; }
       header nav a:hover {
         color: #fff;
         transition: 0.3s;
-        border-top: 5px solid #42bff4; }
+        border-bottom: 5px solid #42bff4; }
       header nav a:active {
         background-color: #222;
         color: #fff; }
@@ -63,7 +63,7 @@ header {
       background-color: #222;
       color: #fff;
       transition: 0.5s;
-      border-top: 5px solid #42bff4; }
+      border-bottom: 5px solid #42bff4; }
 
 .about {
   background: url(images/backgrounds/main-bg.jpg);
@@ -84,7 +84,7 @@ header {
     text-align: center;
     text-shadow: #000 0 0 30px;
     flex-basis: 100%;
-    align-self: flex-start; }
+    align-self: center; }
   .about .wrapper-about {
     display: flex;
     width: 100%;
@@ -114,8 +114,11 @@ header {
     justify-content: center;
     align-items: center; }
     .about .card #about-me {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       color: #fff;
-      max-width: 480px; }
+      max-width: 780px; }
     .about .card p {
       text-align: justify; }
     .about .card h2 {
@@ -170,6 +173,10 @@ header {
         .portfolio .projects-wrap .project-tile .project-image img {
           width: 100%; }
       .portfolio .projects-wrap .project-tile .project-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         max-width: 600px;
         padding: 10px; }
         .portfolio .projects-wrap .project-tile .project-description .project-description-header {

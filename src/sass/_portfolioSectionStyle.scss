@@ -48,6 +48,10 @@
 			}
 
 			.project-description {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
 				max-width: 600px;
 				padding: 10px;
 				.project-description-header {

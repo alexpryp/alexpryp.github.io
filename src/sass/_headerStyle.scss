@@ -45,12 +45,12 @@ header {
 			padding: 10px;
 			background-color: $main-color;
 			color: $grey-text;
-			border-top: 5px solid $main-color;
+			border-bottom: 5px solid $main-color;
 
 			&:hover {
 				color: $white;
 				transition: 0.3s;
-				border-top: 5px solid $hover-footer-link;
+				border-bottom: 5px solid $hover-footer-link;
 			}
 			&:active {
 				background-color: $main-color;
@@ -62,7 +62,7 @@ header {
 			background-color: $main-color;
 			color: $white;
 			transition: 0.5s;
-			border-top: 5px solid $hover-footer-link;
+			border-bottom: 5px solid $hover-footer-link;
 		}
 	}
 }
