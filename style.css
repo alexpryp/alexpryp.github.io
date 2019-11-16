@@ -95,6 +95,7 @@ header {
     display: inline-block;
     margin: 30px auto;
     font-size: 1.5em;
+    line-height: 2.5em;
     text-align: center; }
     .about .about-contact a:link {
       text-decoration: none;
@@ -294,8 +295,10 @@ footer {
       color: #42bff4; }
 
 @media screen and (max-width: 450px) {
-  header .logo_name {
-    display: none; }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   footer {
     display: none; } }
 
