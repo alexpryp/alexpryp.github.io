@@ -12,7 +12,12 @@ header .wrap, body, nav, header ul, header li, section, a {
 body {
   font-size: 0.9em;
   font-family: Arial, sans-serif;
-  line-height: 1.5; }
+  line-height: 1.5;
+  background: url(images/backgrounds/main-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
 
 .section-header {
   max-width: 280px;
@@ -72,11 +77,6 @@ header {
       border-bottom: 5px solid #42bff4; }
 
 .about {
-  background: url(images/backgrounds/main-bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   min-height: 100vh;
   padding: 5px;
   display: flex;
@@ -141,123 +141,92 @@ header {
     .about .card .technology {
       width: 70px; }
 
-.portfolio {
-  background: url(images/backgrounds/main-bg.jpg), rgba(100, 100, 100, 0.5);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; }
-  .portfolio h2 {
-    text-align: center;
-    font-size: 2em;
-    color: #fff;
-    margin: 10px 0; }
-  .portfolio .projects-wrap {
-    padding-bottom: 25px;
-    margin: auto;
+.portfolio h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+  margin: 10px 0; }
+
+.portfolio .projects-wrap {
+  padding-bottom: 25px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .portfolio .projects-wrap .project-tile {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap; }
-    .portfolio .projects-wrap .project-tile {
+    flex-direction: column;
+    overflow: hidden;
+    margin: 20px;
+    background-color: #fff;
+    transition: 0.5s;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2), 6px 6px 20px 0px rgba(0, 0, 0, 0.19); }
+    .portfolio .projects-wrap .project-tile a {
+      text-decoration: none;
+      border: none; }
+      .portfolio .projects-wrap .project-tile a:visited {
+        text-decoration: none; }
+      .portfolio .projects-wrap .project-tile a:active {
+        text-decoration: none; }
+      .portfolio .projects-wrap .project-tile a:hover {
+        text-decoration: none; }
+    .portfolio .projects-wrap .project-tile .project-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 600px;
+      max-height: 420px;
+      overflow: hidden;
+      order: 1; }
+      .portfolio .projects-wrap .project-tile .project-image img {
+        width: 100%; }
+    .portfolio .projects-wrap .project-tile .project-description {
       display: flex;
       flex-direction: column;
-      overflow: hidden;
-      margin: 20px;
-      background-color: #fff;
-      transition: 0.5s;
-      box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2), 6px 6px 20px 0px rgba(0, 0, 0, 0.19); }
-      .portfolio .projects-wrap .project-tile a {
-        text-decoration: none;
-        border: none; }
-        .portfolio .projects-wrap .project-tile a:visited {
-          text-decoration: none; }
-        .portfolio .projects-wrap .project-tile a:active {
-          text-decoration: none; }
-        .portfolio .projects-wrap .project-tile a:hover {
-          text-decoration: none; }
-      .portfolio .projects-wrap .project-tile .project-image {
+      justify-content: space-between;
+      align-items: center;
+      max-width: 600px;
+      padding: 10px;
+      order: 2; }
+      .portfolio .projects-wrap .project-tile .project-description .project-description-header {
+        color: #000; }
+      .portfolio .projects-wrap .project-tile .project-description p {
+        text-align: center; }
+      .portfolio .projects-wrap .project-tile .project-description .visit-buttons {
+        display: flex; }
+      .portfolio .projects-wrap .project-tile .project-description .visit {
         display: flex;
         justify-content: center;
-        align-items: center;
-        max-width: 600px;
-        max-height: 420px;
-        overflow: hidden;
-        order: 1; }
-        .portfolio .projects-wrap .project-tile .project-image img {
-          width: 100%; }
-      .portfolio .projects-wrap .project-tile .project-description {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 600px;
-        padding: 10px;
-        order: 2; }
-        .portfolio .projects-wrap .project-tile .project-description .project-description-header {
-          color: #000; }
-        .portfolio .projects-wrap .project-tile .project-description p {
-          text-align: center; }
-        .portfolio .projects-wrap .project-tile .project-description .visit {
-          display: flex;
-          justify-content: center; }
-          .portfolio .projects-wrap .project-tile .project-description .visit .visit-button {
-            width: 150px;
-            height: 40px;
-            margin-top: 0px;
-            margin-bottom: 5px;
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            text-align: center;
-            line-height: 2.9;
-            font-weight: bold;
-            border-radius: 5px;
-            background-color: #42bff4;
-            box-shadow: 0 5px 0 0 #15759F;
-            transition: 0.2s; }
-            .portfolio .projects-wrap .project-tile .project-description .visit .visit-button:hover {
-              margin-top: 5px;
-              margin-bottom: 0px;
-              box-shadow: none;
-              transition: 0.2s;
-              cursor: pointer; }
-      .portfolio .projects-wrap .project-tile:hover {
-        transform: scale(1.01, 1.01);
-        transition: 0.2s;
-        box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.5), 6px 6px 20px 10px rgba(0, 0, 0, 0.19); }
-
-@media screen and (max-width: 1920px) {
-  .portfolio .projects-wrap .project-tile {
-    max-width: 500px; } }
-
-@media screen and (max-width: 1620px) {
-  .portfolio .projects-wrap .project-tile {
-    max-width: 400px; } }
-
-@media screen and (max-width: 1320px) {
-  .portfolio .projects-wrap .project-tile {
-    max-width: 600px; } }
-
-@media screen and (max-width: 1280px) {
-  .portfolio .projects-wrap .project-tile {
-    max-width: 500px; } }
-
-@media screen and (max-width: 1080px) {
-  .portfolio .projects-wrap .project-tile {
-    max-width: 400px; } }
-
-@media screen and (max-width: 900px) {
-  .portfolio .projects-wrap .project-tile {
-    max-width: 600px; } }
+        margin: 10px; }
+        .portfolio .projects-wrap .project-tile .project-description .visit .visit-button {
+          font-size: 1.3em;
+          width: 150px;
+          height: 40px;
+          margin-top: 0px;
+          margin-bottom: 5px;
+          color: #fff;
+          text-decoration: none;
+          text-transform: uppercase;
+          text-align: center;
+          line-height: 2.5;
+          border-radius: 5px;
+          background-color: #42bff4;
+          box-shadow: 0 5px 0 0 #15759F;
+          transition: 0.2s; }
+          .portfolio .projects-wrap .project-tile .project-description .visit .visit-button:hover {
+            margin-top: 5px;
+            margin-bottom: 0px;
+            box-shadow: none;
+            transition: 0.2s;
+            cursor: pointer; }
+    .portfolio .projects-wrap .project-tile:hover {
+      transform: scale(1.01, 1.01);
+      transition: 0.2s;
+      box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.5), 6px 6px 20px 10px rgba(0, 0, 0, 0.19); }
 
 .contact {
   padding: 1px;
-  color: #fff;
-  background-image: url(images/backgrounds/main-bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; }
+  color: #fff; }
   .contact h2 {
     font-size: 2em;
     text-align: center;
@@ -273,7 +242,7 @@ header {
     .contact #profile-link .profile-link {
       display: flex;
       align-items: center;
-      align-self: center;
+      justify-content: center;
       height: 60px;
       width: 100%;
       font-size: 1.5em;
@@ -322,16 +291,43 @@ footer {
     footer a:hover {
       color: #42bff4; }
 
+@media screen and (max-width: 1920px) {
+  .portfolio .projects-wrap .project-tile {
+    max-width: 500px; } }
+
+@media screen and (max-width: 1620px) {
+  .portfolio .projects-wrap .project-tile {
+    max-width: 400px; } }
+
+@media screen and (max-width: 1320px) {
+  .portfolio .projects-wrap .project-tile {
+    max-width: 600px; } }
+
+@media screen and (max-width: 1280px) {
+  .portfolio .projects-wrap .project-tile {
+    max-width: 500px; } }
+
+@media screen and (max-width: 1080px) {
+  .portfolio .projects-wrap .project-tile {
+    max-width: 400px; } }
+
+@media screen and (max-width: 900px) {
+  .portfolio .projects-wrap .project-tile {
+    max-width: 600px;
+    margin: 20px 10px; } }
+
+@media screen and (max-width: 800px) {
+  header {
+    position: static; }
+  footer {
+    display: none; } }
+
 @media screen and (max-width: 450px) {
   header {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  footer {
-    display: none; } }
-
-@media screen and (max-width: 800px) {
-  header {
-    position: static; }
+  .portfolio .projects-wrap .project-tile .project-description .visit-buttons {
+    flex-direction: column; }
   footer {
     display: none; } }
