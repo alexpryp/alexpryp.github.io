@@ -12,18 +12,21 @@ header .wrap, body, nav, header ul, header li, section, a {
 body {
   font-size: 0.9em;
   font-family: Arial, sans-serif;
-  line-height: 1.5;
-  background: url(images/backgrounds/main-bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; }
+  line-height: 1.5; }
 
 .section-header {
   max-width: 280px;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 10px; }
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2), 6px 6px 20px 0px rgba(0, 0, 0, 0.19); }
+
+.about, .portfolio, .contact {
+  background: url(images/backgrounds/main-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
 
 header {
   background-color: #222;
@@ -119,7 +122,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2), 6px 6px 20px 0px rgba(0, 0, 0, 0.19); }
     .about .card #about-me {
       display: flex;
       flex-direction: column;
@@ -156,11 +160,16 @@ header {
   .portfolio .projects-wrap .project-tile {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     overflow: hidden;
     margin: 20px;
     background-color: #fff;
     transition: 0.5s;
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2), 6px 6px 20px 0px rgba(0, 0, 0, 0.19); }
+    .portfolio .projects-wrap .project-tile:hover {
+      transform: scale(1.02, 1.02);
+      transition: 0.2s;
+      box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.5), 6px 6px 20px 10px rgba(0, 0, 0, 0.19); }
     .portfolio .projects-wrap .project-tile a {
       text-decoration: none;
       border: none; }
@@ -189,9 +198,13 @@ header {
       padding: 10px;
       order: 2; }
       .portfolio .projects-wrap .project-tile .project-description .project-description-header {
-        color: #000; }
+        color: #000;
+        font-size: 1.7em; }
       .portfolio .projects-wrap .project-tile .project-description p {
         text-align: center; }
+      .portfolio .projects-wrap .project-tile .project-description .technologies {
+        font-weight: bold;
+        font-size: 1.1em; }
       .portfolio .projects-wrap .project-tile .project-description .visit-buttons {
         display: flex; }
       .portfolio .projects-wrap .project-tile .project-description .visit {
@@ -208,7 +221,7 @@ header {
           text-decoration: none;
           text-transform: uppercase;
           text-align: center;
-          line-height: 2.5;
+          line-height: 2.2;
           border-radius: 5px;
           background-color: #42bff4;
           box-shadow: 0 5px 0 0 #15759F;
@@ -216,13 +229,10 @@ header {
           .portfolio .projects-wrap .project-tile .project-description .visit .visit-button:hover {
             margin-top: 5px;
             margin-bottom: 0px;
+            background-color: #15759F;
             box-shadow: none;
             transition: 0.2s;
             cursor: pointer; }
-    .portfolio .projects-wrap .project-tile:hover {
-      transform: scale(1.01, 1.01);
-      transition: 0.2s;
-      box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.5), 6px 6px 20px 10px rgba(0, 0, 0, 0.19); }
 
 .contact {
   padding: 1px;

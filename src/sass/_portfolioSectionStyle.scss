@@ -15,11 +15,18 @@
 		.project-tile {
 			display: flex;
 			flex-direction: column;
+			justify-content: space-between;
 			overflow: hidden;
 			margin: 20px;
 			background-color: $white;
 			transition: 0.5s;
 			box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2), 6px 6px 20px 0px rgba(0, 0, 0, 0.19);
+
+			&:hover {
+				transform: scale(1.02, 1.02);
+				transition: 0.2s;
+				box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.5), 6px 6px 20px 10px rgba(0, 0, 0, 0.19);
+			}
 
 			a {
 				text-decoration: none;
@@ -58,9 +65,14 @@
 				order: 2;
 				.project-description-header {
 					color: $black;
+					font-size: 1.7em;
 				}
 				p {
 					text-align: center;
+				}
+				.technologies {
+					font-weight: bold;
+					font-size: 1.1em;
 				}
 				.visit-buttons {
 					display: flex;
@@ -79,7 +91,7 @@
 						text-decoration: none;
 						text-transform: uppercase;
 						text-align: center;
-						line-height: 2.5;
+						line-height: 2.2;
 						//font-weight: bold;
 						border-radius: 5px;
 						background-color: $hover-footer-link;
@@ -88,18 +100,13 @@
 						&:hover {
 							margin-top: 5px;
 							margin-bottom: 0px;
+							background-color: #15759F;
 							box-shadow: none;
 							transition: 0.2s;
 							cursor: pointer;
 						}
 					}
 				}
-			}
-
-			&:hover {
-				transform: scale(1.01, 1.01);
-				transition: 0.2s;
-				box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.5), 6px 6px 20px 10px rgba(0, 0, 0, 0.19);
 			}
 		}
 	}
