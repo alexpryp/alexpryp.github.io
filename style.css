@@ -341,3 +341,12 @@ footer {
     flex-direction: column; }
   footer {
     display: none; } }
+
+@supports (-ms-ime-align: auto) {
+  .about, .portfolio, .contact {
+    background: none; }
+  body {
+    background: url(images/backgrounds/main-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; } }
