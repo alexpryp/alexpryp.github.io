@@ -74,15 +74,13 @@ h2 {
   .main-menu-wrapper .first-active {
     top: 22px;
     transform: rotate(45deg); }
-  .main-menu-wrapper .second, .main-menu-wrapper .third {
+  .main-menu-wrapper .second {
     top: 22px; }
   .main-menu-wrapper .second-active {
-    transform: rotate(45deg); }
-  .main-menu-wrapper .third-active {
     transform: rotate(-45deg); }
-  .main-menu-wrapper .fourth {
+  .main-menu-wrapper .third {
     top: 32px; }
-  .main-menu-wrapper .fourth-active {
+  .main-menu-wrapper .third-active {
     top: 22px;
     transform: rotate(-45deg); }
   .main-menu-wrapper .logo {
@@ -158,14 +156,18 @@ h2 {
   .main-menu-wrapper {
     flex-direction: column; }
     .main-menu-wrapper .nav-menu {
-      flex-direction: column; }
+      flex-direction: column;
+      height: 320px;
+      transition: height 0.5s;
+      overflow: hidden; }
       .main-menu-wrapper .nav-menu .logo {
         display: none; }
       .main-menu-wrapper .nav-menu .main-menu {
         display: flex;
         flex-direction: column; }
     .main-menu-wrapper .nav-menu-hide {
-      display: none; }
+      height: 0;
+      transition: height 0.5s; }
     .main-menu-wrapper .gamburger-menu {
       display: flex; }
     .main-menu-wrapper .logo {
@@ -404,6 +406,13 @@ h2 {
 @media screen and (max-width: 1100px) {
   .recipe-menu, .filter, .submit-block {
     flex-wrap: wrap; }
+  .filter {
+    align-items: center;
+    justify-content: center; }
+  .recipe-menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
   .ingredients-item {
     margin-left: 0px; } }
 
@@ -748,9 +757,18 @@ footer {
 
 .footer-nav a {
   display: block;
-  margin-right: 20px; }
+  margin: 20px; }
 
 .social a {
+  display: block;
+  padding: 5px;
   margin: 5px; }
+
+@media screen and (max-width: 890px) {
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: center; }
+  .social {
+    margin-bottom: 30px; } }
 
 /*# sourceMappingURL=style.css.map */
