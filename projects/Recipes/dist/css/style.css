@@ -157,7 +157,7 @@ h2 {
     flex-direction: column; }
     .main-menu-wrapper .nav-menu {
       flex-direction: column;
-      height: 320px;
+      height: 360px;
       transition: height 0.5s;
       overflow: hidden; }
       .main-menu-wrapper .nav-menu .logo {
