@@ -239,8 +239,7 @@ header {
   color: #fff; }
   .contact h2 {
     font-size: 2em;
-    text-align: center;
-    text-shadow: black 0 0 30px; }
+    text-align: center; }
   .contact #profile-link {
     display: flex;
     flex-wrap: wrap;
@@ -265,7 +264,8 @@ header {
       background-color: #555;
       margin: 5px auto;
       border-radius: 10px;
-      background: rgba(0, 0, 0, 0.7); }
+      background: rgba(0, 0, 0, 0.7);
+      transition: 0.5s; }
       .contact #profile-link a:link {
         text-decoration: none;
         color: #fff; }
@@ -273,7 +273,9 @@ header {
         color: #fff; }
       .contact #profile-link a:hover {
         color: #42bff4;
-        background: #222; }
+        background: #222;
+        box-shadow: black 5px 5px 10px;
+        transition: 0.5s; }
 
 footer {
   margin: 0;

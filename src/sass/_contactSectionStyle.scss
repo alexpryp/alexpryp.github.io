@@ -5,7 +5,6 @@
 	h2 {
 		font-size: 2em;
 		text-align: center;
-		text-shadow: black 0 0 30px;
 	}
 	#profile-link {
 		display: flex;
@@ -35,6 +34,7 @@
 			margin: 5px auto;
 			border-radius: 10px;
 			background: rgba(0, 0, 0, 0.7);
+			transition: 0.5s;
 
 			&:link {
 				text-decoration: none;
@@ -46,6 +46,8 @@
 			&:hover {
 				color: $hover-footer-link;
 				background: $main-color;
+				box-shadow: black 5px 5px 10px;
+				transition: 0.5s;
 			}
 		}
 	}
