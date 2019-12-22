@@ -32,10 +32,12 @@ header {
   background-color: #222;
   min-height: 50px;
   margin: 0;
+  position: -webkit-sticky;
   position: sticky;
   z-index: 1;
   top: 0;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+  display: -webkit-box;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; }
@@ -68,6 +70,7 @@ header {
       border-bottom: 5px solid #222; }
       header nav a:hover {
         color: #fff;
+        -webkit-transition: 0.3s;
         transition: 0.3s;
         border-bottom: 5px solid #42bff4; }
       header nav a:active {
@@ -76,12 +79,14 @@ header {
     header nav .active {
       background-color: #222;
       color: #fff;
+      -webkit-transition: 0.5s;
       transition: 0.5s;
       border-bottom: 5px solid #42bff4; }
 
 .about {
   min-height: 100vh;
   padding: 5px;
+  display: -webkit-box;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -95,10 +100,13 @@ header {
     flex-basis: 100%;
     align-self: center; }
   .about .wrapper-about {
+    display: -webkit-box;
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
     justify-content: center;
+    -webkit-box-align: stretch;
     align-items: stretch; }
   .about .about-contact {
     display: inline-block;
@@ -115,18 +123,25 @@ header {
       color: #42bff4; }
   .about .card {
     font-size: 1.1em;
-    margin: 10px 10px;
+    margin: 10px 10px 60px 10px;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     padding: 5px 20px;
+    display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
     align-items: center;
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2), 6px 6px 20px 0px rgba(0, 0, 0, 0.19); }
     .about .card #about-me {
+      display: -webkit-box;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
       flex-direction: column;
+      -webkit-box-align: center;
       align-items: center;
       color: #fff;
       max-width: 780px; }
@@ -149,25 +164,34 @@ header {
   text-align: center;
   font-size: 2em;
   color: #fff;
-  margin: 10px 0; }
+  margin: 20px 0; }
 
 .portfolio .projects-wrap {
   padding-bottom: 25px;
   margin: auto;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
   flex-wrap: wrap; }
   .portfolio .projects-wrap .project-tile {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
+    -webkit-box-pack: justify;
     justify-content: space-between;
     overflow: hidden;
     margin: 20px;
     background-color: #fff;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2), 6px 6px 20px 0px rgba(0, 0, 0, 0.19); }
     .portfolio .projects-wrap .project-tile:hover {
+      -webkit-transform: scale(1.02, 1.02);
       transform: scale(1.02, 1.02);
+      -webkit-transition: 0.2s;
       transition: 0.2s;
       box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.5), 6px 6px 20px 10px rgba(0, 0, 0, 0.19); }
     .portfolio .projects-wrap .project-tile a {
@@ -180,22 +204,32 @@ header {
       .portfolio .projects-wrap .project-tile a:hover {
         text-decoration: none; }
     .portfolio .projects-wrap .project-tile .project-image {
+      display: -webkit-box;
       display: flex;
+      -webkit-box-pack: center;
       justify-content: center;
+      -webkit-box-align: center;
       align-items: center;
       max-width: 600px;
       max-height: 420px;
       overflow: hidden;
+      -webkit-box-ordinal-group: 2;
       order: 1; }
       .portfolio .projects-wrap .project-tile .project-image img {
         width: 100%; }
     .portfolio .projects-wrap .project-tile .project-description {
+      display: -webkit-box;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
       flex-direction: column;
+      -webkit-box-pack: justify;
       justify-content: space-between;
+      -webkit-box-align: center;
       align-items: center;
       max-width: 600px;
       padding: 10px;
+      -webkit-box-ordinal-group: 3;
       order: 2; }
       .portfolio .projects-wrap .project-tile .project-description .project-description-header {
         color: #000;
@@ -206,9 +240,12 @@ header {
         font-weight: bold;
         font-size: 1.1em; }
       .portfolio .projects-wrap .project-tile .project-description .visit-buttons {
+        display: -webkit-box;
         display: flex; }
       .portfolio .projects-wrap .project-tile .project-description .visit {
+        display: -webkit-box;
         display: flex;
+        -webkit-box-pack: center;
         justify-content: center;
         margin: 10px; }
         .portfolio .projects-wrap .project-tile .project-description .visit .visit-button {
@@ -225,12 +262,14 @@ header {
           border-radius: 5px;
           background-color: #42bff4;
           box-shadow: 0 5px 0 0 #15759F;
+          -webkit-transition: 0.2s;
           transition: 0.2s; }
           .portfolio .projects-wrap .project-tile .project-description .visit .visit-button:hover {
             margin-top: 5px;
             margin-bottom: 0px;
             background-color: #15759F;
             box-shadow: none;
+            -webkit-transition: 0.2s;
             transition: 0.2s;
             cursor: pointer; }
 
@@ -239,18 +278,26 @@ header {
   color: #fff; }
   .contact h2 {
     font-size: 2em;
-    text-align: center; }
+    text-align: center;
+    margin: 50px 0; }
   .contact #profile-link {
+    display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
     justify-content: space-around;
+    -webkit-box-align: stretch;
     align-items: stretch;
     margin: 25px auto;
     width: 100%; }
     .contact #profile-link .profile-link {
+      display: -webkit-box;
       display: flex;
+      -webkit-box-align: center;
       align-items: center;
+      -webkit-box-pack: center;
       justify-content: center;
       height: 60px;
       width: 100%;
@@ -265,6 +312,7 @@ header {
       margin: 5px auto;
       border-radius: 10px;
       background: rgba(0, 0, 0, 0.7);
+      -webkit-transition: 0.5s;
       transition: 0.5s; }
       .contact #profile-link a:link {
         text-decoration: none;
@@ -275,6 +323,7 @@ header {
         color: #42bff4;
         background: #222;
         box-shadow: black 5px 5px 10px;
+        -webkit-transition: 0.5s;
         transition: 0.5s; }
 
 footer {
@@ -283,7 +332,9 @@ footer {
   color: #fff;
   background-color: #222;
   box-shadow: 0 -8px 8px 0 rgba(0, 0, 0, 0.2), 0 -12px 20px 0 rgba(0, 0, 0, 0.19);
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center; }
   footer > div {
     margin: 10px 20px; }
@@ -303,11 +354,16 @@ footer {
     footer a:hover {
       color: #42bff4; }
   footer .validation {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
     justify-content: space-around; }
   footer .visit {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-pack: start;
     justify-content: flex-start; }
     footer .visit div {
       margin: 0px; }
@@ -325,12 +381,14 @@ footer {
       border-radius: 5px;
       background-color: #42bff4;
       box-shadow: 0 5px 0 0 #15759F;
+      -webkit-transition: 0.2s;
       transition: 0.2s; }
       footer .visit .visit-button:hover {
         margin-top: 5px;
         margin-bottom: 0px;
         background-color: #15759F;
         box-shadow: none;
+        -webkit-transition: 0.2s;
         transition: 0.2s;
         cursor: pointer; }
 
@@ -367,10 +425,16 @@ footer {
 
 @media screen and (max-width: 450px) {
   header {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
+    -webkit-box-align: center;
     align-items: center; }
   .portfolio .projects-wrap .project-tile .project-description .visit-buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column; }
   footer {
     display: none; } }

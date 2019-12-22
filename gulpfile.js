@@ -2,6 +2,8 @@ const gulp = require('gulp');
 const concat = require('gulp-concat');
 const sass = require('gulp-sass');
 const del = require('del');
+const autoprefixer = require('gulp-autoprefixer');
+const babel = require('gulp-babel');
 
 
 sass.compiler = require('node-sass');
@@ -9,12 +11,19 @@ sass.compiler = require('node-sass');
 function styles() {
 	return gulp.src('./src/sass/style.scss') //берём файлы на обработку
 				.pipe(sass().on('error', sass.logError)) //компиляция из scss в css
+				.pipe(autoprefixer({
+		            overrideBrowserlist: ['> 1%'],
+		            cascade: false
+		        }))
 				.pipe(gulp.dest('./')); //сохраняем обработанные файлы
 }
 
 function scripts() {
 	return gulp.src(['./src/js/script.js']) //берём файлы на обработку
 				.pipe(concat('script.js')) //Объединение всех файлов в один script.js
+				.pipe(babel({
+		            presets: ['@babel/env']
+		        }))
 				.pipe(gulp.dest('./')); //сохраняем обработанные файлы
 }
 
