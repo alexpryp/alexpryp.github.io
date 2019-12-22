@@ -84,11 +84,27 @@ elementArray[2].push($("a[href='#contact']")[0]);
 
 function scrolling(e) {
 	for(let i = 0; i < elementArray.length; i++) {
-		let tablinks;
-		if (isPartiallyVisible( elementArray[i][0] )) {
+		if (isPartiallyVisible( elementArray[i][0] ) && checkSize( elementArray[i][0] )) {
 			elementArray[i][1].classList.add("active");
 		} else {
 			elementArray[i][1].classList.remove("active");
 		}
 	}
 }
+
+function checkSize(elem) {
+	let biggerHalfDisplay = false;
+	let windowHeight = document.documentElement.clientHeight;
+	let halfWindowHeight = windowHeight / 2;
+	let elemTop = elem.getBoundingClientRect().top;
+	let elemBottom = elem.getBoundingClientRect().bottom;
+
+	if ( ((elemTop < halfWindowHeight) && (elemTop > 0)) || 
+		((elemBottom > halfWindowHeight) && (elemBottom < windowHeight)) ||
+		((elemTop < 0) && (elemBottom > windowHeight))) {
+		biggerHalfDisplay = true;
+	}
+
+	return biggerHalfDisplay;
+}
+

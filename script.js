@@ -99,12 +99,24 @@ elementArray[2].push($("a[href='#contact']")[0]);
 
 function scrolling(e) {
   for (var _i = 0; _i < elementArray.length; _i++) {
-    var tablinks = void 0;
-
-    if (isPartiallyVisible(elementArray[_i][0])) {
+    if (isPartiallyVisible(elementArray[_i][0]) && checkSize(elementArray[_i][0])) {
       elementArray[_i][1].classList.add("active");
     } else {
       elementArray[_i][1].classList.remove("active");
     }
   }
+}
+
+function checkSize(elem) {
+  var biggerHalfDisplay = false;
+  var windowHeight = document.documentElement.clientHeight;
+  var halfWindowHeight = windowHeight / 2;
+  var elemTop = elem.getBoundingClientRect().top;
+  var elemBottom = elem.getBoundingClientRect().bottom;
+
+  if (elemTop < halfWindowHeight && elemTop > 0 || elemBottom > halfWindowHeight && elemBottom < windowHeight || elemTop < 0 && elemBottom > windowHeight) {
+    biggerHalfDisplay = true;
+  }
+
+  return biggerHalfDisplay;
 }
