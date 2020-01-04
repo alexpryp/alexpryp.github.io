@@ -64,6 +64,17 @@
 			align-items: center;
 			color: $white;
 			max-width: 780px;
+
+			.logo_name {
+				display: none;
+				font-size: 1.5em;
+				padding: 5px 0 0 0;
+				color: $grey-text;
+				font-family: 'Audiowide', cursive;
+				img {
+					height: 35px;
+				}
+			}
 		}
 
 		p {
