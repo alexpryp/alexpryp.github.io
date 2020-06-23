@@ -191,6 +191,7 @@ header {
     -webkit-box-pack: justify;
     justify-content: space-between;
     overflow: hidden;
+    border-radius: 10px;
     margin: 20px;
     background-color: #fff;
     -webkit-transition: 0.5s;
@@ -268,17 +269,9 @@ header {
           text-align: center;
           line-height: 2.2;
           border-radius: 5px;
-          background-color: #42bff4;
-          box-shadow: 0 5px 0 0 #15759F;
-          -webkit-transition: 0.2s;
-          transition: 0.2s; }
+          background-color: #15759F; }
           .portfolio .projects-wrap .project-tile .project-description .visit .visit-button:hover {
-            margin-top: 5px;
-            margin-bottom: 0px;
-            background-color: #15759F;
-            box-shadow: none;
-            -webkit-transition: 0.2s;
-            transition: 0.2s;
+            background-color: #42bff4;
             cursor: pointer; }
 
 .contact {
