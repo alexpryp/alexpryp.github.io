@@ -97,13 +97,14 @@ nav {
 
 .slider-text h1 {
   font-size: 72px;
-  color: #333; }
+  color: #333;
+  margin: 40px 10px; }
 
 .slider-text p {
   font-size: 30px;
   color: #666;
   font-style: italic;
-  margin: 68px 0px; }
+  margin: 68px 10px; }
 
 .slider-events {
   display: flex;
@@ -472,11 +473,12 @@ nav {
 .achievements-line {
   width: 300px;
   border: 1px solid #000;
-  margin: 40px 0; }
+  margin: 40px 10px; }
 
 .achievements-description {
   max-width: 456px;
-  color: #333; }
+  color: #333;
+  margin: 0px 10px; }
 
 .achievements-video {
   display: flex;
@@ -938,7 +940,7 @@ footer {
     font-size: 40px; }
   .slider-text p {
     font-size: 20px;
-    margin: 20px 0px; }
+    margin: 20px 10px; }
   .about-LMS-content-text, .about-LMS-content-photo {
     flex-basis: 100%; }
   .live-class-description, .live-class-videos {
@@ -964,6 +966,6 @@ footer {
     font-size: 30px; }
   .slider-text p {
     font-size: 15px;
-    margin: 20px 0px; } }
+    margin: 20px 10px; } }
 
 /*# sourceMappingURL=style.css.map */
