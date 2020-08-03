@@ -1,5 +1,6 @@
 header {
-	background-color: $main-color;
+	//background-color: $main-color;
+	background-color: rgba(10, 10, 10, 0.9);
 	min-height: 50px;
 	margin: 0;
 	position: sticky;
@@ -42,7 +43,7 @@ header {
 			height: 50px;
 			text-align: center;
 			padding: 10px;
-			background-color: $main-color;
+			//background-color: $main-color;
 			color: $grey-text;
 			border-bottom: 5px solid $main-color;
 
@@ -65,3 +66,10 @@ header {
 		}
 	}
 }
+
+/* @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+	header {
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+	}
+} */

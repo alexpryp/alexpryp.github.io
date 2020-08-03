@@ -10,11 +10,11 @@
 	#profile-link {
 		display: flex;
 		flex-wrap: wrap;
-		flex-direction: column;
+		flex-direction: row;
 		justify-content: space-around;
 		align-items: stretch;
 		margin: 25px auto;
-		width: 100%;
+		max-width: 1100px;
 
 		.profile-link {
 			display: flex;

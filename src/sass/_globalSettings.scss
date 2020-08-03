@@ -23,6 +23,12 @@ body {
 	font-size: 0.9em;
 	font-family: Arial, sans-serif;
 	line-height: 1.5;
+
+	background: url(images/backgrounds/main-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 .section-header {
 	max-width: 280px;
@@ -31,10 +37,10 @@ body {
 	border-radius: 10px;
 	box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2), 6px 6px 20px 0px rgba(0, 0, 0, 0.19);
 }
-.about, .portfolio, .contact {
+/* .about, .portfolio, .contact {
 	background: url(images/backgrounds/main-bg.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-}
+} */

@@ -12,7 +12,12 @@ header .wrap, body, nav, header ul, header li, section, a {
 body {
   font-size: 0.9em;
   font-family: Arial, sans-serif;
-  line-height: 1.5; }
+  line-height: 1.5;
+  background: url(images/backgrounds/main-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
 
 .section-header {
   max-width: 280px;
@@ -21,15 +26,15 @@ body {
   border-radius: 10px;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2), 6px 6px 20px 0px rgba(0, 0, 0, 0.19); }
 
-.about, .portfolio, .contact {
-  background: url(images/backgrounds/main-bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; }
-
+/* .about, .portfolio, .contact {
+	background: url(images/backgrounds/main-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+} */
 header {
-  background-color: #222;
+  background-color: rgba(10, 10, 10, 0.9);
   min-height: 50px;
   margin: 0;
   position: -webkit-sticky;
@@ -65,7 +70,6 @@ header {
       height: 50px;
       text-align: center;
       padding: 10px;
-      background-color: #222;
       color: #999;
       border-bottom: 5px solid #222; }
       header nav a:hover {
@@ -83,6 +87,12 @@ header {
       transition: 0.5s;
       border-bottom: 5px solid #42bff4; }
 
+/* @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+	header {
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+	}
+} */
 .about {
   min-height: 100vh;
   padding: 5px;
@@ -168,6 +178,14 @@ header {
     .about .card .technology {
       width: 70px; }
 
+/* @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+	.about {
+		.card {
+			-webkit-backdrop-filter: blur(10px);
+			backdrop-filter: blur(10px);
+		}
+	}
+} */
 .portfolio h2 {
   text-align: center;
   font-size: 2em;
@@ -193,13 +211,11 @@ header {
     overflow: hidden;
     border-radius: 10px;
     margin: 20px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
     -webkit-transition: 0.5s;
     transition: 0.5s;
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2), 6px 6px 20px 0px rgba(0, 0, 0, 0.19); }
     .portfolio .projects-wrap .project-tile:hover {
-      -webkit-transform: scale(1.02, 1.02);
-      transform: scale(1.02, 1.02);
       -webkit-transition: 0.2s;
       transition: 0.2s;
       box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.5), 6px 6px 20px 10px rgba(0, 0, 0, 0.19); }
@@ -274,6 +290,16 @@ header {
             background-color: #42bff4;
             cursor: pointer; }
 
+/* @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+	.portfolio {
+		.projects-wrap {
+			.project-tile {
+				-webkit-backdrop-filter: blur(20px);
+				backdrop-filter: blur(20px);
+			}
+		}
+	}
+} */
 .contact {
   padding: 1px;
   color: #fff; }
@@ -285,14 +311,14 @@ header {
     display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     -webkit-box-align: stretch;
     align-items: stretch;
     margin: 25px auto;
-    width: 100%; }
+    max-width: 1100px; }
     .contact #profile-link .profile-link {
       display: -webkit-box;
       display: flex;
@@ -331,7 +357,7 @@ footer {
   margin: 0;
   padding: 10px;
   color: #fff;
-  background-color: #222;
+  background-color: rgba(10, 10, 10, 0.9);
   box-shadow: 0 -8px 8px 0 rgba(0, 0, 0, 0.2), 0 -12px 20px 0 rgba(0, 0, 0, 0.19);
   display: -webkit-box;
   display: flex;
@@ -380,17 +406,9 @@ footer {
       text-align: center;
       line-height: 2.2;
       border-radius: 5px;
-      background-color: #42bff4;
-      box-shadow: 0 5px 0 0 #15759F;
-      -webkit-transition: 0.2s;
-      transition: 0.2s; }
+      background-color: #15759F; }
       footer .visit .visit-button:hover {
-        margin-top: 5px;
-        margin-bottom: 0px;
-        background-color: #15759F;
-        box-shadow: none;
-        -webkit-transition: 0.2s;
-        transition: 0.2s;
+        background-color: #42bff4;
         cursor: pointer; }
 
 @media screen and (max-width: 1920px) {
