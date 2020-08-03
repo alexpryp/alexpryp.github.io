@@ -1,6 +1,6 @@
 header {
 	//background-color: $main-color;
-	background-color: rgba(10, 10, 10, 0.9);
+	background-color: rgba(20, 20, 20, 0.8);
 	min-height: 50px;
 	margin: 0;
 	position: sticky;
@@ -66,10 +66,3 @@ header {
 		}
 	}
 }
-
-/* @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-	header {
-		-webkit-backdrop-filter: blur(10px);
-		backdrop-filter: blur(10px);
-	}
-} */

@@ -12,13 +12,18 @@
 		justify-content: center;
 		flex-wrap: wrap;
 
+		.project-tile-wrap {
+			display: flex;
+			justify-content: center;
+		}
 		.project-tile {
 			display: flex;
+			max-width: 600px;
 			flex-direction: column;
 			justify-content: space-between;
 			overflow: hidden;
 			border-radius: 10px;
-			margin: 20px;
+			//margin: 20px;
 			background-color: rgba(255, 255, 255, 0.9);;
 			transition: 0.5s;
 			box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2), 6px 6px 20px 0px rgba(0, 0, 0, 0.19);
@@ -105,15 +110,3 @@
 		}
 	}
 }
-
-
-/* @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-	.portfolio {
-		.projects-wrap {
-			.project-tile {
-				-webkit-backdrop-filter: blur(20px);
-				backdrop-filter: blur(20px);
-			}
-		}
-	}
-} */
