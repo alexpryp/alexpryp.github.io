@@ -1,3 +1,6 @@
+header {
+  scroll-behavior: smooth; }
+
 header .wrap, body, nav, header ul, header li, section, a {
   padding: 0;
   margin: 0;
@@ -181,114 +184,115 @@ header {
     .about .card .technology {
       width: 70px; }
 
-.portfolio h2 {
-  text-align: center;
-  font-size: 2em;
-  color: #fff;
-  margin: 20px 0; }
-
-.portfolio .projects-wrap {
-  padding-bottom: 25px;
-  margin: auto;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  flex-wrap: wrap; }
-  .portfolio .projects-wrap .project-tile-wrap {
+.portfolio {
+  max-width: 1920px; }
+  .portfolio h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    margin: 20px 0; }
+  .portfolio .projects-wrap {
+    padding-bottom: 25px;
+    margin: auto;
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
-    justify-content: center; }
-  .portfolio .projects-wrap .project-tile {
-    display: -webkit-box;
-    display: flex;
-    max-width: 600px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    overflow: hidden;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.9);
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2), 6px 6px 20px 0px rgba(0, 0, 0, 0.19); }
-    .portfolio .projects-wrap .project-tile:hover {
-      -webkit-transition: 0.2s;
-      transition: 0.2s;
-      box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.5), 6px 6px 20px 10px rgba(0, 0, 0, 0.19); }
-    .portfolio .projects-wrap .project-tile a {
-      text-decoration: none;
-      border: none; }
-      .portfolio .projects-wrap .project-tile a:visited {
-        text-decoration: none; }
-      .portfolio .projects-wrap .project-tile a:active {
-        text-decoration: none; }
-      .portfolio .projects-wrap .project-tile a:hover {
-        text-decoration: none; }
-    .portfolio .projects-wrap .project-tile .project-image {
+    justify-content: center;
+    flex-wrap: wrap; }
+    .portfolio .projects-wrap .project-tile-wrap {
       display: -webkit-box;
       display: flex;
       -webkit-box-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      align-items: center;
-      max-width: 600px;
-      max-height: 420px;
-      overflow: hidden;
-      -webkit-box-ordinal-group: 2;
-      order: 1; }
-      .portfolio .projects-wrap .project-tile .project-image img {
-        width: 100%; }
-    .portfolio .projects-wrap .project-tile .project-description {
+      justify-content: center; }
+    .portfolio .projects-wrap .project-tile {
       display: -webkit-box;
       display: flex;
+      max-width: 600px;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       flex-direction: column;
       -webkit-box-pack: justify;
       justify-content: space-between;
-      -webkit-box-align: center;
-      align-items: center;
-      max-width: 600px;
-      padding: 10px;
-      -webkit-box-ordinal-group: 3;
-      order: 2; }
-      .portfolio .projects-wrap .project-tile .project-description .project-description-header {
-        color: #000;
-        font-size: 1.7em; }
-      .portfolio .projects-wrap .project-tile .project-description p {
-        text-align: center; }
-      .portfolio .projects-wrap .project-tile .project-description .technologies {
-        font-weight: bold;
-        font-size: 1.1em; }
-      .portfolio .projects-wrap .project-tile .project-description .visit-buttons {
-        display: -webkit-box;
-        display: flex; }
-      .portfolio .projects-wrap .project-tile .project-description .visit {
+      overflow: hidden;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.9);
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2), 6px 6px 20px 0px rgba(0, 0, 0, 0.19); }
+      .portfolio .projects-wrap .project-tile:hover {
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
+        box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.5), 6px 6px 20px 10px rgba(0, 0, 0, 0.19); }
+      .portfolio .projects-wrap .project-tile a {
+        text-decoration: none;
+        border: none; }
+        .portfolio .projects-wrap .project-tile a:visited {
+          text-decoration: none; }
+        .portfolio .projects-wrap .project-tile a:active {
+          text-decoration: none; }
+        .portfolio .projects-wrap .project-tile a:hover {
+          text-decoration: none; }
+      .portfolio .projects-wrap .project-tile .project-image {
         display: -webkit-box;
         display: flex;
         -webkit-box-pack: center;
         justify-content: center;
-        margin: 10px; }
-        .portfolio .projects-wrap .project-tile .project-description .visit .visit-button {
-          font-size: 1.3em;
-          width: 150px;
-          height: 40px;
-          margin-top: 0px;
-          margin-bottom: 5px;
-          color: #fff;
-          text-decoration: none;
-          text-transform: uppercase;
-          text-align: center;
-          line-height: 2.2;
-          border-radius: 5px;
-          background-color: #15759F; }
-          .portfolio .projects-wrap .project-tile .project-description .visit .visit-button:hover {
-            background-color: #42bff4;
-            cursor: pointer; }
+        -webkit-box-align: center;
+        align-items: center;
+        max-width: 600px;
+        max-height: 420px;
+        overflow: hidden;
+        -webkit-box-ordinal-group: 2;
+        order: 1; }
+        .portfolio .projects-wrap .project-tile .project-image img {
+          width: 100%; }
+      .portfolio .projects-wrap .project-tile .project-description {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+        max-width: 600px;
+        padding: 10px;
+        -webkit-box-ordinal-group: 3;
+        order: 2; }
+        .portfolio .projects-wrap .project-tile .project-description .project-description-header {
+          color: #000;
+          font-size: 1.7em; }
+        .portfolio .projects-wrap .project-tile .project-description p {
+          text-align: center; }
+        .portfolio .projects-wrap .project-tile .project-description .technologies {
+          font-weight: bold;
+          font-size: 1.1em; }
+        .portfolio .projects-wrap .project-tile .project-description .visit-buttons {
+          display: -webkit-box;
+          display: flex; }
+        .portfolio .projects-wrap .project-tile .project-description .visit {
+          display: -webkit-box;
+          display: flex;
+          -webkit-box-pack: center;
+          justify-content: center;
+          margin: 10px; }
+          .portfolio .projects-wrap .project-tile .project-description .visit .visit-button {
+            font-size: 1.3em;
+            width: 150px;
+            height: 40px;
+            margin-top: 0px;
+            margin-bottom: 5px;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 2.2;
+            border-radius: 5px;
+            background-color: #15759F; }
+            .portfolio .projects-wrap .project-tile .project-description .visit .visit-button:hover {
+              background-color: #42bff4;
+              cursor: pointer; }
 
 .contact {
   padding: 1px;

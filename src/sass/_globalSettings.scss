@@ -8,6 +8,9 @@ $light-purple: #ee11ee;
 $terminal-color: #33ee33;
 $max-content-width: 1080px;
 
+header {
+	scroll-behavior: smooth;
+}
 header .wrap, body, nav, header ul, header li, section, a{
 	padding: 0;
 	margin: 0;
