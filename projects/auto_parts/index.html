@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href ="build/libs/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href ="build/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav__content-wrap">
+                <div class="nav__content">
+                    <div class="nav__group1">
+                        <a href="#" class="nav__link nav__link_active">ГЛАВНАЯ</a>
+                        <a href="#" class="nav__link">О КОМПАНИИ</a>
+                        <a href="#" class="nav__link">ССЫЛКА 1</a>
+                        <a href="#" class="nav__link">ССЫЛКА 2</a>
+                        <a href="#" class="nav__link">ССЫЛКА 3</a>
+                    </div>
+                    <button class="nav__login-button">
+                        <img src="build/images/icons/login_icon.png" alt="user icon">
+                        <div class="nav__login-button-caption">ВХОД</div>
+                    </button>  
+                </div>
+            </div>
+        </nav>
+        <div class="header__main">
+            <div class="header__content-wrap">
+                <div class="header__content">
+                    <div class="header__logo">
+                        <img src="build//images/logo.png" alt="logo">
+                    </div>
+                    <div class="header__phone-basket">
+                        <div class="header__phones">
+                            <div class="header__phone-item">+380 98 170 00 740</div>
+                            <div class="header__phone-item">+380 98 170 00 740</div>
+                            <button class="header__callme-button">
+                                <img src="build/images/icons/phone_icon.png" alt="phone icon">
+                                <div class="header__callme-button-caption">ПЕРЕЗВОНИТЬ МНЕ</div>
+                            </button>
+                        </div>
+                        <div class="header__compare-basket">
+                            <div class="header__cfb-container">
+                                <div class="header__cfb-image">
+                                    <img src="build/images/icons/compare_icon.png" alt="compare icon">
+                                </div>
+                                <div class="header__cfb-caption">СРАВНЕНИЕ</div>
+                            </div>
+                            <div class="header__cfb-divider"></div>
+                            <div class="header__cfb-container">
+                                <div class="header__cfb-image">
+                                    <img src="build/images/icons/favorites_icon.png" alt="favorites icon">
+                                </div>
+                                <div class="header__cfb-caption">ИЗБРАННОЕ</div>
+                            </div>
+                            <div class="header__cfb-divider"></div>
+                            <div class="header__cfb-container">
+                                <div class="header__cfb-image">
+                                    <div class="header__basket-counter">
+                                        5
+                                    </div>
+                                    <img src="build/images/icons/basket_icon.png" alt="basket icon">
+                                </div>
+                                <div class="header__cfb-caption">КОРЗИНА</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="top">
+        <div class="top__wrapper">
+            <div class="top__content">
+                <div class="top__menu">
+                    <div class="top__menu-header">
+                        <div class="top__burger-icon">
+                            <img src="build/images/icons/burger_icon.png" alt="burger icon">
+                        </div>
+                        <div class="top__menu-title">
+                            <div class="top__menu-caption">Меню</div>
+                        </div>
+                    </div>
+                    <a href="#" class="top__menu-item top__menu-item_first">
+                        ССЫЛКА 1 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
+                    </a>
+                    <a href="#" class="top__menu-item">
+                        ССЫЛКА 2 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
+                    </a>
+                    <a href="#" class="top__menu-item">
+                        ССЫЛКА 3 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
+                    </a>
+                    <a href="#" class="top__menu-item">
+                        ССЫЛКА 4 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
+                    </a>
+                    <a href="#" class="top__menu-item">
+                        ССЫЛКА 5 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
+                    </a>
+                    <a href="#" class="top__menu-item">
+                        ССЫЛКА 6 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
+                    </a>
+                    <a href="#" class="top__menu-item">
+                        ССЫЛКА 7 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
+                    </a>
+                </div>
+                <div class="top__forms">
+                    <form action="" class="top__forms-search">
+                        <input type="search" id="search" name="search" placeholder="Поиск по сайту"><br>
+                        <div class="top__forms-search-divider"></div>
+                        <div class="top__forms-select-wrapper">
+                            <select id="categories" name="categories">
+                                <option value="allCategories">Все категории</option>
+                                <option value="category1">Категория 1</option>
+                                <option value="category2">Категория 2</option>
+                                <option value="category3">Категория 3</option>
+                                <option value="category4">Категория 4</option>
+                                <option value="category5">Категория 5</option>
+                                <option value="category6">Категория 6</option>
+                                <option value="category7">Категория 7</option>
+                            </select>
+                            <div class="top__forms-select-custom-arrow">&#9660</div>
+                        </div>
+                        <button class="top__forms-search-button">
+                            ПОИСК
+                        </button>
+                    </form>
+                    <div class="top__forms-biggroup">
+                        <div class="top__forms-sections">
+                            <a href="#" class="top__forms-partlink top__forms-partlink_actual">
+                                <img src="build/images/icons/part1_icon.png" alt="part1">
+                                Ссылка 1
+                            </a>
+                            <a href="#" class="top__forms-partlink">
+                                <img src="build/images/icons/part2_icon.png" alt="part2">
+                                Ссылка 2
+                            </a>
+                            <a href="#" class="top__forms-partlink">
+                                <img src="build/images/icons/part3_icon.png" alt="part3">
+                                Ссылка 3
+                            </a>
+                            <a href="#" class="top__forms-partlink">
+                                <img src="build/images/icons/part4_icon.png" alt="part4">
+                                Ссылка 4
+                            </a>
+                            <a href="#" class="top__forms-partlink">
+                                <img src="build/images/icons/part5_icon.png" alt="part5">
+                                Ссылка 5
+                            </a>
+                        </div>
+                        <form action="" class="top__forms-selectgroup">
+                            <div class="top__forms-tabs-wrapper">
+                                <div class="top__forms-tabsgroup">
+                                    <div class="top__forms-tab">Tab 1</div>
+                                    <div class="top__forms-tab top__forms-tab_active">Tab 2</div>
+                                </div>
+                            </div>
+                            <div class="top__forms-selects">
+                                <div class="top__forms-selects-wrapper">
+                                    <select id="Select1" name="Select 1" class="top__forms-selects-item">
+                                        <option value="Select1" selected>Select 1</option>
+                                        <option value="Select2">Select 2</option>
+                                        <option value="Select3">Select 3</option>
+                                        <option value="Select4">Select 4</option>
+                                        <option value="Select5">Select 5</option>
+                                        <option value="Select6">Select 6</option>
+                                        <option value="Select7">Select 7</option>
+                                        <option value="Select8">Select 8</option>
+                                    </select>
+                                    <div class="top__forms-selects-item-custom-arrow">&#9660</div>
+                                </div>
+                                <div class="top__forms-selects-wrapper">
+                                    <select id="Select1" name="Select 2" class="top__forms-selects-item">
+                                        <option value="Select1">Select 1</option>
+                                        <option value="Select2" selected>Select 2</option>
+                                        <option value="Select3">Select 3</option>
+                                        <option value="Select4">Select 4</option>
+                                        <option value="Select5">Select 5</option>
+                                        <option value="Select6">Select 6</option>
+                                        <option value="Select7">Select 7</option>
+                                        <option value="Select8">Select 8</option>
+                                    </select>
+                                    <div class="top__forms-selects-item-custom-arrow">&#9660</div>
+                                </div>
+                                <div class="top__forms-selects-wrapper">
+                                    <select id="Select1" name="Select 3" class="top__forms-selects-item">
+                                        <option value="Select1">Select 1</option>
+                                        <option value="Select2">Select 2</option>
+                                        <option value="Select3" selected>Select 3</option>
+                                        <option value="Select4">Select 4</option>
+                                        <option value="Select5">Select 5</option>
+                                        <option value="Select6">Select 6</option>
+                                        <option value="Select7">Select 7</option>
+                                        <option value="Select8">Select 8</option>
+                                    </select>
+                                    <div class="top__forms-selects-item-custom-arrow">&#9660</div>
+                                </div>
+                                <div class="top__forms-selects-wrapper">
+                                    <select id="Select1" name="Select 4" class="top__forms-selects-item">
+                                        <option value="Select1">Select 1</option>
+                                        <option value="Select2">Select 2</option>
+                                        <option value="Select3">Select 3</option>
+                                        <option value="Select4" selected>Select 4</option>
+                                        <option value="Select5">Select 5</option>
+                                        <option value="Select6">Select 6</option>
+                                        <option value="Select7">Select 7</option>
+                                        <option value="Select8">Select 8</option>
+                                    </select>
+                                    <div class="top__forms-selects-item-custom-arrow">&#9660</div>
+                                </div>
+                                <div class="top__forms-selects-wrapper">
+                                    <select id="Select1" name="Select 5" class="top__forms-selects-item">
+                                        <option value="Select1">Select 1</option>
+                                        <option value="Select2">Select 2</option>
+                                        <option value="Select3">Select 3</option>
+                                        <option value="Select4">Select 4</option>
+                                        <option value="Select5" selected>Select 5</option>
+                                        <option value="Select6">Select 6</option>
+                                        <option value="Select7">Select 7</option>
+                                        <option value="Select8">Select 8</option>
+                                    </select>
+                                    <div class="top__forms-selects-item-custom-arrow">&#9660</div>
+                                </div>
+                                <div class="top__forms-price-wrapper">
+                                    <div class="top__forms-price-caption">
+                                        Цена
+                                    </div>
+                                    <div class="top__forms-price-input-wrapper">
+                                        <input type="text" placeholder="50">
+                                    </div>
+                                    <div class="top__forms-price-input-wrapper">
+                                        <input type="text" placeholder="250000">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top__forms-submit-wrapper">
+                                <button id="top__forms-reset-button">
+                                    X Очистить фильтр
+                                </button>
+                                <input type="submit" id="top__forms-submit-button" value="ПРИМЕНИТЬ ФИЛЬТР"></input>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main">
+        <div class="main__wrapper">
+            <div class="main__header">
+                <div class="main__headercards">
+                    Карточки товаров
+                </div>
+                <div class="main__linktocatalog">
+                    <a href="#" id="main__link-to-catalog">Ссылка на католог</a>
+                    <div class="main_linkarrow">
+                        <img src="build/images/icons/tocatalogarrow_icon.png" alt="Arrow to catalog icon">
+                    </div>
+                </div>
+            </div>
+            <div class="main__product-cards">
+                <div class="main__productcard">
+                    <div class="main__productcard-mark">
+                        Mark
+                    </div>
+                    <div class="main__productcard-name">
+                        <a href="#">Антифриз Fosser Antifreeze FA 12 Readymix 1 л Concentrat, Germany</a>
+                    </div>
+                    <div class="main__productcard-body">
+                        <div class="main__productcard-RRAblock">
+                            <div class="main__productcard-rating">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span class="active"></span>  
+                                <span class="active"></span>    
+                                <span class="active"></span>
+                            </div>
+                            <div class="main__productcard-reviews">
+                                <a href="#">Отзывы(10)</a>
+                            </div>
+                            <div class="main__productcard-availability">
+                                В наличии: 24 шт
+                            </div>
+                        </div>
+                        <div class="main__productcard-tipe-photo-product">
+                            <div class="main__productcard-tipe">
+                                <div class="main__productcard-tipe-season">
+                                    <div class="main__productcard-summer-icon">
+                                        <img src="build/images/icons/summer_icon.png" alt="sun icon">
+                                    </div>
+                                    <div class="main__productcard-summer-icon-caption">
+                                        ЛЕТНЯЯ
+                                    </div>
+                                </div>
+                                <div class="main__productcard-tipecar">
+                                    <div class="main__productcard-tipecar-icon">
+                                        <img src="build/images/icons/passengercar_icon.png" alt="passenger car icon">
+                                    </div>
+                                    <div class="main__productcard-tipecar-icon-caption">
+                                        ЛЕГКОВАЯ
+                                    </div>
+                                </div>
+                                <div class="main__productcard-tipestate">
+                                    <div class="main__productcard-tipestate-icon">
+                                        <img src="build/images/icons/new_icon.png" alt="new sign icon">
+                                    </div>
+                                    <div class="main__productcard-tipestate-caption">
+                                        НОВАЯ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__productcard-photo">
+                                <img src="build/images/products/product1.png" alt="tire">
+                            </div>
+                        </div>
+                        <div class="main__productcard-labels">
+                            <div class="main__productcard-labels-new">
+                                <div class="main__productcard-labels-caption">
+                                    НОВИНКА
+                                </div>
+                            </div>
+                            <div class="main__productcard-labels-hit">
+                                <div class="main__productcard-labels-caption">
+                                    ХИТ
+                                </div>
+                            </div>
+                            <div class="main__productcard-labels-discount">
+                                <div class="main__productcard-labels-caption">
+                                    СКИДКА
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__productcard-price">
+                            <div class="main__productcard-price-actual">599 грн.</div>
+                            <div class="main__productcard-price-past-wrapper">
+                                <div class="main__productcard-price-past">1 250 ГРН.
+                                    <div class="main__productcard-price-past-linethrough">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__productcard-buybutton-wrapper">
+                            <button class="main__productcard-buybutton">
+                                <div class="main__productcard-buybutton-icon">
+                                    <img src="build/images/icons/basket_icon_white.png" alt="basket icon">
+                                </div>
+                                <div class="main__productcard-buybutton-caption">
+                                    КУПИТЬ ТОВАР
+                                </div>
+                            </>
+                        </div>
+                        <div class="main__productcard-addactions">
+                            <div class="main__productcard-compare">
+                                <div class="main__productcard-compare-icon">
+                                    <img src="build/images/icons/compare2_icon.png" alt="compare icon">
+                                </div>
+                                <div class="main__productcard-compare-link">
+                                    <a href="#">Сравнить товар</a>
+                                </div>
+                            </div>
+                            <div class="main__productcard-favorites">
+                                <div class="main__productcard-favorites-icon">
+                                    <img src="build/images/icons/favorites2_icon.png" alt="favorites icon">
+                                </div>
+                                <div class="main__productcard-favorites-link">
+                                    <a href="">В избранное</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__product-cards-divider"></div>
+                <div class="main__productcard">
+                    <div class="main__productcard-mark">
+                        Mark
+                    </div>
+                    <div class="main__productcard-name">
+                        <a href="#">Антифриз Fosser Antifreeze FA 12 Readymix 1 л Concentrat, Germany</a>
+                    </div>
+                    <div class="main__productcard-body">
+                        <div class="main__productcard-RRAblock">
+                            <div class="main__productcard-rating">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span class="active"></span>  
+                                <span class=""></span>    
+                                <span class=""></span>
+                            </div>
+                            <div class="main__productcard-reviews">
+                                <a href="#">Отзывы(10)</a>
+                            </div>
+                            <div class="main__productcard-availability">
+                                В наличии: 24 шт
+                            </div>
+                        </div>
+                        <div class="main__productcard-tipe-photo-product">
+                            <div class="main__productcard-tipe">
+                                <div class="main__productcard-tipe-season">
+                                    <div class="main__productcard-summer-icon">
+                                        <img src="build/images/icons/summer_icon.png" alt="sun icon">
+                                    </div>
+                                    <div class="main__productcard-summer-icon-caption">
+                                        ЛЕТНЯЯ
+                                    </div>
+                                </div>
+                                
+                                <div class="main__productcard-tipestate">
+                                    <div class="main__productcard-tipestate-icon">
+                                        <img src="build/images/icons/new_icon.png" alt="new sign icon">
+                                    </div>
+                                    <div class="main__productcard-tipestate-caption">
+                                        НОВАЯ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__productcard-photo">
+                                <img src="build/images/products/product2.png" alt="tire">
+                            </div>
+                        </div>
+                        <div class="main__productcard-labels">
+                            <div class="main__productcard-labels-new">
+                                <div class="main__productcard-labels-caption">
+                                    НОВИНКА
+                                </div>
+                            </div>
+                            <div class="main__productcard-labels-hit">
+                                <div class="main__productcard-labels-caption">
+                                    ХИТ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__productcard-price">
+                            <div class="main__productcard-price-actual">599 грн.</div>
+                            <div class="main__productcard-price-past-wrapper">
+                                <div class="main__productcard-price-past">1 250 ГРН.
+                                    <div class="main__productcard-price-past-linethrough">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__productcard-buybutton-wrapper">
+                            <button class="main__productcard-buybutton">
+                                <div class="main__productcard-buybutton-icon">
+                                    <img src="build/images/icons/basket_icon_white.png" alt="basket icon">
+                                </div>
+                                <div class="main__productcard-buybutton-caption">
+                                    КУПИТЬ ТОВАР
+                                </div>
+                            </>
+                        </div>
+                        <div class="main__productcard-addactions">
+                            <div class="main__productcard-compare">
+                                <div class="main__productcard-compare-icon">
+                                    <img src="build/images/icons/compare2_icon.png" alt="compare icon">
+                                </div>
+                                <div class="main__productcard-compare-link">
+                                    <a href="#">Сравнить товар</a>
+                                </div>
+                            </div>
+                            <div class="main__productcard-favorites">
+                                <div class="main__productcard-favorites-icon">
+                                    <img src="build/images/icons/favorites2_icon.png" alt="favorites icon">
+                                </div>
+                                <div class="main__productcard-favorites-link">
+                                    <a href="">В избранное</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__product-cards-divider"></div>
+                <div class="main__productcard">
+                    <div class="main__productcard-mark">
+                        Mark
+                    </div>
+                    <div class="main__productcard-name">
+                        <a href="#">Антифриз Fosser Antifreeze FA 12 Readymix 1 л Concentrat, Germany</a>
+                    </div>
+                    <div class="main__productcard-body">
+                        <div class="main__productcard-RRAblock">
+                            <div class="main__productcard-rating">
+                                <span class=""></span>	
+                                <span class=""></span>    
+                                <span class=""></span>  
+                                <span class=""></span>    
+                                <span class=""></span>
+                            </div>
+                            <div class="main__productcard-reviews">
+                                <a href="#">Без отзывов</a>
+                            </div>
+                            <div class="main__productcard-availability">
+                                В наличии: 24 шт
+                            </div>
+                        </div>
+                        <div class="main__productcard-tipe-photo-product">
+                            <div class="main__productcard-tipe">
+                                <div class="main__productcard-tipe-season">
+                                    <div class="main__productcard-summer-icon">
+                                        <img src="build/images/icons/summer_icon.png" alt="sun icon">
+                                    </div>
+                                    <div class="main__productcard-summer-icon-caption">
+                                        ЛЕТНЯЯ
+                                    </div>
+                                </div>
+                                <div class="main__productcard-tipecar">
+                                    <div class="main__productcard-tipecar-icon">
+                                        <img src="build/images/icons/passengercar_icon.png" alt="passenger car icon">
+                                    </div>
+                                    <div class="main__productcard-tipecar-icon-caption">
+                                        ЛЕГКОВАЯ
+                                    </div>
+                                </div>
+                                <div class="main__productcard-tipestate">
+                                    <div class="main__productcard-tipestate-icon">
+                                        <img src="build/images/icons/new_icon.png" alt="new sign icon">
+                                    </div>
+                                    <div class="main__productcard-tipestate-caption">
+                                        НОВАЯ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__productcard-photo">
+                                <img src="build/images/products/product3.png" alt="tire">
+                            </div>
+                        </div>
+                        <div class="main__productcard-labels">
+                            <div class="main__productcard-labels-new">
+                                <div class="main__productcard-labels-caption">
+                                    НОВИНКА
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__productcard-price">
+                            <div class="main__productcard-price-actual">9570 грн.</div>
+                            <div class="main__productcard-price-past-wrapper">
+                                <div class="main__productcard-price-past">11 250 ГРН.
+                                    <div class="main__productcard-price-past-linethrough">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__productcard-buybutton-wrapper">
+                            <button class="main__productcard-buybutton">
+                                <div class="main__productcard-buybutton-icon">
+                                    <img src="build/images/icons/basket_icon_white.png" alt="basket icon">
+                                </div>
+                                <div class="main__productcard-buybutton-caption">
+                                    КУПИТЬ ТОВАР
+                                </div>
+                            </>
+                        </div>
+                        <div class="main__productcard-addactions">
+                            <div class="main__productcard-compare">
+                                <div class="main__productcard-compare-icon">
+                                    <img src="build/images/icons/compare2_icon.png" alt="compare icon">
+                                </div>
+                                <div class="main__productcard-compare-link">
+                                    <a href="#">Сравнить товар</a>
+                                </div>
+                            </div>
+                            <div class="main__productcard-favorites">
+                                <div class="main__productcard-favorites-icon">
+                                    <img src="build/images/icons/favorites2_icon.png" alt="favorites icon">
+                                </div>
+                                <div class="main__productcard-favorites-link">
+                                    <a href="">В избранное</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__product-cards-divider"></div>
+                <div class="main__productcard">
+                    <div class="main__productcard-mark">
+                        Mark
+                    </div>
+                    <div class="main__productcard-name">
+                        <a href="#">Антифриз Fosser Antifreeze</a>
+                    </div>
+                    <div class="main__productcard-body">
+                        <div class="main__productcard-RRAblock">
+                            <div class="main__productcard-rating">
+                                <span class="active"></span>	
+                                <span class="active"></span>    
+                                <span class="active"></span>  
+                                <span class="active"></span>    
+                                <span class="active"></span>
+                            </div>
+                            <div class="main__productcard-reviews">
+                                <a href="#">Отзывы(10)</a>
+                            </div>
+                            <div class="main__productcard-availability">
+                                В наличии: 24 шт
+                            </div>
+                        </div>
+                        <div class="main__productcard-tipe-photo-product">
+                            <div class="main__productcard-tipe">
+                                <div class="main__productcard-tipe-season">
+                                    <div class="main__productcard-summer-icon">
+                                        <img src="build/images/icons/summer_icon.png" alt="sun icon">
+                                    </div>
+                                    <div class="main__productcard-summer-icon-caption">
+                                        ЛЕТНЯЯ
+                                    </div>
+                                </div>
+                                <div class="main__productcard-tipecar">
+                                    <div class="main__productcard-tipecar-icon">
+                                        <img src="build/images/icons/passengercar_icon.png" alt="passenger car icon">
+                                    </div>
+                                    <div class="main__productcard-tipecar-icon-caption">
+                                        ЛЕГКОВАЯ
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__productcard-photo">
+                                <img src="build/images/products/product4.png" alt="tire">
+                            </div>
+                        </div>
+                        <div class="main__productcard-labels">
+    
+                        </div>
+                        <div class="main__productcard-price">
+                            <div class="main__productcard-price-actual">599 грн.</div>
+                            <div class="main__productcard-price-past-wrapper">
+                                <div class="main__productcard-price-past">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__productcard-buybutton-wrapper">
+                            <button class="main__productcard-buybutton">
+                                <div class="main__productcard-buybutton-icon">
+                                    <img src="build/images/icons/basket_icon_white.png" alt="basket icon">
+                                </div>
+                                <div class="main__productcard-buybutton-caption">
+                                    КУПИТЬ ТОВАР
+                                </div>
+                            </>
+                        </div>
+                        <div class="main__productcard-addactions">
+                            <div class="main__productcard-compare">
+                                <div class="main__productcard-compare-icon">
+                                    <img src="build/images/icons/compare2_icon.png" alt="compare icon">
+                                </div>
+                                <div class="main__productcard-compare-link">
+                                    <a href="#">Сравнить товар</a>
+                                </div>
+                            </div>
+                            <div class="main__productcard-favorites">
+                                <div class="main__productcard-favorites-icon">
+                                    <img src="build/images/icons/favorites2_icon.png" alt="favorites icon">
+                                </div>
+                                <div class="main__productcard-favorites-link">
+                                    <a href="">В избранное</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__wrapper">
+            <div class="footer__block1">
+                <div class="footer__block1-header">
+                    <div class="footer__block1-header-name">
+                        Блок 1
+                    </div>
+                    <div class="footer__block1-header-placeholder">
+
+                    </div> 
+                </div>
+                <div class="footer__subscribe">
+                    <p class="footer__subscribe-caption1">
+                        БУДЬТЕ В КУРСЕ НОВОСТЕЙ И НОВИНОК!
+                    </p>
+                    <p class="footer__subscribe-caption2">
+                        ПОДПИСЫВАЙТЕСЬ НА РАССЫЛКУ
+                    </p>
+                </div>
+                <form action="#" class="footer__subscribe-form">
+                    <input type="text" class="footer__subscribe-input" placeholder="Укажите свой email для подписки">
+                    <input type="submit" value="ПОДПИСАТЬСЯ" class="footer__subscribe-submitbutton">
+                </form>
+            </div>
+            <div class="footer__block2-4">
+                <div class="footer__block2-4-1">
+                    <div class="footer__block2-4-header">
+                        <div class="footer__block2-4-1-header-name">
+                            Блок ссылок 1
+                        </div>
+                        <div class="footer__block2-4-header-placeholder">
+                        </div>
+                    </div>
+                    <div class="footer__block2-4-1-body">
+                        <a href="#">Ссылка 1</a>
+                        <a href="#">Ссылка 2</a>
+                        <a href="#">Ссылка 3</a>
+                        <a href="#">Ссылка 4</a>
+                    </div>
+                </div>
+                <div class="footer__block2-4-2">
+                    <div class="footer__block2-4-header">
+                        <div class="footer__block2-4-2-header-name">
+                            Блок 2
+                        </div>
+                        <div class="footer__block2-4-header-placeholder">
+                        </div>
+                    </div>
+                    <div class="footer__block2-4-2-body">
+                        <a href="#">Ссылка 1</a>
+                        <a href="#">Ссылка 2</a>
+                        <a href="#">Ссылка 3</a>
+                        <a href="#">Ссылка 4</a>
+                    </div>
+                </div>
+                <div class="footer__block2-4-3">
+                    <div class="footer__block2-4-header">
+                        <div class="footer__block2-4-3-header-name">
+                            Блок ссылок 3
+                        </div>
+                        <div class="footer__block2-4-header-placeholder">
+                        </div>
+                    </div>
+                    <div class="footer__block2-4-3-body">
+                        <a href="#">Ссылка 1</a>
+                        <a href="#">Ссылка 2</a>
+                        <a href="#">Ссылка 3</a>
+                        <a href="#">Ссылка 4</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom-logocop">
+                <div class="footer__bottom-logo">
+                    <img src="build/images/logo_footer.png" alt="logo">
+                </div>
+                <div class="footer__bottom-divider">
+                </div>
+                <div class="footer__bottom-copyright">
+                    © Copyrith 2017. Тестовое задание Wezom
+                </div>
+            </div>
+            <div class="footer__bottom-logosocial">
+                <div class="footer__bottom-social">
+                    <a href="#" class="footer__bottom-social-item">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a href="#" class="footer__bottom-social-item">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer__bottom-social-item">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="footer__bottom-social-item">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <div class="footer__bottom-logodevelop">
+                    <div class="footer__bottom-wezomlogo">
+                        <img src="build/images/icons/wezom_icon.png" alt="logo">
+                    </div>
+                    <div class="footer__bottom-logodevelop-divider"></div>
+                    <div class="footer__bottom-logodevelop-wezomdevelop">
+                        <p class="footer__bottom-logodevelop-text1">Разработка тестового</p>
+                        <p class="footer__bottom-logodevelop-text2">Wezom Agency</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <div class="popup-enter">
+        <div class="popup-enter__body">
+
+        </div>
+    </div> -->
+</body>
+</html>
