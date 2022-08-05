@@ -443,6 +443,14 @@ template {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-display: swap;
+  src: url("../fonts/IBMPlexSans-Regular.woff2") format("woff2"), url("../fonts/IBMPlexSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   font-size: 16px;
 }
@@ -456,7 +464,6 @@ body {
   justify-content: center;
   background-color: #000;
   color: #fff;
-  font-family: DrukWide;
 }
 
 .content-wrapper {
@@ -464,9 +471,9 @@ body {
   max-width: 1440px;
 }
 
-.content {
-  background-image: url("../img/bcgdesktop.png");
-  background-repeat: no-repeat;
+.content-inner {
+  width: 1260px;
+  max-width: 1260px;
 }
 
 header {
@@ -532,6 +539,10 @@ header {
   text-decoration: none;
 }
 
+.header__nav li a:hover {
+  color: #3BFABE;
+}
+
 .header__callbackbtn {
   display: flex;
   align-items: center;
@@ -550,6 +561,12 @@ header {
   margin-left: 64px;
   background-image: url("../img/CallbackBTNborder.svg");
   background-repeat: no-repeat;
+}
+
+.main__content {
+  background-image: url("../img/bcgdesktop.png");
+  background-repeat: no-repeat;
+  width: 100%;
 }
 
 .main__techBandSection {
@@ -842,4 +859,141 @@ footer {
 
 .footer__right_icons img {
   margin: 0 20px 0 0;
+}
+
+.portfolio__content {
+  background-image: url("../img/bcgportfolio.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  overflow: hidden;
+}
+
+.portfolio__content_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 14px auto 136px auto;
+}
+
+.portfolio__left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 525px;
+  min-height: 455px;
+}
+
+.portfolio__project_card {
+  width: 525px;
+  height: 425px;
+  margin: 12px 0 0 0;
+  padding: 32px 40px 32px 71px;
+  color: #000;
+  background: #FFFFFF;
+  border-radius: 3px;
+}
+
+.portfolio__project_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio__project_main {
+  display: flex;
+  justify-content: space-between;
+  overflow: visible;
+}
+
+.portfolio__project_main_left {
+  width: 150px;
+}
+
+.portfolio__project_name {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 88.99%;
+  color: #DDDDDD;
+}
+
+.portfolio__project_main_left_p1 {
+  margin: 40px 0 0 0;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.3173px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.selection {
+  color: #C24105;
+}
+
+.portfolio__project_main_left_p2 {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7.15867px;
+  line-height: 9px;
+  color: #000000;
+}
+
+.portfolio__project_bottom {
+  margin: 22px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio__project_network {
+  display: flex;
+  width: 172px;
+  height: 54px;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4.51213px;
+}
+
+.portfolio__project_network_name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 116px;
+  height: 100%;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.8291px;
+  line-height: 80.69%;
+  color: #000000;
+  border-right: 1px solid rgba(194, 65, 5, 0.26);
+}
+
+.portfolio__project_network_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+}
+
+.portfolio__right {
+  max-width: 602px;
+}
+
+.portfolio__project_headername {
+  font-family: "DrukWide";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 98px;
+  color: #DDDDDD;
+  white-space: nowrap;
+  margin: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+.portfolio__project_headername:hover {
+  color: #3BFABE;
 }
