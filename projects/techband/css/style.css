@@ -472,7 +472,7 @@ body {
 }
 
 .content-inner {
-  width: 1260px;
+  width: 100%;
   max-width: 1260px;
 }
 
@@ -568,8 +568,8 @@ header {
   height: 698px;
   position: absolute;
   z-index: -100;
-  top: 450px;
-  left: 650px;
+  top: 466px;
+  left: 656px;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -587,6 +587,7 @@ header {
   background-image: url("../img/bcgdesktop.png");
   background-repeat: no-repeat;
   width: 100%;
+  min-widtH: 1440px;
 }
 
 .main__blue_circle1 {
@@ -738,8 +739,7 @@ article {
   text-align: center;
   color: #FFFFFF;
   background: #09F1C2;
-  border: 2.78958px solid rgba(51, 233, 198, 0.2);
-  box-shadow: inset -0.278958px 0.557917px 0.278958px rgba(255, 255, 255, 0.5);
+  border: 1px solid rgb(100, 233, 233);
   border-radius: 29px;
 }
 
@@ -873,6 +873,7 @@ article {
 }
 
 .main__twoBlocksContainer_item p {
+  text-align: justify;
   font-family: "Archivo";
   font-style: normal;
   font-weight: 400;
@@ -911,6 +912,7 @@ article {
 }
 
 .main__oneBlockContainer_item p {
+  text-align: justify;
   font-family: "Archivo";
   font-style: normal;
   font-weight: 400;
@@ -926,11 +928,58 @@ article {
 }
 
 .main__portfolio_future {
+  position: relative;
   width: 100%;
+  height: 280px;
+  background-image: url("../img/FUTURE.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
-.main__portfolio_future img {
-  width: 100%;
+.main__future_hide {
+  position: absolute;
+  top: 51px;
+  right: -390px;
+  transition: 500ms;
+}
+
+.main__future {
+  position: absolute;
+  top: 51px;
+  right: 100px;
+  transition: 500ms;
+}
+
+.main__is_hide {
+  position: absolute;
+  top: 75px;
+  right: -600px;
+  transition: 1000ms;
+  transition-delay: 500ms;
+}
+
+.main__is {
+  position: absolute;
+  top: 75px;
+  right: 530px;
+  transition: 1000ms;
+  transition-delay: 500ms;
+}
+
+.main__now_hide {
+  position: absolute;
+  top: 51px;
+  right: -250px;
+  transition: 2000ms;
+  transition-delay: 1500ms;
+}
+
+.main__now {
+  position: absolute;
+  top: 51px;
+  right: 1125px;
+  transition: 2000ms;
+  transition-delay: 1500ms;
 }
 
 .main__portfolio_btnBlck_wrapper {
@@ -941,7 +990,7 @@ article {
 }
 
 .main__portfolio_btnBlck {
-  margin: 0 241px 0 0;
+  margin: 0 215px 0 0;
 }
 
 .main__portfolio_btnBlck h2 {
