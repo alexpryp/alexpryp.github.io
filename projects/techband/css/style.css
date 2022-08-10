@@ -587,10 +587,12 @@ header {
   background-image: url("../img/bcgdesktop.png");
   background-repeat: no-repeat;
   width: 100%;
-  min-widtH: 1440px;
+  min-width: 1440px;
 }
 
 .main__blue_circle1 {
+  width: 232px;
+  height: 226px;
   position: absolute;
   z-index: -1;
   top: 500px;
@@ -608,6 +610,8 @@ header {
 }
 
 .main__blue_circle2 {
+  width: 232px;
+  height: 226px;
   position: absolute;
   z-index: -1;
   top: 50px;
@@ -625,6 +629,8 @@ header {
 }
 
 .main__purple_circle1 {
+  width: 232px;
+  height: 226px;
   position: absolute;
   z-index: -1;
   top: 350px;
@@ -642,6 +648,8 @@ header {
 }
 
 .main__purple_circle2 {
+  width: 232px;
+  height: 226px;
   position: absolute;
   z-index: -1;
   top: 350px;
@@ -695,7 +703,7 @@ article {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 450px 80px 0 80px;
+  padding: 450px 80px 0px 80px;
 }
 
 .main__aboutBlockchain {
@@ -722,7 +730,7 @@ article {
 }
 
 .orderBtnWrapper3 {
-  margin: 47px 0 0 0;
+  margin: 0;
 }
 
 .orderBtn {
@@ -892,9 +900,12 @@ article {
 }
 
 .main__oneBlockContainer_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 1112px;
   height: 470px;
-  padding: 34px 135px;
+  padding: 34px 135px 94px 135px;
   background: rgba(0, 0, 0, 0.14);
   -webkit-backdrop-filter: blur(114px);
           backdrop-filter: blur(114px);
@@ -919,7 +930,7 @@ article {
   font-size: 20px;
   line-height: 22px;
   color: #E8E8E8;
-  margin: 74px 0 0 0;
+  margin: 40px 0 0 0;
 }
 
 .main__portfolio {
@@ -1486,4 +1497,460 @@ footer {
     top: 350px;
     left: 950px;
   }
+}
+
+@media screen and (max-width: 1440px) {
+  header {
+    padding: 0 45px 0 80px;
+  }
+
+  .main__magic_sphere {
+    width: 514px;
+    height: 514px;
+    top: 597px;
+    left: 491px;
+  }
+
+  .main__content {
+    background-image: url("../img/bcgplanshet.png");
+    min-width: 1005px;
+    max-width: 1005px;
+  }
+
+  .main__bigquote {
+    font-size: 50px;
+    margin: 46px 0 0 90px;
+  }
+
+  .main__activities {
+    margin: 281px 0 0 0;
+  }
+
+  .main__aboutTechBandArticle {
+    width: 456px;
+    margin: 312px 0 0 79px;
+  }
+
+  .orderBtnWrapper1 {
+    margin: 37px 0 0 0;
+  }
+
+  .main__aboutBlockchainContainer {
+    padding: 320px 57px 0px 80px;
+  }
+
+  .main__aboutBlockchain {
+    width: 468px;
+  }
+
+  .main__blockchainBigquote {
+    width: 370px;
+    font-size: 40px;
+  }
+
+  .main__twoBlocksContainer_item {
+    width: 416px;
+    height: 700px;
+    -webkit-backdrop-filter: blur(77px);
+            backdrop-filter: blur(77px);
+    border-radius: 20px;
+  }
+
+  .main__twoBlocksContainer_item h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .main__twoBlocksContainer_item p {
+    margin: 42px 0 0 0;
+  }
+
+  .main__blue_circle1 {
+    width: 210px;
+    height: 205px;
+    top: 586px;
+    left: 15;
+  }
+
+  .main__blue_circle2 {
+    width: 210px;
+    height: 205px;
+    top: 50px;
+    left: 350px;
+  }
+
+  .main__purple_circle1 {
+    width: 210px;
+    height: 205px;
+    top: 450px;
+    left: 650px;
+  }
+
+  .main__purple_circle2 {
+    width: 210px;
+    height: 205px;
+    top: 450px;
+    left: 650px;
+  }
+
+  .main__twoBlocksContainer2 {
+    justify-content: space-between;
+    padding: 0 68px;
+    margin: 302px 0 0 0;
+  }
+
+  .main__twoBlocksContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 68px;
+  }
+
+  .orderBtnWrapper2 {
+    margin: 0 0 50px 0;
+  }
+
+  .main__oneBlockContainer_item {
+    width: 759px;
+    height: 434px;
+    padding: 34px 70px;
+    -webkit-backdrop-filter: blur(94px);
+            backdrop-filter: blur(94px);
+    border-radius: 24px;
+  }
+
+  .main__oneBlockContainer_item h2 {
+    font-size: 32px;
+    line-height: 42px;
+    color: #E8E8E8;
+  }
+
+  .main__oneBlockContainer_item p {
+    margin: 46px 0 0 0;
+  }
+
+  .orderBtnWrapper3 {
+    margin: 0 0 14px 0;
+  }
+
+  .main__bacterium1 {
+    width: 306px;
+    height: 320px;
+    top: 250px;
+    left: -150px;
+  }
+
+  .main__bacterium2 {
+    width: 411px;
+    height: 424px;
+    top: 200px;
+    left: -10px;
+  }
+
+  .main__bacterium3 {
+    width: 277px;
+    height: 299px;
+    top: 200px;
+    left: 400px;
+  }
+
+  .main__bacterium4 {
+    width: 326px;
+    height: 347px;
+    top: -105px;
+    left: 515px;
+  }
+
+  .main__portfolio_future {
+    height: 239px;
+    background-image: url("../img/FUTURE1.png");
+  }
+
+  .main__future_hide {
+    top: 36px;
+    right: -390px;
+  }
+
+  .main__future {
+    width: 303px;
+    top: 36px;
+    right: 35px;
+  }
+
+  .main__is_hide {
+    top: 50px;
+    right: -570px;
+  }
+
+  .main__is {
+    width: 373px;
+    top: 50px;
+    right: 370px;
+  }
+
+  .main__now_hide {
+    top: 36px;
+    right: -250px;
+  }
+
+  .main__now {
+    width: 184px;
+    top: 36px;
+    right: 760px;
+  }
+
+  .main__portfolio_btnBlck {
+    margin: 0 169px 0 0;
+  }
+
+  .main__portfolio_header {
+    font-size: 40px;
+    line-height: 52px;
+    color: #E3E3E3;
+  }
+
+  footer {
+    padding: 66px 77px 90px 77px;
+  }
+
+  .footer__right {
+    margin: 0 186px 0 0;
+  }
+
+@-webkit-keyframes circle1 {
+    0% {
+      top: 586px;
+      left: 15px;
+    }
+
+    50% {
+      top: 50px;
+      left: 150px;
+    }
+
+    100% {
+      top: 586px;
+      left: 15px;
+    }
+}
+
+@keyframes circle1 {
+    0% {
+      top: 586px;
+      left: 15px;
+    }
+
+    50% {
+      top: 50px;
+      left: 150px;
+    }
+
+    100% {
+      top: 586px;
+      left: 15px;
+    }
+}
+
+@-webkit-keyframes circle2 {
+    0% {
+      top: 50px;
+      left: 350px;
+    }
+
+    50% {
+      top: 600px;
+      left: 390px;
+    }
+
+    100% {
+      top: 50px;
+      left: 350px;
+    }
+}
+
+@keyframes circle2 {
+    0% {
+      top: 50px;
+      left: 350px;
+    }
+
+    50% {
+      top: 600px;
+      left: 390px;
+    }
+
+    100% {
+      top: 50px;
+      left: 350px;
+    }
+}
+
+@-webkit-keyframes circle3 {
+    0% {
+      top: 450px;
+      left: 650px;
+    }
+
+    50% {
+      top: -30px;
+      left: 810px;
+    }
+
+    100% {
+      top: 450px;
+      left: 650px;
+    }
+}
+
+@keyframes circle3 {
+    0% {
+      top: 450px;
+      left: 650px;
+    }
+
+    50% {
+      top: -30px;
+      left: 810px;
+    }
+
+    100% {
+      top: 450px;
+      left: 650px;
+    }
+}
+
+@-webkit-keyframes circle4 {
+    0% {
+      top: 450px;
+      left: 650px;
+    }
+
+    50% {
+      top: 50px;
+      left: 750px;
+    }
+
+    100% {
+      top: 450px;
+      left: 650px;
+    }
+}
+
+@keyframes circle4 {
+    0% {
+      top: 450px;
+      left: 650px;
+    }
+
+    50% {
+      top: 50px;
+      left: 750px;
+    }
+
+    100% {
+      top: 450px;
+      left: 650px;
+    }
+}
+
+@-webkit-keyframes bacterium2 {
+    0% {
+      top: 200px;
+      left: -10px;
+    }
+
+    50% {
+      top: 10px;
+      left: 10px;
+    }
+
+    100% {
+      top: 200px;
+      left: -10px;
+    }
+}
+
+@keyframes bacterium2 {
+    0% {
+      top: 200px;
+      left: -10px;
+    }
+
+    50% {
+      top: 10px;
+      left: 10px;
+    }
+
+    100% {
+      top: 200px;
+      left: -10px;
+    }
+}
+
+@-webkit-keyframes bacterium3 {
+    0% {
+      top: 200px;
+      left: 500px;
+    }
+
+    50% {
+      top: 350px;
+      left: 450px;
+    }
+
+    100% {
+      top: 200px;
+      left: 500px;
+    }
+}
+
+@keyframes bacterium3 {
+    0% {
+      top: 200px;
+      left: 500px;
+    }
+
+    50% {
+      top: 350px;
+      left: 450px;
+    }
+
+    100% {
+      top: 200px;
+      left: 500px;
+    }
+}
+
+@-webkit-keyframes bacterium4 {
+    0% {
+      top: -105px;
+      left: 515px;
+    }
+
+    50% {
+      top: -105px;
+      left: 415px;
+    }
+
+    100% {
+      top: -105px;
+      left: 515px;
+    }
+}
+
+@keyframes bacterium4 {
+    0% {
+      top: -105px;
+      left: 515px;
+    }
+
+    50% {
+      top: -105px;
+      left: 415px;
+    }
+
+    100% {
+      top: -105px;
+      left: 515px;
+    }
+}
 }
