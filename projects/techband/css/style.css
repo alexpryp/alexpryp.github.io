@@ -3255,6 +3255,10 @@ footer {
 }
 
 @media screen and (max-width: 413px) {
+  .main__twoBlocksContainer_item {
+    height: 700px;
+  }
+
   .main__portfolio_future {
     width: 100vw;
     height: 100px;
