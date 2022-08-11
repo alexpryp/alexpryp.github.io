@@ -809,6 +809,11 @@ article {
   border-radius: 29px;
 }
 
+.orderBtn:active,
+.orderBtn:focus {
+  outline: none;
+}
+
 .main__blockchainBigquote {
   width: 609px;
   font-family: "DrukWide";
@@ -1557,7 +1562,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1435px) {
   header {
     padding: 0 45px 0 80px;
   }
@@ -2016,7 +2021,7 @@ footer {
 }
 }
 
-@media screen and (max-width: 1005px) {
+@media screen and (max-width: 1000px) {
   header {
     padding: 0 24px 0 131px;
   }
@@ -2083,7 +2088,7 @@ footer {
     background-image: url("../img/bcgphone.png");
     background-repeat: no-repeat;
     width: 100%;
-    min-width: 414px;
+    min-width: 375px;
     max-width: 414px;
   }
 
