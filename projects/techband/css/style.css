@@ -1437,6 +1437,7 @@ footer {
 }
 
 .portfolio__content_inner {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1453,6 +1454,7 @@ footer {
 }
 
 .portfolio__left {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1467,7 +1469,53 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 525px;
-  min-height: 455px;
+  height: 425px;
+  left: 0px;
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+}
+
+.portfolio__left_hide {
+  left: -700px;
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+}
+
+#img_proj {
+  width: 525px;
+  height: 425px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img_NimbusProj {
+  background-image: url("../img/NimbusProj.png");
+}
+
+.img_CryptoSnakeProj {
+  background-image: url("../img/CryptoSnakeProj.png");
+}
+
+.img_FlareFinanceProj {
+  background-image: url("../img/FlareFinanceProj.png");
+}
+
+.img_BubblegumProj {
+  background-image: url("../img/BubblegumProj.png");
+}
+
+.img_AssemblyProj {
+  background-image: url("../img/AssemblyProj.png");
+}
+
+.img_FairspinProj {
+  background-image: url("../img/FairspinProj.png");
+}
+
+.img_AnmolNetworkProj {
+  background-image: url("../img/AnmolNetworkProj.png");
 }
 
 .portfolio__project_card {
@@ -1607,7 +1655,19 @@ footer {
 }
 
 .portfolio__right {
+  position: relative;
   max-width: 602px;
+  right: 0px;
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
+}
+
+.portfolio__right_hide {
+  right: -700px;
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
 }
 
 .portfolio__project_headername {
@@ -2576,6 +2636,7 @@ footer {
     transition: 500ms;
     position: fixed;
     width: inherit;
+    z-index: 1;
   }
 
   .menu {
@@ -2917,7 +2978,7 @@ footer {
     width: 140px;
     height: 136px;
     top: 450px;
-    left: 650px;
+    left: 200px;
   }
 
   .main__bacterium1 {
@@ -3086,34 +3147,34 @@ footer {
 @-webkit-keyframes circle4 {
     0% {
       top: 450px;
-      left: 650px;
+      left: 200px;
     }
 
     50% {
-      top: 50px;
-      left: 750px;
+      top: 750px;
+      left: 0px;
     }
 
     100% {
       top: 450px;
-      left: 650px;
+      left: 200px;
     }
 }
 
 @keyframes circle4 {
     0% {
       top: 450px;
-      left: 650px;
+      left: 200px;
     }
 
     50% {
-      top: 50px;
-      left: 750px;
+      top: 750px;
+      left: 0px;
     }
 
     100% {
       top: 450px;
-      left: 650px;
+      left: 200px;
     }
 }
 
