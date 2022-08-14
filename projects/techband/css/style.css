@@ -3757,5 +3757,19 @@ footer {
 
   .project__work {
     width: 100%;
+    height: auto;
+  }
+
+  .project__work h2 {
+    font-size: 14px;
+    line-height: 103.19%;
+    text-align: center;
+  }
+
+  .project__work p {
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    margin: 20px 0 0 0;
   }
 }
