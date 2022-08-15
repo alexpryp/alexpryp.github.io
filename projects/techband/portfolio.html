@@ -5,12 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.min.css?_v=20220815122510">
+  <link rel="stylesheet" href="css/style.min.css?_v=20220815201231">
   <title>Portfolio</title>
 </head>
   <body>
-    <div class="content-wrapper portfolio__content">
-      <header>
+    <div class="main__wrapper">
+      <div class="content-wrapper portfolio__content">
+        <header>
   <div class="content-wrapper">
     <div class="header__content">
       <div class="header__logo">
@@ -32,39 +33,118 @@
             <li><a class="menu-contacts" href="#contact">Contacts</a></li>
           </ul>
         </nav>
-        <a class="header__callbackbtn" href="">
+        <div class="header__callbackbtn">
           Callback
-        </a>
+        </div>
       </div>
     </div>
   </div>
-</header>
+</header> <div class="fixed-overlay">
+  <div class="modal">
+    <div class="modal_container">
+      <!-- method="POST" -->
+      <form id="form" class="form-modal" method="post">
+        <span class="heading-modal">Order a development</span>
+        <div class="label-container">
+          <label for="formName" class="label">Name</label>
 
-      <div class="first-elipse"></div>
-      <div class="second-elipse"></div>
-      <div class="third-elipse"></div>
-      <div class="fours-elipse"></div>
-      <div class="fives-elipse"></div>
-      <main class="portfolio__content_inner">
-            <div class="portfolio__left">
-              <div id="img_proj" class="">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            class="input"
+            required
+          />
+        </div>
+
+        <div class="label-container">
+          <label for="formEmail" class="label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="formEmail"
+            placeholder="Email"
+            class="input"
+            required
+          />
+        </div>
+
+        <div class="label-container">
+          <label for="formPhone" class="label">Phone namber</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Phone"
+            class="input"
+            required
+          />
+        </div>
+
+        <div class="label-container">
+          <label for="formMessage" class="label">Message</label>
+          <input
+            type="text"
+            name="message"
+            id="message"
+            placeholder="Message"
+            class="input"
+            required
+          />
+        </div>
+        <span class="btnContainer">
+          <button class="orderBtnModal" type="submit" data-text-hover="submit">
+            Order a development
+          </button>
+          <!-- <input type="hidden" name="formData" /> -->
+          <button class="close-modal" type="button">Not now</button>
+        </span>
+      </form>
+    </div>
+  </div>
+</div>
+
+          <div class="modal-success-overlay">
+  <div class="modal-success">
+    <div class="modal-success-container">
+      <img
+        src="img/checkOk.png"
+        alt="success image"
+        width="50px"
+        height="50px"
+      />
+      <p class="modal-title">Message sent Successfully</p>
+    </div>
+  </div>
+</div>
+
+  
+        <div class="first-elipse"></div>
+        <div class="second-elipse"></div>
+        <div class="third-elipse"></div>
+        <div class="fours-elipse"></div>
+        <div class="fives-elipse"></div>
+        <main class="portfolio__content_inner">
+              <div class="portfolio__left">
+                <div id="img_proj" class="">
+                </div>
               </div>
-            </div>
-            <div class="portfolio__right">
-              <a href="nimbus.html" class="portfolio__project_headername portfolio__project_Nimbus">Nimbus</a>
-              <a href="cryptoSnake.html" class="portfolio__project_headername portfolio__project_CryptoSnake">Crypto Snake</a>
-              <a href="flareFinance.html" class="portfolio__project_headername portfolio__project_FlareFinance">Flare Finance</a>
-              <a href="bubblegum.html" class="portfolio__project_headername portfolio__project_Bubblegum">Bubblegum</a>
-              <a href="assembly.html" class="portfolio__project_headername portfolio__project_Assembly">Assembly</a>
-              <a href="fairSpin.html" class="portfolio__project_headername portfolio__project_FairSpin">FairSpin</a>
-              <a href="aquiferLabs.html" class="portfolio__project_headername portfolio__project_AquiferLabs">Aquifer Labs</a>
-              <a href="anmolNetwork.html" class="portfolio__project_headername portfolio__project_AnmolNetwork">Anmol Network</a>
-              <a href="CBIX.html" class="portfolio__project_headername portfolio__project_CBI-X">CBI-X</a>
-              <a href="liquidAccess.html" class="portfolio__project_headername portfolio__project_LiquidAccess">Liquid Access</a>
-            </div>
-
-      </main>
-      <footer>
+              <div class="portfolio__right">
+                <a href="nimbus.html" class="portfolio__project_headername portfolio__project_Nimbus">Nimbus</a>
+                <a href="cryptoSnake.html" class="portfolio__project_headername portfolio__project_CryptoSnake">Crypto Snake</a>
+                <a href="flareFinance.html" class="portfolio__project_headername portfolio__project_FlareFinance">Flare Finance</a>
+                <a href="bubblegum.html" class="portfolio__project_headername portfolio__project_Bubblegum">Bubblegum</a>
+                <a href="assembly.html" class="portfolio__project_headername portfolio__project_Assembly">Assembly</a>
+                <a href="fairSpin.html" class="portfolio__project_headername portfolio__project_FairSpin">FairSpin</a>
+                <a href="aquiferLabs.html" class="portfolio__project_headername portfolio__project_AquiferLabs">Aquifer Labs</a>
+                <a href="anmolNetwork.html" class="portfolio__project_headername portfolio__project_AnmolNetwork">Anmol Network</a>
+                <a href="CBIX.html" class="portfolio__project_headername portfolio__project_CBI-X">CBI-X</a>
+                <a href="liquidAccess.html" class="portfolio__project_headername portfolio__project_LiquidAccess">Liquid Access</a>
+              </div>
+  
+        </main>
+        <footer>
   <div class="content-wrapper footer__content">
     <div class="footer__left">
       <a id="contact" name="contact"></a>
@@ -100,7 +180,8 @@
     </div>
   </div>
 </footer>
+      </div>
     </div>
-    <script src="js/app.min.js?_v=20220815122510"></script>
+    <script src="js/app.min.js?_v=20220815201231"></script>
   </body>
 </html>

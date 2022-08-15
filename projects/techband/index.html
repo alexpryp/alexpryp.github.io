@@ -5,13 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.min.css?_v=20220815122510">
+  <link rel="stylesheet" href="css/style.min.css?_v=20220815201231">
   <title>Main</title>
 </head>
   <body>
     <div class="main__wrapper">
       <div class="main__magic_sphere">
-        <img src="img/svkl1.gif" alt="Gif sphere">
+        <img src="img/svkl1.gif" alt="Gif sphere" />
       </div>
       <div main class="content-wrapper main__content">
         <header>
@@ -36,49 +36,129 @@
             <li><a class="menu-contacts" href="#contact">Contacts</a></li>
           </ul>
         </nav>
-        <a class="header__callbackbtn" href="">
+        <div class="header__callbackbtn">
           Callback
-        </a>
+        </div>
       </div>
     </div>
   </div>
-</header>
-        <main>
+</header> <div class="fixed-overlay">
+  <div class="modal">
+    <div class="modal_container">
+      <!-- method="POST" -->
+      <form id="form" class="form-modal" method="post">
+        <span class="heading-modal">Order a development</span>
+        <div class="label-container">
+          <label for="formName" class="label">Name</label>
+
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            class="input"
+            required
+          />
+        </div>
+
+        <div class="label-container">
+          <label for="formEmail" class="label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="formEmail"
+            placeholder="Email"
+            class="input"
+            required
+          />
+        </div>
+
+        <div class="label-container">
+          <label for="formPhone" class="label">Phone namber</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Phone"
+            class="input"
+            required
+          />
+        </div>
+
+        <div class="label-container">
+          <label for="formMessage" class="label">Message</label>
+          <input
+            type="text"
+            name="message"
+            id="message"
+            placeholder="Message"
+            class="input"
+            required
+          />
+        </div>
+        <span class="btnContainer">
+          <button class="orderBtnModal" type="submit" data-text-hover="submit">
+            Order a development
+          </button>
+          <!-- <input type="hidden" name="formData" /> -->
+          <button class="close-modal" type="button">Not now</button>
+        </span>
+      </form>
+    </div>
+  </div>
+</div>
+
+        <div class="modal-success-overlay">
+  <div class="modal-success">
+    <div class="modal-success-container">
+      <img
+        src="img/checkOk.png"
+        alt="success image"
+        width="50px"
+        height="50px"
+      />
+      <p class="modal-title">Message sent Successfully</p>
+    </div>
+  </div>
+</div>
+
+        <main class="main">
           <section class="main__techBandSection">
             <p class="main__bigquote">
-              like <br>
-              The Rolling Stones <br>
+              like <br />
+              The Rolling Stones <br />
               in web3
             </p>
             <article>
               <div class="main__aboutTechBandArticle">
                 <p>
-                  TechBand is a software company experienced with all blockchain nodes. We develop turn-key solutions for DeFi, NFT, and Gaming projects.<br> 
-                  Our goal is to produce safe, transparent, universal products, which became possible thanks to the blockchain.<br><br>
-                  Text us, and we will calculate your blockchain project budget for free!<br>
+                  TechBand is a software company experienced with all blockchain nodes. 
+                  We develop turn-key solutions for DeFi, NFT, and Gaming projects..<br />
+                  Our goal is to produce safe, transparent, universal products, 
+                  which became possible thanks to the blockchain.<br /><br />
+                  Text us, and we will calculate your blockchain project budget for free!<br />
                 </p>
                 <div class="orderBtnWrapper1">
-                  <button class="orderBtn">
-                    Order a development
-                  </button>
+                  <button class="orderBtn">Order a development</button>
                 </div>
               </div>
             </article>
             <article class="main__aboutBlockchainContainer">
               <div class="main__aboutBlockchain">
                 <p>
-                  A world where blockchain is cutting-edge technology is no longer just a dream of nerds to retrowave music, it is the present and the future, it is the interaction of art and finance, democracy and new solutions. It's a new world that's changing so fast and we didn't notice it's already here.
+                  A world where blockchain is cutting-edge technology is no longer just 
+                  a dream of nerds to retrowave music, it is the present and the future, 
+                  it is the interaction of art and finance, democracy and new solutions. 
+                  It's a new world that's changing so fast and we didn't notice it's already here.
                 </p>
                 <div class="orderBtnWrapper1">
-                  <button class="orderBtn">
-                    Order a development
-                  </button>
+                  <button class="orderBtn">Order a development</button>
                 </div>
               </div>
               <div>
                 <p class="main__blockchainBigquote">
-                  Blockchain<br> 
-                  is the reality<br>
+                  Blockchain<br />
+                  is the reality<br />
                   of the future.
                 </p>
               </div>
@@ -86,102 +166,167 @@
           </section>
           <section class="main__activities">
             <div class="main__twoBlocksContainer_wrapper">
-              <img class="main__blue_circle1" src="img/blueCircle.png" alt="Blue circle">
-              <img class="main__blue_circle2" src="img/blueCircle.png" alt="Blue circle">
-              <img class="main__purple_circle1" src="img/purpleCircle.png" alt="Perple circle">
+              <img
+                class="main__blue_circle1"
+                src="img/blueCircle.png"
+                alt="Blue circle"
+              />
+              <img
+                class="main__blue_circle2"
+                src="img/blueCircle.png"
+                alt="Blue circle"
+              />
+              <img
+                class="main__purple_circle1"
+                src="img/purpleCircle.png"
+                alt="Perple circle"
+              />
               <div class="main__twoBlocksContainer">
-                <div class="main__twoBlocksContainer_item main__twoBlocksContainer_item1">
+                <div
+                  class="main__twoBlocksContainer_item main__twoBlocksContainer_item1"
+                >
                   <div>
-                    <h2>
-                      GameDev
-                    </h2>
+                    <h2>GameDev</h2>
                     <p>
-                      Blockchain has changed the understanding of the interaction between the user and the game on a global level. Now the gamer can not only enjoy the game, but have the opportunity to earn from this process. If you have an idea for a blockchain game or a new metaverse, then we are open to cooperation and ready to create new worlds for you by introducing our unlimited experience into this process.<br><br>
+                      Blockchain has changed the understanding of the interaction 
+                      between the user and the game on a global level. 
+                      Now the gamer can not only enjoy the game, but have the opportunity 
+                      to earn from this process. If you have an idea for a blockchain game 
+                      or a new metaverse, then we are open to cooperation and ready to create 
+                      new worlds for you by introducing our unlimited experience into this process.<br /><br />
                       Ready Player One!
                     </p>
                   </div>
                   <div class="orderBtnWrapper2">
-                    <button class="orderBtn">
-                      Order a development
-                    </button>
+                    <button class="orderBtn">Order a development</button>
                   </div>
                 </div>
-                <div class="main__twoBlocksContainer_item main__twoBlocksContainer_item2">
+                <div
+                  class="main__twoBlocksContainer_item main__twoBlocksContainer_item2"
+                >
                   <div>
-                    <h2>
-                      BlockchainDev
-                    </h2>
+                    <h2>BlockchainDev</h2>
                     <p>
-                      We believe that blockchain has been the best human invention over the past 20 years, and we are proud that we can create and launch blockchain products in various formats of varying complexity. Our team worked with Solana, Ethereum and all Ethereum friendly networks, but if you want to use another blockchain to develop your own product, then we are always open to new experiments.<br><br>
+                      We believe that blockchain has been the best human invention 
+                      over the past 20 years, and we are proud that we can create 
+                      and launch blockchain products in various formats of varying 
+                      complexity. Our team worked with Solana, Ethereum and 
+                      all Ethereum friendly networks, but if you want to use another 
+                      blockchain to develop your own product, then we are always 
+                      open to new experiments.<br /><br />
                       Let's start developing!
                     </p>
                   </div>
                   <div class="orderBtnWrapper2">
-                    <button class="orderBtn">
-                      Order a development
-                    </button>
+                    <button class="orderBtn">Order a development</button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="main__oneBlocksContainer">
               <div class="main__oneBlocksContainer_content">
-                <img class="main__bacterium1" src="img/bacterium1.png" alt="Bacterium image">
-                <img class="main__bacterium2" src="img/bacterium2.png" alt="Bacterium image">
-                <img class="main__bacterium3" src="img/bacterium3.png" alt="Bacterium image">
-                <img class="main__bacterium4" src="img/bacterium4.png" alt="Bacterium image">
+                <img
+                  class="main__bacterium1"
+                  src="img/bacterium1.png"
+                  alt="Bacterium image"
+                />
+                <img
+                  class="main__bacterium2"
+                  src="img/bacterium2.png"
+                  alt="Bacterium image"
+                />
+                <img
+                  class="main__bacterium3"
+                  src="img/bacterium3.png"
+                  alt="Bacterium image"
+                />
+                <img
+                  class="main__bacterium4"
+                  src="img/bacterium4.png"
+                  alt="Bacterium image"
+                />
                 <div class="main__oneBlockContainer_item">
                   <div>
-                    <h2>
-                      Smart Contract Audit
-                    </h2>
+                    <h2>Smart Contract Audit</h2>
                     <p>
-                      The idea of ​​smart contracts is a masterpiece in the blockchain world and time has proven it. But every financial instrument, even if it is an absolute masterpiece, needs a thorough technical check. To ensure that any project that uses a smart contract in its technical solutions does not expose itself to unjustified risk, we have created a team in our company that audits contracts for other projects in a quality manner. If you need such an audit, then we are ready to provide such services and conduct a detailed reserch of your smart contracts.
+                      The idea of ​​smart contracts is a masterpiece in the 
+                      blockchain world and time has proven it. But every 
+                      financial instrument, even if it is an absolute 
+                      masterpiece, needs a thorough technical check. 
+                      To ensure that any project that uses a smart 
+                      contract in its technical solutions does not 
+                      expose itself to unjustified risk, we have created 
+                      a team in our company that audits contracts 
+                      for other projects in a quality manner. 
+                      If you need such an audit, then we are ready 
+                      to provide such services and conduct a detailed 
+                      research of your smart contracts.
                     </p>
                   </div>
                   <div class="orderBtnWrapper3">
-                    <button class="orderBtn">
-                      Order a development
-                    </button>
+                    <button class="orderBtn">Order a development</button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="main__twoBlocksContainer_wrapper">
-              <img class="main__blue_circle1" src="img/blueCircle.png" alt="Blue circle">
-              <img class="main__blue_circle2" src="img/blueCircle.png" alt="Blue circle">
-              <img class="main__purple_circle2" src="img/purpleCircle.png" alt="Purple circle">
+              <img
+                class="main__blue_circle1"
+                src="img/blueCircle.png"
+                alt="Blue circle"
+              />
+              <img
+                class="main__blue_circle2"
+                src="img/blueCircle.png"
+                alt="Blue circle"
+              />
+              <img
+                class="main__purple_circle2"
+                src="img/purpleCircle.png"
+                alt="Perple circle"
+              />
               <div class="main__twoBlocksContainer2">
-                <div class="main__twoBlocksContainer_item main__twoBlocksContainer_item1">
+                <div
+                  class="main__twoBlocksContainer_item main__twoBlocksContainer_item1"
+                >
                   <div>
-                    <h2>
-                      DeFi
-                    </h2>
+                    <h2>DeFi</h2>
                     <p>
-                      If you think that centralized solutions in the financial system are the last century, and decentralization leads to the democratization of financial instruments, then we are happy to help you in the technical implementation of your project. Our team has extensive experience in creating DeFI projects, which gives us the opportunity not only to make a quality product, but also to suggest the best technical solution for your idea.<br><br>
+                      If you think that centralized solutions in the financial 
+                      system are the last century, and decentralization 
+                      leads to the democratization of financial instruments, 
+                      then we are happy to help you in the technical implementation 
+                      of your project. Our team has extensive experience in creating 
+                      DeFI projects, which gives us the opportunity not only to make 
+                      a quality product, but also to suggest the best technical 
+                      solution for your idea.<br /><br />
                       Yes, we can make DeFi great again!
                     </p>
                   </div>
                   <div class="orderBtnWrapper2">
-                    <button class="orderBtn">
-                      Order a development
-                    </button>
+                    <button class="orderBtn">Order a development</button>
                   </div>
                 </div>
-                <div class="main__twoBlocksContainer_item main__twoBlocksContainer_item2">
+                <div
+                  class="main__twoBlocksContainer_item main__twoBlocksContainer_item2"
+                >
                   <div>
-                    <h2>
-                      BoxSolutions
-                    </h2>
+                    <h2>BoxSolutions</h2>
                     <p>
-                      Our team is ready to provide you with boxed solutions for your project. We have created a ready-made NFT Marketplace that will give you the opportunity to release your collection and let your users participate in auctions. The Bridge that will enable your project to work in several networks at the same time. Cryptocurrency Custody Solution, which will allow your project to withdraw and accept payments in cryptocurrencies by converting them into an in-game currency.<br><br>
-                      *custom solution for your project is discussed in more detail after the application is submitted
+                      Our team is ready to provide you with boxed solutions 
+                      for your project. We have created a ready-made NFT 
+                      Marketplace that will give you the opportunity to release 
+                      your collection and let your users participate in auctions. 
+                      The Bridge that will enable your project to work in several 
+                      networks at the same time. Cryptocurrency Custody Solution, 
+                      which will allow your project to withdraw and accept payments 
+                      in cryptocurrencies by converting them into an in-game currency.<br /><br />
+                      *custom solution for your project is discussed in more 
+                      detail after the application is submitted
                     </p>
                   </div>
                   <div class="orderBtnWrapper2">
-                    <button class="orderBtn">
-                      Order a development
-                    </button>
+                    <button class="orderBtn">Order a development</button>
                   </div>
                 </div>
               </div>
@@ -189,39 +334,66 @@
           </section>
           <div class="main__oneBlocksContainer">
             <div class="main__oneBlocksContainer_content">
-              <img class="main__bacterium1" src="img/bacterium1.png" alt="Bacterium image">
-              <img class="main__bacterium2" src="img/bacterium2.png" alt="Bacterium image">
-              <img class="main__bacterium3" src="img/bacterium3.png" alt="Bacterium image">
-              <img class="main__bacterium4" src="img/bacterium4.png" alt="Bacterium image">
+              <img
+                class="main__bacterium1"
+                src="img/bacterium1.png"
+                alt="Bacterium image"
+              />
+              <img
+                class="main__bacterium2"
+                src="img/bacterium2.png"
+                alt="Bacterium image"
+              />
+              <img
+                class="main__bacterium3"
+                src="img/bacterium3.png"
+                alt="Bacterium image"
+              />
+              <img
+                class="main__bacterium4"
+                src="img/bacterium4.png"
+                alt="Bacterium image"
+              />
               <div class="main__oneBlockContainer_item">
                 <div>
-                  <h2>
-                    NFT Development
-                  </h2>
+                  <h2>NFTDev</h2>
                   <p>
-                    The Bored Ape Yacht Club and Cryptopunks have generated an unprecedented interest in the NFT industry, which has become a new popular trend in the arts. If you want to create your own collection or make your own marketplace, then we will be happy to create a unique product for you. Our team has a wide range of experience in the field of NFTs: we have created auctions, marketplaces, custom collections, and various financial NFTs. Even if you want to digitalize your physical collections, we know how to do it!
+                    The Bored Ape Yacht Club and Cryptopunks have generated 
+                    an unprecedented interest in the NFT industry, which has 
+                    become a new popular trend in the arts. If you want to create 
+                    your own collection or make your own marketplace, then 
+                    we will be happy to create a unique product for you. Our team 
+                    has a wide range of experience in the field of NFTs: 
+                    we have created auctions, marketplaces, custom collections, 
+                    and various financial NFTs, which are becoming a popular 
+                    solution in DeFi projects. Even if you want to digitalize 
+                    your physical collections, we know how to do it!
                   </p>
                 </div>
                 <div class="orderBtnWrapper3">
-                  <button class="orderBtn">
-                    Order a development
-                  </button>
+                  <button class="orderBtn">Order a development</button>
                 </div>
               </div>
             </div>
           </div>
           <section class="main__portfolio">
             <div class="main__portfolio_future">
-              <img class="main__future_hide" src="img/futureWord.png" alt="Future word">
-              <img class="main__is_hide" src="img/isWord.png" alt="Is word">
-              <img class="main__now_hide" src="img/nowWord.png" alt="Now word">
+              <img
+                class="main__future_hide"
+                src="img/futureWord.png"
+                alt="Future word"
+              />
+              <img class="main__is_hide" src="img/isWord.png" alt="Is word" />
+              <img
+                class="main__now_hide"
+                src="img/nowWord.png"
+                alt="Now word"
+              />
             </div>
             <div class="main__portfolio_btnBlck_wrapper">
               <div class="main__portfolio_btnBlck">
                 <div>
-                  <h2 class="main__portfolio_header">
-                    Portfolio.
-                  </h2>
+                  <h2 class="main__portfolio_header">Portfolio.</h2>
                 </div>
                 <div class="portfolioBtnWrapper">
                   <a href="portfolio.html" class="portfolioBtn">
@@ -270,6 +442,6 @@
   </div>
 </footer>
     </div>
-    <script src="js/app.min.js?_v=20220815122510"></script>
+    <script src="js/app.min.js?_v=20220815201231"></script>
   </body>
 </html>

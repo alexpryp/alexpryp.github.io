@@ -5,12 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.min.css?_v=20220815122510">
+  <link rel="stylesheet" href="css/style.min.css?_v=20220815201231">
   <title>Anmol Network</title>
 </head>
   <body>
-    <div class="content-wrapper portfolio__content">
-      <header>
+    <div class="main__wrapper">
+      <div class="content-wrapper portfolio__content">
+        <header>
   <div class="content-wrapper">
     <div class="header__content">
       <div class="header__logo">
@@ -32,70 +33,151 @@
             <li><a class="menu-contacts" href="#contact">Contacts</a></li>
           </ul>
         </nav>
-        <a class="header__callbackbtn" href="">
+        <div class="header__callbackbtn">
           Callback
-        </a>
+        </div>
       </div>
     </div>
   </div>
-</header>
-      <div class="project__content_wrapper">
-        <div class="project__back_wrapper">
-          <div class="project__back">
-            <a href="portfolio.html">
-              <img src="img/backLink.svg" alt="Back arrow">
+</header> <div class="fixed-overlay">
+  <div class="modal">
+    <div class="modal_container">
+      <!-- method="POST" -->
+      <form id="form" class="form-modal" method="post">
+        <span class="heading-modal">Order a development</span>
+        <div class="label-container">
+          <label for="formName" class="label">Name</label>
+
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            class="input"
+            required
+          />
+        </div>
+
+        <div class="label-container">
+          <label for="formEmail" class="label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="formEmail"
+            placeholder="Email"
+            class="input"
+            required
+          />
+        </div>
+
+        <div class="label-container">
+          <label for="formPhone" class="label">Phone namber</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Phone"
+            class="input"
+            required
+          />
+        </div>
+
+        <div class="label-container">
+          <label for="formMessage" class="label">Message</label>
+          <input
+            type="text"
+            name="message"
+            id="message"
+            placeholder="Message"
+            class="input"
+            required
+          />
+        </div>
+        <span class="btnContainer">
+          <button class="orderBtnModal" type="submit" data-text-hover="submit">
+            Order a development
+          </button>
+          <!-- <input type="hidden" name="formData" /> -->
+          <button class="close-modal" type="button">Not now</button>
+        </span>
+      </form>
+    </div>
+  </div>
+</div>
+
+          <div class="modal-success-overlay">
+  <div class="modal-success">
+    <div class="modal-success-container">
+      <img
+        src="img/checkOk.png"
+        alt="success image"
+        width="50px"
+        height="50px"
+      />
+      <p class="modal-title">Message sent Successfully</p>
+    </div>
+  </div>
+</div>
+
+        <div class="project__content_wrapper">
+          <div class="project__back_wrapper">
+            <div class="project__back">
+              <a href="portfolio.html">
+                <img src="img/backLink.svg" alt="Back arrow">
+              </a>
+            </div>
+          </div>
+          <div class="main__oneBlocksContainer main__oneBlocksContainer_project">
+            <div class="main__oneBlocksContainer_content project__oneBlocksContainer_content">
+              <img class="main__bacterium1" src="img/bacterium1.png" alt="Bacterium image">
+              <img class="main__bacterium2" src="img/bacterium2.png" alt="Bacterium image">
+              <img class="main__bacterium3" src="img/bacterium3.png" alt="Bacterium image">
+              <img class="main__bacterium4" src="img/bacterium4.png" alt="Bacterium image">
+              <div class="project__header">
+                <h1 class="project__header_text">Anmol Network</h1>
+              </div>
+              <div class="project__oneBlockContainer_item">
+                <div>
+                  <h2>
+                    About company
+                  </h2>
+                  <p>
+                    Mission of Anmol is to make Web3 technologies accessible, whilst promoting decentralization and blockchain tech as the norm within this industry. Anmol is building a multi-chain Web3 toolkit, designed to remove the barriers of entry into the market by giving businesses, corporations, influencers, content creators, artists, and average users the ability to transition to the new wave of online activity, all without any programming needs. Anmol is building a new blockchain for the new wave of internet activity, perfect for transferring NFTs, tokens, and other digital assets.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project__ticker">
+            <marquee direction="right" hspace="0" vspace="0" behavior="alternate">
+              The work we have done - The work we have done - The work we have done - The work we have done - The work we have done - The work we have done - The work we have done - The work we have done - The work we have done - The work we have done - The work we have done - The work we have done
+            </marquee>
+          </div>
+          <div class="main__twoBlocksContainer_wrapper">
+            <img class="main__blue_circle1" src="img/blueCircle.png" alt="Blue circle">
+            <img class="main__blue_circle2" src="img/blueCircle.png" alt="Blue circle">
+            <img class="main__purple_circle1" src="img/purpleCircle.png" alt="Perple circle">
+            <div class="main__twoBlocksContainer project__twoBlocksContainer">
+              <div class="main__twoBlocksContainer_item1 project__work">
+                <div>
+                  <h2 class="project__work_header">
+                    Full smart contract and frontend development
+                  </h2>
+                  <p>
+                    For this project, our team provided a package of services, which included the development of smart contracts (Binance Smart Chain Network), frontend and full coverage of the product with tests. We have developed and released the following products for the project: creating of unique EIP721 project's token, creating a custom image generator, full frontend development for a project, integrating Web3 into an existing project.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project_links">
+            <div class="project__icon_container"><img src="img/icons/anmol.png" alt="Project icon"></div>
+            <a href="https://anmol.network/" target="_blank">
+              <div class="project__icon_container"><img src="img/icons/projectLink.png" alt="Project link icon"></div>
             </a>
           </div>
         </div>
-        <div class="main__oneBlocksContainer main__oneBlocksContainer_project">
-          <div class="main__oneBlocksContainer_content project__oneBlocksContainer_content">
-            <img class="main__bacterium1" src="img/bacterium1.png" alt="Bacterium image">
-            <img class="main__bacterium2" src="img/bacterium2.png" alt="Bacterium image">
-            <img class="main__bacterium3" src="img/bacterium3.png" alt="Bacterium image">
-            <img class="main__bacterium4" src="img/bacterium4.png" alt="Bacterium image">
-            <div class="project__header">
-              <h1 class="project__header_text">Anmol Network</h1>
-            </div>
-            <div class="project__oneBlockContainer_item">
-              <div>
-                <h2>
-                  About company
-                </h2>
-                <p>
-                  Mission of Anmol is to make Web3 technologies accessible, whilst promoting decentralization and blockchain tech as the norm within this industry. Anmol is building a multi-chain Web3 toolkit, designed to remove the barriers of entry into the market by giving businesses, corporations, influencers, content creators, artists, and average users the ability to transition to the new wave of online activity, all without any programming needs.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="project__ticker">
-          <marquee direction="right" hspace="0" vspace="0" behavior="alternate">
-            The work we have done - The work we have done - The work we have done - The work we have done - The work we have done - The work we have done - The work we have done - The work we have done - The work we have done - The work we have done - The work we have done - The work we have done
-          </marquee>
-        </div>
-        <div class="main__twoBlocksContainer_wrapper">
-          <img class="main__blue_circle1" src="img/blueCircle.png" alt="Blue circle">
-          <img class="main__blue_circle2" src="img/blueCircle.png" alt="Blue circle">
-          <img class="main__purple_circle1" src="img/purpleCircle.png" alt="Perple circle">
-          <div class="main__twoBlocksContainer project__twoBlocksContainer">
-            <div class="main__twoBlocksContainer_item1 project__work">
-              <div>
-                <h2 class="project__work_header">
-                  Full smart contraсt / backend / frontend development:
-                </h2>
-                <p>
-                  For this project, our team provided a package of services, which included the development of smart contracts (Binance Smart Chain Network), frontend and full coverage of the product with tests. We have developed and released the following products for the project: creating of unique EIP721 project's token, creating a custom image generator, full frontend development for a project, integrating Web3 into an existing project.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="project_links">
-          <div class="project__icon_container"><img src="img/icons/anmol.png" alt="Project icon"></div>
-          <div class="project__icon_container"><img src="img/icons/projectLink.png" alt="Project link icon"></div>
-        </div>
-      </div>
-      <footer>
+        <footer>
   <div class="content-wrapper footer__content">
     <div class="footer__left">
       <a id="contact" name="contact"></a>
@@ -131,7 +213,8 @@
     </div>
   </div>
 </footer>
+      </div>
     </div>
-    <script src="js/app.min.js?_v=20220815122510"></script>
+    <script src="js/app.min.js?_v=20220815201231"></script>
   </body>
 </html>
