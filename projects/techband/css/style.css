@@ -2188,14 +2188,47 @@ footer {
 }
 
 .project__oneBlockContainer_item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 470px;
   width: 913px;
   padding: 48px 67px;
+  background: rgba(0, 0, 0, 0.14);
+  -webkit-backdrop-filter: blur(38px);
+          backdrop-filter: blur(38px);
+  border-radius: 29px;
+}
+
+.project__oneBlockContainer_item h2 {
+  margin: 0;
+  font-family: "DrukWide";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 63px;
+  color: #E8E8E8;
 }
 
 .project__oneBlockContainer_item p {
+  text-align: justify;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
   font-size: 24px;
   line-height: 26px;
-  margin: 25px 0 0 0;
+  color: #E8E8E8;
+  margin: 30px 0 0 0;
 }
 
 .project__header {
@@ -2237,22 +2270,30 @@ footer {
 }
 
 .project__work {
-  -webkit-box-orient: horizontal;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 445px;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 913px;
+  height: 445px;
   margin: 94px 0 110px 0;
   padding: 50px 60px;
+  -webkit-backdrop-filter: blur(38px);
+          backdrop-filter: blur(38px);
+  border-radius: 29px;
 }
 
 .project__work h2 {
+  margin: 0;
   font-family: "DrukWide";
   font-style: normal;
   font-weight: 700;
@@ -2262,6 +2303,7 @@ footer {
 }
 
 .project__work p {
+  text-align: justify;
   font-family: "Archivo";
   font-style: normal;
   font-weight: 500;
@@ -2272,8 +2314,17 @@ footer {
 }
 
 .project__twoBlocksContainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: auto;
   min-height: 700px;
+  padding: 0 80px;
 }
 
 .project_links {
@@ -2818,6 +2869,48 @@ footer {
     width: 100%;
     max-width: 1005px;
     min-width: 1005px;
+  }
+
+  .project__oneBlockContainer_item {
+    height: 434px;
+    width: 760px;
+    padding: 48px 67px;
+  }
+
+  .project__oneBlockContainer_item h2 {
+    margin: 0;
+    font-family: "DrukWide";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    color: #E8E8E8;
+  }
+
+  .project__oneBlockContainer_item p {
+    font-size: 20px;
+    line-height: 22px;
+    color: #E8E8E8;
+    margin: 30px 0 0 0;
+  }
+
+  .project__work {
+    width: 759px;
+    height: 434px;
+    -webkit-backdrop-filter: blur(38px);
+            backdrop-filter: blur(38px);
+    border-radius: 24px;
+  }
+
+  .project__work h2 {
+    font-size: 16px;
+    line-height: 80.69%;
+  }
+
+  .project__work p {
+    font-size: 20px;
+    line-height: 100%;
+    margin: 40px 0 0 0;
   }
 }
 
@@ -3601,7 +3694,7 @@ footer {
 }
 
   .project__back_wrapper {
-    padding: 0 20px;
+    padding: 0 30px;
   }
 
   .project__content {
@@ -3628,10 +3721,21 @@ footer {
     padding: 24px 16px 24px 16px;
   }
 
+  .project__oneBlockContainer_item h2 {
+    margin: 0;
+    font-size: 28px;
+    line-height: 37px;
+    text-align: center;
+  }
+
   .project__oneBlockContainer_item p {
     font-size: 18px;
     line-height: 20px;
     margin: 16px 0 0 0;
+  }
+
+  .project__twoBlocksContainer {
+    padding: 0 30px;
   }
 
   .project__work {
@@ -3753,6 +3857,10 @@ footer {
     width: 22.22vw;
     top: 15px;
     right: 74.88vw;
+  }
+
+  .project__back_wrapper {
+    padding: 0 20px;
   }
 
   .project__work {
