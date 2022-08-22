@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechBand is a software company experienced with all blockchain nodes. We develop turn-key solutions for DeFi, NFT, and Gaming projects.">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.min.css?_v=20220816185657">
-  <title>Main</title>
+  <link rel="stylesheet" href="css/style.min.css?_v=20220822124447">
+  <title>TechBand Blockchain Development Company</title>
 </head>
   <body>
     <div class="main__wrapper">
@@ -31,15 +32,17 @@
         </div>
       </div>
       <div class="header__navwrapper">
-        <nav class="header__nav">
-          <ul>
-            <li><a class="menu-main" href="index.html">Main</a></li>
-            <li><a class="menu-portfolio" href="portfolio.html">Portfolio</a></li>
-            <li><a class="menu-contacts" href="#contact">Contacts</a></li>
-          </ul>
-        </nav>
-        <div class="header__callbackbtn">
-          Callback
+        <div class="header__navcontent">
+          <nav class="header__nav">
+            <ul>
+              <li><a class="menu-main" href="index.html">Main</a></li>
+              <li><a class="menu-portfolio" href="portfolio.html">Portfolio</a></li>
+              <li><a class="menu-contacts" href="#contact">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="header__callbackbtn">
+            Callback
+          </div>
         </div>
       </div>
     </div>
@@ -59,7 +62,7 @@
             id="name"
             placeholder="Name"
             class="input"
-            required
+            maxlength="256"
           />
         </div>
 
@@ -72,6 +75,8 @@
             placeholder="Email"
             class="input"
             required
+            maxlength="256"
+            pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
           />
         </div>
 
@@ -83,7 +88,8 @@
             id="phone"
             placeholder="Phone"
             class="input"
-            required
+            pattern="[^A-Za-z]{1,256}"
+            maxlength="256"
           />
         </div>
 
@@ -95,7 +101,7 @@
             id="message"
             placeholder="Message"
             class="input"
-            required
+            maxlength="3000"
           />
         </div>
         <span class="btnContainer">
@@ -135,10 +141,10 @@
               <div class="main__aboutTechBandArticle">
                 <p>
                   TechBand is a software company experienced with all blockchain nodes. 
-                  We develop turn-key solutions for DeFi, NFT, and Gaming projects..<br />
+                  We develop turn-key solutions for DeFi, NFT, and Gaming projects.<br />
                   Our goal is to produce safe, transparent, universal products, 
-                  which became possible thanks to the blockchain.<br /><br />
-                  Text us, and we will calculate your blockchain project budget for free!<br />
+                  it has became possible thanks to the blockchain.<br /><br />
+                  Text us and we will calculate your blockchain project budget for free!<br />
                 </p>
                 <div class="orderBtnWrapper1">
                   <button class="orderBtn">Order a development</button>
@@ -148,10 +154,12 @@
             <article class="main__aboutBlockchainContainer">
               <div class="main__aboutBlockchain">
                 <p>
-                  A world where blockchain is cutting-edge technology is no longer just 
-                  a dream of nerds to retrowave music, it is the present and the future, 
-                  it is the interaction of art and finance, democracy and new solutions. 
-                  It's a new world that's changing so fast and we didn't notice it's already here.
+                  A world where blockchain is cutting-edge technology is 
+                  no longer just a dream of nerds to retro wave music, 
+                  but it is the present and the future, it is the interaction 
+                  of art and finance, freedom and new solutions. 
+                  It's a new world that's changing so fast that we haven't 
+                  noticed that it is already here.
                 </p>
                 <div class="orderBtnWrapper1">
                   <button class="orderBtn">Order a development</button>
@@ -192,10 +200,10 @@
                     <p>
                       Blockchain has changed the understanding of the interaction 
                       between the user and the game on a global level. 
-                      Now the gamer can not only enjoy the game, but have the opportunity 
-                      to earn from this process. If you have an idea for a blockchain game 
-                      or a new metaverse, then we are open to cooperation and ready to create 
-                      new worlds for you by introducing our unlimited experience into this process.<br /><br />
+                      Now the gamer can enjoy the game and can earn from this process. 
+                      If you have an idea for a blockchain game or a new metaverse, 
+                      then we are open to cooperation and ready to create new worlds 
+                      for you by introducing our vast experience.<br /><br />
                       Ready Player One!
                     </p>
                   </div>
@@ -211,11 +219,11 @@
                     <p>
                       We believe that blockchain has been the best human invention 
                       over the past 20 years, and we are proud that we can create 
-                      and launch blockchain products in various formats of varying 
-                      complexity. Our team worked with Solana, Ethereum and 
-                      all Ethereum friendly networks, but if you want to use another 
-                      blockchain to develop your own product, then we are always 
-                      open to new experiments.<br /><br />
+                      and launch blockchain products in various formats of varied 
+                      complexity. Our team worked with Solana, Ethereum and all 
+                      Ethereum-friendly networks, but if you want to use another 
+                      blockchain to develop your product, then we are always open 
+                      to new experiments.<br /><br />
                       Let's start developing!
                     </p>
                   </div>
@@ -251,18 +259,15 @@
                   <div>
                     <h2>Smart Contract Audit</h2>
                     <p>
-                      The idea of ​​smart contracts is a masterpiece in the 
-                      blockchain world and time has proven it. But every 
-                      financial instrument, even if it is an absolute 
-                      masterpiece, needs a thorough technical check. 
-                      To ensure that any project that uses a smart 
-                      contract in its technical solutions does not 
-                      expose itself to unjustified risk, we have created 
-                      a team in our company that audits contracts 
-                      for other projects in a quality manner. 
-                      If you need such an audit, then we are ready 
-                      to provide such services and conduct a detailed 
-                      research of your smart contracts.
+                      The idea of smart contracts is a masterpiece in the blockchain 
+                      world and time has proved it. Every financial instrument, even 
+                      if it is an absolute masterpiece, needs thorough technical checks. 
+                      To ensure that any project that uses a smart contract with its 
+                      technical solutions does not expose itself to unjustified risks, 
+                      we have created a team within our company that provides quality 
+                      audits of smart contracts for other companies. If you need this 
+                      type of audit, then we are ready to provide our services and 
+                      conduct detailed research on your smart contracts.
                     </p>
                   </div>
                   <div class="orderBtnWrapper3">
@@ -294,14 +299,14 @@
                   <div>
                     <h2>DeFi</h2>
                     <p>
-                      If you think that centralized solutions in the financial 
-                      system are the last century, and decentralization 
-                      leads to the democratization of financial instruments, 
-                      then we are happy to help you in the technical implementation 
-                      of your project. Our team has extensive experience in creating 
-                      DeFI projects, which gives us the opportunity not only to make 
-                      a quality product, but also to suggest the best technical 
-                      solution for your idea.<br /><br />
+                      If you think that centralised solutions in the financial 
+                      system are the last century, but decentralisation leads 
+                      to the freedom of financial instruments, then we are 
+                      happy to help you in the technical implementation of 
+                      your project. Our team has extensive experience in 
+                      creating DeFI projects that allows us not only to make 
+                      a quality product but, also, to suggest the best 
+                      technical solutions for your idea.<br /><br />
                       Yes, we can make DeFi great again!
                     </p>
                   </div>
@@ -316,13 +321,14 @@
                     <h2>BoxSolutions</h2>
                     <p>
                       Our team is ready to provide you with boxed solutions 
-                      for your project. We have created a ready-made NFT 
-                      Marketplace that will give you the opportunity to release 
-                      your collection and let your users participate in auctions. 
-                      The Bridge that will enable your project to work in several 
+                      for your project. We have created a ready-made 
+                      NFT Marketplace that will allow you to release your 
+                      collection and let your users participate in auctions. 
+                      The Bridge will enable your project to work in several 
                       networks at the same time. Cryptocurrency Custody Solution, 
-                      which will allow your project to withdraw and accept payments 
-                      in cryptocurrencies by converting them into an in-game currency.<br /><br />
+                      which will allow your project to withdraw and accept 
+                      payments in cryptocurrencies by converting them into 
+                      an in-game currency.<br /><br />
                       *custom solution for your project is discussed in more 
                       detail after the application is submitted
                     </p>
@@ -361,14 +367,14 @@
                   <h2>NFTDev</h2>
                   <p>
                     The Bored Ape Yacht Club and Cryptopunks have generated 
-                    an unprecedented interest in the NFT industry, which has 
-                    become a new popular trend in the arts. If you want to create 
-                    your own collection or make your own marketplace, then 
-                    we will be happy to create a unique product for you. Our team 
-                    has a wide range of experience in the field of NFTs: 
+                    an unprecedented interest in the NFT industry that has 
+                    become a new popular trend in the arts. If you want 
+                    to create your collection or make your marketplace, 
+                    then we will be happy to create a unique product for you. 
+                    Our team has a wide range of experience in the field of NFTs: 
                     we have created auctions, marketplaces, custom collections, 
-                    and various financial NFTs, which are becoming a popular 
-                    solution in DeFi projects. Even if you want to digitalize 
+                    and various financial NFTs, that are becoming a popular 
+                    solution in DeFi projects. Even if you want to digitalise 
                     your physical collections, we know how to do it!
                   </p>
                 </div>
@@ -431,19 +437,19 @@
       <h3>Follow us</h3>
       <div class="footer__right_icons">
         <a href="https://www.facebook.com/techband.org/" target="_blank">
-          <img src="img/facebookIcon.png" alt="Facebook icon">
+          <img src="img/facebookIcon.svg" alt="Facebook icon">
         </a>
         <a href="https://clutch.co/profile/techband-blockchain-development-company#summary" target="_blank">
-          <img src="img/cIcon.png" alt="C icon">
+          <img src="img/cIcon.svg" alt="C icon">
         </a>
         <a href="https://www.upwork.com/ag/techband/" target="_blank">
-          <img src="img/UpIcon.png" alt="Up icon">
+          <img src="img/UpIcon.svg" alt="Up icon">
         </a>
       </div>
     </div>
   </div>
 </footer>
     </div>
-    <script src="js/app.min.js?_v=20220816185657"></script>
+    <script src="js/app.min.js?_v=20220822124447"></script>
   </body>
 </html>

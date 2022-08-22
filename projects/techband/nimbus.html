@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechBand is a software company experienced with all blockchain nodes. We develop turn-key solutions for DeFi, NFT, and Gaming projects.">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.min.css?_v=20220816185657">
-  <title>Nimbus</title>
+  <link rel="stylesheet" href="css/style.min.css?_v=20220822124447">
+  <title>TechBand Blockchain Development Company</title>
 </head>
   <body>
     <div class="main__wrapper">
@@ -28,15 +29,17 @@
         </div>
       </div>
       <div class="header__navwrapper">
-        <nav class="header__nav">
-          <ul>
-            <li><a class="menu-main" href="index.html">Main</a></li>
-            <li><a class="menu-portfolio" href="portfolio.html">Portfolio</a></li>
-            <li><a class="menu-contacts" href="#contact">Contacts</a></li>
-          </ul>
-        </nav>
-        <div class="header__callbackbtn">
-          Callback
+        <div class="header__navcontent">
+          <nav class="header__nav">
+            <ul>
+              <li><a class="menu-main" href="index.html">Main</a></li>
+              <li><a class="menu-portfolio" href="portfolio.html">Portfolio</a></li>
+              <li><a class="menu-contacts" href="#contact">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="header__callbackbtn">
+            Callback
+          </div>
         </div>
       </div>
     </div>
@@ -56,7 +59,7 @@
             id="name"
             placeholder="Name"
             class="input"
-            required
+            maxlength="256"
           />
         </div>
 
@@ -69,6 +72,8 @@
             placeholder="Email"
             class="input"
             required
+            maxlength="256"
+            pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
           />
         </div>
 
@@ -80,7 +85,8 @@
             id="phone"
             placeholder="Phone"
             class="input"
-            required
+            pattern="[^A-Za-z]{1,256}"
+            maxlength="256"
           />
         </div>
 
@@ -92,7 +98,7 @@
             id="message"
             placeholder="Message"
             class="input"
-            required
+            maxlength="3000"
           />
         </div>
         <span class="btnContainer">
@@ -144,17 +150,17 @@
                     About company
                   </h2>
                   <p>
-                    Nimbus Platform is a company that focuses on providing solutions 
-                    on the DeFi market for those who are in need of them. 
-                    Whether it is a first-time user or a veteran Crypto enthusiast, 
-                    many will find that Nimbus offers services that will meet the 
-                    needs of any level of user. With options like the Liquidity 
-                    Pool Staking, NFT exchange, cross-platform interactions,  
-                    and lending and borrowing, Nimbus provides many avenues for 
-                    users to explore. The platform’s goal was to offer an intuitive 
-                    experience that any user could take advantage of, and it has 
-                    delivered one that has a seamless flow of activity while providing 
-                    the security and open nature that all users desire.
+                    Nimbus Platform is a company which focuses on providing solutions 
+                    in the DeFi market for those who require them. Whether it is a 
+                    first-time user or a veteran Crypto enthusiast, many will find 
+                    that Nimbus offers services that will meet the needs of any 
+                    level of user. With options like the Liquidity Pool Staking, 
+                    NFT exchange, cross-platform interactions, and lending and 
+                    borrowing, Nimbus provides many avenues for users to explore. 
+                    The platform's goal was to offer an intuitive experience 
+                    that any user could take advantage of, and it has delivered 
+                    a seamless flow of activity while providing the security and 
+                    open nature that all users desire.
                   </p>
                 </div>
               </div>
@@ -176,16 +182,16 @@
                     Full smart contract / backend / frontend development
                   </h2>
                   <p>
-                    For this client, our team provided a package of services, which 
-                    included the development of smart contracts for two networks 
+                    For this client, our team provided a package of services that 
+                    includes the development of smart contracts for two networks 
                     (Ethereum, Binance Smart Chain), backend, frontend, and full 
-                    coverage of the product with tests. We have developed and released 
-                    the following products for the project: three different types of 
-                    affiliate programs, swap engine with supporting project affiliate 
-                    program, staking family (up to 10 different staking scenarios), 
-                    governance, lending/borrowing ecosystem, cross-chain token wrapping, 
-                    project's P2P exchange, financial derivative NFT token, inner 
-                    dashboard and full projects cash flow analytics.
+                    coverage of the products with tests. We have developed and 
+                    released the following products for the project: three different 
+                    types of affiliate programs, a swap engine with a supporting 
+                    project affiliate program, staking family (up to 10 different 
+                    staking scenarios), governance, lending/borrowing ecosystem, 
+                    cross-chain token wrapping, project's P2P exchange, financial 
+                    derivative NFT token, inner dashboard, and full project's cash flow analytics.
                   </p>
                 </div>
               </div>
@@ -222,13 +228,13 @@
       <h3>Follow us</h3>
       <div class="footer__right_icons">
         <a href="https://www.facebook.com/techband.org/" target="_blank">
-          <img src="img/facebookIcon.png" alt="Facebook icon">
+          <img src="img/facebookIcon.svg" alt="Facebook icon">
         </a>
         <a href="https://clutch.co/profile/techband-blockchain-development-company#summary" target="_blank">
-          <img src="img/cIcon.png" alt="C icon">
+          <img src="img/cIcon.svg" alt="C icon">
         </a>
         <a href="https://www.upwork.com/ag/techband/" target="_blank">
-          <img src="img/UpIcon.png" alt="Up icon">
+          <img src="img/UpIcon.svg" alt="Up icon">
         </a>
       </div>
     </div>
@@ -236,6 +242,6 @@
 </footer>
       </div>
     </div>
-    <script src="js/app.min.js?_v=20220816185657"></script>
+    <script src="js/app.min.js?_v=20220822124447"></script>
   </body>
 </html>

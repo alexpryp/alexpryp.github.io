@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechBand is a software company experienced with all blockchain nodes. We develop turn-key solutions for DeFi, NFT, and Gaming projects.">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.min.css?_v=20220816185657">
-  <title>Flare Finance</title>
+  <link rel="stylesheet" href="css/style.min.css?_v=20220822124447">
+  <title>TechBand Blockchain Development Company</title>
 </head>
   <body>
     <div class="main__wrapper">
@@ -28,15 +29,17 @@
         </div>
       </div>
       <div class="header__navwrapper">
-        <nav class="header__nav">
-          <ul>
-            <li><a class="menu-main" href="index.html">Main</a></li>
-            <li><a class="menu-portfolio" href="portfolio.html">Portfolio</a></li>
-            <li><a class="menu-contacts" href="#contact">Contacts</a></li>
-          </ul>
-        </nav>
-        <div class="header__callbackbtn">
-          Callback
+        <div class="header__navcontent">
+          <nav class="header__nav">
+            <ul>
+              <li><a class="menu-main" href="index.html">Main</a></li>
+              <li><a class="menu-portfolio" href="portfolio.html">Portfolio</a></li>
+              <li><a class="menu-contacts" href="#contact">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="header__callbackbtn">
+            Callback
+          </div>
         </div>
       </div>
     </div>
@@ -56,7 +59,7 @@
             id="name"
             placeholder="Name"
             class="input"
-            required
+            maxlength="256"
           />
         </div>
 
@@ -69,6 +72,8 @@
             placeholder="Email"
             class="input"
             required
+            maxlength="256"
+            pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
           />
         </div>
 
@@ -80,7 +85,8 @@
             id="phone"
             placeholder="Phone"
             class="input"
-            required
+            pattern="[^A-Za-z]{1,256}"
+            maxlength="256"
           />
         </div>
 
@@ -92,7 +98,7 @@
             id="message"
             placeholder="Message"
             class="input"
-            required
+            maxlength="3000"
           />
         </div>
         <span class="btnContainer">
@@ -144,7 +150,18 @@
                     About company
                   </h2>
                   <p>
-                    Flare Finance is the first institutional-grade decentralized finance platform built on the Flare Network. It offers a suite of 6 unique decentralized finance products dedicated to bootstrapping the Flare Network with a single suite DeFi solution for business and retail finance products. Flare Finance utilizes Web3 capabilities to allow people to engage with our products and services trustlessly without giving up custody of their funds. The protocol is a compliant decentralized autonomous organization with added KYC and AML regulatory features ensuring a trustable experience. It offers unique features like tax solutions to help ensure users are supported with tools that can help them accomplish their goals.
+                    Flare Finance is the first institutional-grade decentralised 
+                    finance platform built on the Flare Network. It offers a suite 
+                    of 6 unique decentralised finance products dedicated to 
+                    bootstrapping the Flare Network with a single suite DeFi 
+                    solution for business and retail finance products. 
+                    Flare Finance utilises Web3 capabilities to allow people 
+                    to engage with our products and services without giving up 
+                    custody of their funds. The protocol is a compliant 
+                    decentralised autonomous organisation with added KYC 
+                    and AML regulatory features ensuring a trustable experience. 
+                    It offers a unique feature like tax solutions in order to ensure 
+                    users and support them with tools that can help to accomplish their goals.
                   </p>
                 </div>
               </div>
@@ -166,7 +183,15 @@
                     Full smart contract and backend infrastructure
                   </h2>
                   <p>
-                    For this project, our team provided a package of services, which included the development of smart contracts (Songbird Network (EVM)), backend and full coverage of the product with tests. We have developed and released the following products for the project: swap engine with supporting project token as swap fee token,  stake farming infrastructure, loans ecosystem, cross-chain token wrapping, governance, project's unique cross-product staking and reward system (APY Cloud), integration with default network delegation and reward system (FTSO).
+                    For this project, our team provided a package of services that 
+                    includes the development of smart contracts (Songbird Network (EVM)), 
+                    backend and full coverage of the product with tests. We have 
+                    developed and released the following products for the project: 
+                    swap engine with supporting project token as swap fee token, 
+                    stake farming infrastructure, loans ecosystem, cross-chain 
+                    token wrapping, governance, project's unique cross-product 
+                    staking and reward system (APY Cloud), integration with 
+                    default network delegation and the reward system (FTSO).
                   </p>
                 </div>
               </div>
@@ -203,13 +228,13 @@
       <h3>Follow us</h3>
       <div class="footer__right_icons">
         <a href="https://www.facebook.com/techband.org/" target="_blank">
-          <img src="img/facebookIcon.png" alt="Facebook icon">
+          <img src="img/facebookIcon.svg" alt="Facebook icon">
         </a>
         <a href="https://clutch.co/profile/techband-blockchain-development-company#summary" target="_blank">
-          <img src="img/cIcon.png" alt="C icon">
+          <img src="img/cIcon.svg" alt="C icon">
         </a>
         <a href="https://www.upwork.com/ag/techband/" target="_blank">
-          <img src="img/UpIcon.png" alt="Up icon">
+          <img src="img/UpIcon.svg" alt="Up icon">
         </a>
       </div>
     </div>
@@ -217,6 +242,6 @@
 </footer>
       </div>
     </div>
-    <script src="js/app.min.js?_v=20220816185657"></script>
+    <script src="js/app.min.js?_v=20220822124447"></script>
   </body>
 </html>

@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechBand is a software company experienced with all blockchain nodes. We develop turn-key solutions for DeFi, NFT, and Gaming projects.">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.min.css?_v=20220816185657">
-  <title>Assembly</title>
+  <link rel="stylesheet" href="css/style.min.css?_v=20220822124447">
+  <title>TechBand Blockchain Development Company</title>
 </head>
   <body>
     <div class="main__wrapper">
@@ -28,15 +29,17 @@
         </div>
       </div>
       <div class="header__navwrapper">
-        <nav class="header__nav">
-          <ul>
-            <li><a class="menu-main" href="index.html">Main</a></li>
-            <li><a class="menu-portfolio" href="portfolio.html">Portfolio</a></li>
-            <li><a class="menu-contacts" href="#contact">Contacts</a></li>
-          </ul>
-        </nav>
-        <div class="header__callbackbtn">
-          Callback
+        <div class="header__navcontent">
+          <nav class="header__nav">
+            <ul>
+              <li><a class="menu-main" href="index.html">Main</a></li>
+              <li><a class="menu-portfolio" href="portfolio.html">Portfolio</a></li>
+              <li><a class="menu-contacts" href="#contact">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="header__callbackbtn">
+            Callback
+          </div>
         </div>
       </div>
     </div>
@@ -56,7 +59,7 @@
             id="name"
             placeholder="Name"
             class="input"
-            required
+            maxlength="256"
           />
         </div>
 
@@ -69,6 +72,8 @@
             placeholder="Email"
             class="input"
             required
+            maxlength="256"
+            pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
           />
         </div>
 
@@ -80,7 +85,8 @@
             id="phone"
             placeholder="Phone"
             class="input"
-            required
+            pattern="[^A-Za-z]{1,256}"
+            maxlength="256"
           />
         </div>
 
@@ -92,7 +98,7 @@
             id="message"
             placeholder="Message"
             class="input"
-            required
+            maxlength="3000"
           />
         </div>
         <span class="btnContainer">
@@ -144,7 +150,16 @@
                     About company
                   </h2>
                   <p>
-                    Assembly is a platform designed to empower photographers and the institutions that support them, to inspire collectors with the most important and culturally valuable works of the world's leading fine art photographers, as well as innovative new voices, to create value through access, context and carefully selected collections. After stewarding fine art photographers in the space since 2021, the team launched the Assembly Curated Platform in 2022 to be a lighthouse in the NFT space, guiding artists, the institutions that support them, and collectors with the most culturally-valuable work on the market.
+                    Assembly is a platform designed to empower photographers and the 
+                    organisations that support them, to inspire collectors with 
+                    the most important and culturally valuable works of the world's 
+                    leading fine art photographers, as well as innovative new voices, 
+                    to create value through access, context, and carefully selected 
+                    collections. After having been steward fine art photographers 
+                    in the space since 2021, the team launched the Assembly Curated 
+                    Platform in 2022 to be a lighthouse in the NFT space, guiding 
+                    artists, the organisations that support them, and collectors 
+                    with the most culturally valuable works on the market.
                   </p>
                 </div>
               </div>
@@ -166,7 +181,14 @@
                     Full smart contract / backend / frontend development
                   </h2>
                   <p>
-                    For this project, our team provided a package of services, which included the development of smart contracts (Ethereum Network), backend, frontend and full coverage of the product with tests. We have developed and released the following products for the project: creating of unique EIP721 project's token with supported build, royalty transfer,  lazy minting, enhanced multi-author support for different arts and collection, support of both digital and real world art objects, auction bidding platform, supporting of custodial version of the auctions.
+                    For this project, our team provided a package of services 
+                    that includes the development of smart contracts (Ethereum Network), 
+                    backend, frontend, and full coverage of the product with tests. 
+                    We have developed and released the following products for the project: 
+                    the creation of a unique EIP721 project token with the supported build, 
+                    royalty transfer, lazy minting, enhanced multi-author support for 
+                    different artists and collections, support of both digital and real-world 
+                    art objects, auction bidding platform, and supporting custodial version of the auctions.
                   </p>
                 </div>
               </div>
@@ -203,13 +225,13 @@
       <h3>Follow us</h3>
       <div class="footer__right_icons">
         <a href="https://www.facebook.com/techband.org/" target="_blank">
-          <img src="img/facebookIcon.png" alt="Facebook icon">
+          <img src="img/facebookIcon.svg" alt="Facebook icon">
         </a>
         <a href="https://clutch.co/profile/techband-blockchain-development-company#summary" target="_blank">
-          <img src="img/cIcon.png" alt="C icon">
+          <img src="img/cIcon.svg" alt="C icon">
         </a>
         <a href="https://www.upwork.com/ag/techband/" target="_blank">
-          <img src="img/UpIcon.png" alt="Up icon">
+          <img src="img/UpIcon.svg" alt="Up icon">
         </a>
       </div>
     </div>
@@ -217,6 +239,6 @@
 </footer>
       </div>
     </div>
-    <script src="js/app.min.js?_v=20220816185657"></script>
+    <script src="js/app.min.js?_v=20220822124447"></script>
   </body>
 </html>

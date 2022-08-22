@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechBand is a software company experienced with all blockchain nodes. We develop turn-key solutions for DeFi, NFT, and Gaming projects.">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.min.css?_v=20220816185657">
-  <title>Liquid Access</title>
+  <link rel="stylesheet" href="css/style.min.css?_v=20220822124447">
+  <title>TechBand Blockchain Development Company</title>
 </head>
   <body>
     <div class="main__wrapper">
@@ -28,15 +29,17 @@
         </div>
       </div>
       <div class="header__navwrapper">
-        <nav class="header__nav">
-          <ul>
-            <li><a class="menu-main" href="index.html">Main</a></li>
-            <li><a class="menu-portfolio" href="portfolio.html">Portfolio</a></li>
-            <li><a class="menu-contacts" href="#contact">Contacts</a></li>
-          </ul>
-        </nav>
-        <div class="header__callbackbtn">
-          Callback
+        <div class="header__navcontent">
+          <nav class="header__nav">
+            <ul>
+              <li><a class="menu-main" href="index.html">Main</a></li>
+              <li><a class="menu-portfolio" href="portfolio.html">Portfolio</a></li>
+              <li><a class="menu-contacts" href="#contact">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="header__callbackbtn">
+            Callback
+          </div>
         </div>
       </div>
     </div>
@@ -56,7 +59,7 @@
             id="name"
             placeholder="Name"
             class="input"
-            required
+            maxlength="256"
           />
         </div>
 
@@ -69,6 +72,8 @@
             placeholder="Email"
             class="input"
             required
+            maxlength="256"
+            pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
           />
         </div>
 
@@ -80,7 +85,8 @@
             id="phone"
             placeholder="Phone"
             class="input"
-            required
+            pattern="[^A-Za-z]{1,256}"
+            maxlength="256"
           />
         </div>
 
@@ -92,7 +98,7 @@
             id="message"
             placeholder="Message"
             class="input"
-            required
+            maxlength="3000"
           />
         </div>
         <span class="btnContainer">
@@ -144,7 +150,15 @@
                     About company
                   </h2>
                   <p>
-                    Liquid Access is a platform that allows you to operate your subscriptions using blockchain solutions. If you have one of the subscriptions to the services of one of our partners, then you have the opportunity to generate an NFT token that you can transfer or sell after a time when this subscription becomes irrelevant to you.  The project also includes a marketplace where you can auction your NFT subscriptions. The project uses the Polygon Network, which allows the project to provide a low gas price for transactions to its users.
+                    Liquid Access is a platform that allows you to operate your 
+                    subscriptions using blockchain solutions. If you have one 
+                    of the subscriptions to the services of one of our partners, 
+                    then you can generate an NFT token that you can transfer or sell 
+                    after some time when this subscription becomes irrelevant to you. 
+                    Also, the project includes a marketplace where you can auction 
+                    your NFT subscriptions. The project uses the Polygon Network, 
+                    which allows this project to provide a low gas price 
+                    for transactions to its users.
                   </p>
                 </div>
               </div>
@@ -166,7 +180,12 @@
                     Full blockchain / backend / frontend development
                   </h2>
                   <p>
-                    For this project, our team provided a package of services, which included the development of smart contracts (Polygon Network), backend, frontend and full coverage of the product with tests. We have developed and released the following products for the project: creating of unique EIP721 project's token, API architecture, subscription service, auction bidding platform.
+                    For this project, our team provided a package of services 
+                    that includes the development of smart contracts (Polygon Network), 
+                    backend, frontend, and full coverage of the product with tests. 
+                    We have developed and released the following products 
+                    for the project: the creation of a unique EIP721 project token, 
+                    API architecture, subscription service, and auction bidding platform.
                   </p>
                 </div>
               </div>
@@ -201,13 +220,13 @@
       <h3>Follow us</h3>
       <div class="footer__right_icons">
         <a href="https://www.facebook.com/techband.org/" target="_blank">
-          <img src="img/facebookIcon.png" alt="Facebook icon">
+          <img src="img/facebookIcon.svg" alt="Facebook icon">
         </a>
         <a href="https://clutch.co/profile/techband-blockchain-development-company#summary" target="_blank">
-          <img src="img/cIcon.png" alt="C icon">
+          <img src="img/cIcon.svg" alt="C icon">
         </a>
         <a href="https://www.upwork.com/ag/techband/" target="_blank">
-          <img src="img/UpIcon.png" alt="Up icon">
+          <img src="img/UpIcon.svg" alt="Up icon">
         </a>
       </div>
     </div>
@@ -215,6 +234,6 @@
 </footer>
       </div>
     </div>
-    <script src="js/app.min.js?_v=20220816185657"></script>
+    <script src="js/app.min.js?_v=20220822124447"></script>
   </body>
 </html>

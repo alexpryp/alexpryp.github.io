@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechBand is a software company experienced with all blockchain nodes. We develop turn-key solutions for DeFi, NFT, and Gaming projects.">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.min.css?_v=20220816185657">
-  <title>FairSpin</title>
+  <link rel="stylesheet" href="css/style.min.css?_v=20220822124447">
+  <title>TechBand Blockchain Development Company</title>
 </head>
   <body>
     <div class="main__wrapper">
@@ -28,15 +29,17 @@
         </div>
       </div>
       <div class="header__navwrapper">
-        <nav class="header__nav">
-          <ul>
-            <li><a class="menu-main" href="index.html">Main</a></li>
-            <li><a class="menu-portfolio" href="portfolio.html">Portfolio</a></li>
-            <li><a class="menu-contacts" href="#contact">Contacts</a></li>
-          </ul>
-        </nav>
-        <div class="header__callbackbtn">
-          Callback
+        <div class="header__navcontent">
+          <nav class="header__nav">
+            <ul>
+              <li><a class="menu-main" href="index.html">Main</a></li>
+              <li><a class="menu-portfolio" href="portfolio.html">Portfolio</a></li>
+              <li><a class="menu-contacts" href="#contact">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="header__callbackbtn">
+            Callback
+          </div>
         </div>
       </div>
     </div>
@@ -56,7 +59,7 @@
             id="name"
             placeholder="Name"
             class="input"
-            required
+            maxlength="256"
           />
         </div>
 
@@ -69,6 +72,8 @@
             placeholder="Email"
             class="input"
             required
+            maxlength="256"
+            pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
           />
         </div>
 
@@ -80,7 +85,8 @@
             id="phone"
             placeholder="Phone"
             class="input"
-            required
+            pattern="[^A-Za-z]{1,256}"
+            maxlength="256"
           />
         </div>
 
@@ -92,7 +98,7 @@
             id="message"
             placeholder="Message"
             class="input"
-            required
+            maxlength="3000"
           />
         </div>
         <span class="btnContainer">
@@ -144,7 +150,17 @@
                     About company
                   </h2>
                   <p>
-                    Fairspin is a cryptocurrency-based online casino that allows customers to fund their accounts with different digital coins and more common payment options. These payment types for depositing funds include Bitcoin, Bitcoin Cash, Ethereum, Dogecoin, Ripple, Neteller. The withdrawal methods are similar to the deposits, including the different cryptocurrencies, e-wallet options and bank transfers. Users play anonymously, can check the RTP and monitor the fairness of the game. In October 2019, the creators of the Fair Spin blockchain casino presented the project at the EGR Operator Awards in London. The platform was nominated in the Rising Star category.
+                    Fairspin is a cryptocurrency-based online casino that allows 
+                    customers to fund their accounts with different digital 
+                    coins and more common payment options. These payment types 
+                    for depositing funds include Bitcoin, Bitcoin Cash, Ethereum, 
+                    Dogecoin, Ripple, and Neteller. The withdrawal methods 
+                    are like the deposits that include various cryptocurrencies, 
+                    e-wallet options, and bank transfers. Users play anonymously, 
+                    can check the RTP and monitor the fairness of the game. 
+                    In October 2019, the creators of the Fair Spin blockchain 
+                    casino presented the project at the EGR Operator Awards in London. 
+                    The platform was nominated in the Rising Star category.
                   </p>
                 </div>
               </div>
@@ -166,7 +182,16 @@
                     Full blockchain / backend / frontend development
                   </h2>
                   <p>
-                    For this project, our team provided a package of services, which included the development of blockchain solutions, frontend, backend and full coverage of the product with tests. We have developed and released the custodian solution service and a payment multi-vendor processing solution: supports any EVM blockchain, auto generating user wallets, auto generating master wallets for vendors, common tokens support for the system and custom token for each vendor, auto transfer assets to vendors master wallet, back-office for system monitoring.
+                    For this project, our team provided a package of services 
+                    that includes the development of smart contracts 
+                    (Ethereum Network), backend, frontend, and full coverage 
+                    of the product with tests We have developed and released 
+                    the custodian solution service and the payment multi-vendor 
+                    processing solution that supports any EVM blockchain, 
+                    auto-generating user wallets, auto-generating master wallets 
+                    for vendors, common token support for the system and custom 
+                    token for each vendor, auto transfer assets to vendor's 
+                    master wallet, back-office for system monitoring.
                   </p>
                 </div>
               </div>
@@ -203,13 +228,13 @@
       <h3>Follow us</h3>
       <div class="footer__right_icons">
         <a href="https://www.facebook.com/techband.org/" target="_blank">
-          <img src="img/facebookIcon.png" alt="Facebook icon">
+          <img src="img/facebookIcon.svg" alt="Facebook icon">
         </a>
         <a href="https://clutch.co/profile/techband-blockchain-development-company#summary" target="_blank">
-          <img src="img/cIcon.png" alt="C icon">
+          <img src="img/cIcon.svg" alt="C icon">
         </a>
         <a href="https://www.upwork.com/ag/techband/" target="_blank">
-          <img src="img/UpIcon.png" alt="Up icon">
+          <img src="img/UpIcon.svg" alt="Up icon">
         </a>
       </div>
     </div>
@@ -217,6 +242,6 @@
 </footer>
       </div>
     </div>
-    <script src="js/app.min.js?_v=20220816185657"></script>
+    <script src="js/app.min.js?_v=20220822124447"></script>
   </body>
 </html>
